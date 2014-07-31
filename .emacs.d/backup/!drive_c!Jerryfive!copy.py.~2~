@@ -1,0 +1,12 @@
+
+'''
+when hopeTime = curTime = 9:00
+copy temFile = template daily report (review)
+paste newFile name = hopeDate
+'''
+
+print ("this is a test")
+print ("fjkdlsjf")
+pdb
+	
+    

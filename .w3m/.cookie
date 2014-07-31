@@ -1,0 +1,9 @@
+;;; .cookie  -*- mode: emacs-lisp; coding: iso-2022-7bit -*-
+;; This file is generated automatically by emacs-w3m v1.4.420.
+
+(["http://forum.ubuntu.org.cn/" "forum.ubuntu.org.cn" nil "HttpOnly" nil "/" 0 "Tue, 07-Jul-2015 09:27:51 GMT" nil]
+["http://forum.ubuntu.org.cn/" "forum.ubuntu.org.cn" nil "ubuntuforum_sid" "12618a797bacf550477493f8777b8f1d" "/" 0 "Tue, 07-Jul-2015 09:27:51 GMT" nil]
+["http://forum.ubuntu.org.cn/" "forum.ubuntu.org.cn" nil "ubuntuforum_k" "" "/" 0 "Tue, 07-Jul-2015 09:27:51 GMT" nil]
+["http://forum.ubuntu.org.cn/" "forum.ubuntu.org.cn" nil "ubuntuforum_u" "1" "/" 0 "Tue, 07-Jul-2015 09:27:51 GMT" nil]
+["http://www.baidu.com/" ".baidu.com" nil "BAIDUID" "24CA2B984D7233B17BBAD772AA90448F:FG=1" "/" 0 "Thu, 31-Dec-37 23:55:55 GMT" nil]
+["http://www.baidu.com/" ".baidu.com" nil "max-age" "2147483647" "/" 0 "Thu, 31-Dec-37 23:55:55 GMT" nil])

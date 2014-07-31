@@ -1,0 +1,18 @@
+;; Object Jerryfive/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Jerryfive/"
+  :tables (list 
+   (semanticdb-table "new.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "new.cpp"
+    :pointmax 232
+    :fsize 242
+    :lastmodtime '(21435 28976)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_c!Jerryfive!semantic.cache"
+  :semantic-tag-version "2.1"
+  :semanticdb-version "2.1"
+  )

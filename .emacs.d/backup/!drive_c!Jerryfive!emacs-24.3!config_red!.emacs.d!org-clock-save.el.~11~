@@ -1,0 +1,2 @@
+;; org-persist.el - ZHUXIAOLIN-PC at <2014-07-31 ÖÜËÄ 14:39>
+(setq stored-clock-history '(("c:/Jerryfive/emacs-24.3/config_red/ToDo/newgtd.org" . 13623)))

@@ -1,0 +1,26 @@
+
+;; ----- smex-history -----
+(
+ gtd
+ log
+ yas/new-snippet
+ mydiary
+ pdb
+ yas/global-mode
+ w32-menu-bar-open
+)
+
+;; ----- smex-data -----
+(
+ (w32-menu-bar-open . 2)
+ (xterm-mouse-mode . 1)
+ (mydiary . 3)
+ (yas/global-mode . 2)
+ (my-yas-expand . 1)
+ (w3m . 6)
+ (gtd . 2)
+ (pdb . 17)
+ (ecb-byte-compile . 1)
+ (log . 3)
+ (yas/new-snippet . 1)
+)

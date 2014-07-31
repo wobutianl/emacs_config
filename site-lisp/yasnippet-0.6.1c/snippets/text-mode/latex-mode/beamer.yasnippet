@@ -1,0 +1,244 @@
+# -*- mode: snippet -*-
+# name: beamer
+# key: beamer
+# expand-env: ((some-var some-value))
+# --
+\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage{ctex}
+%\usepackage{listings}
+\usepackage[absolute,overlay]{textpos}       %设置参考
+\newenvironment{reference}[2]{%
+  \begin{textblock*}{\textwidth}(#1,#2)
+      \footnotesize\it\bgroup\color{red!50!black}}{\egroup\end{textblock*}}
+\useoutertheme{infolines}                    %底边导航条
+\usetheme{Boadilla}                          %设置主题
+\usecolortheme[RGB={205,173,0}]{structure}   %设置结构颜色
+\setbeamertemplate{items}[default]           %设置items标识
+                                             %设置圆角边框
+\setbeamertemplate{blocks}[rounded][shadow=true] 
+\setbeamerfont{frametitle}{family=\rmfamily,shape=\itshape}
+\setbeamertemplate{frametitle}[default][center] %标题居中
+\hypersetup{colorlinks=true,linkcolor=red}   %设置超链接颜色
+                                             %设置背景图片
+\setbeamertemplate{background canvas}{\includegraphics
+        [width=\paperwidth,height=\paperheight]{win7.jpg}}
+
+
+%\useoutertheme{}                            %设置outer主题
+%\usefonttheme{}                             %设置字体主题
+%\useinnertheme{rounded}                     %设置inner主题
+%\setbeamertemplate{navigation symbols}{}     %导航图标消失
+
+
+             
+\begin{document}
+%%--------------title-----------------------------------
+    \title{Jeerryfive的Beamer}
+    \subtitle{个人总结}
+    \author{Jerry Five}
+    \institute{南京师范大学~~地理科学学院}
+    \date{\today}
+    \begin{frame}[plain]
+    \titlepage
+    \end{frame}
+
+%%--------------logo-------------------------
+\logo{\includegraphics[height=0.09\textwidth]{nnulogo.jpg}}     %设置logo
+
+%%--------------slide-------------------------
+\begin{frame}[label=home]{Over View}
+   Here is a list of items:
+   \pause
+   \begin{itemize}
+   \item \textcolor{red}{formula}
+   \pause
+   \item second item
+   \pause
+   \item picture
+   \end{itemize}
+\end{frame}
+
+%%--------------slide-------------------------
+\begin{frame}{formula}
+A displayed formula:
+\[
+  \int_{-\infty}^\infty e^{-x^2} \, dx = \sqrt{\pi}
+\]
+\pause
+\begin{definition}
+A triangle that has a right angle is called
+a \emph{right triangle}.
+\end{definition}
+\pause
+\begin{theorem}
+  In a right triangle, the square of hypotenuse equals
+\end{theorem}
+\pause
+\begin{proof}
+  We leave the proof as an exercise to our astute reader.
+\end{proof}
+\pause
+\begin{theorem}
+  In a right triangle, the square of hypotenuse equals
+\end{theorem}
+\hyperlink{home}{\beamerbutton{here}}
+\end{frame}
+
+%------------slide-------------------
+\begin{frame}{second title}
+  显示第二个页面
+\hyperlink{home}{\beamerbutton{here}}
+\end{frame}
+
+%%--------------------slide picture---------------------
+\begin{frame}{Graphics} 
+Here we include three images, one each of PDF, PNG, and JPG types. 
+\begin{center} 
+  \includegraphics[width=0.3\textwidth]{nnu.jpg} \pause
+  \includegraphics[width=0.3\textwidth]{nnu1.jpg} \pause
+  \includegraphics[width=0.3\textwidth]{nnulogo.jpg} \pause
+\end{center} 
+ \hyperlink{home}{\beamerbutton{here}}
+\end{frame} 
+ 
+%%-----------------slide  footnote--------
+\begin{frame}{footnote}
+   \begin{reference}{4mm}{85mm}
+       V. Jikov, S. Kozlov and O. Olenik, Homogenization
+       of differential operators and integral
+       functionals, Springer, 1994.
+   \end{reference} 
+   This is a test.
+\end{frame}
+
+%%---------------slide  split
+\begin{frame}{Splitting a slide into columns}
+The line you are reading goes all the way across the slide.
+From the left margin to the right margin.  Now we are going
+the split the slide into two columns.
+\bigskip
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+    Here is the first column.  We put an itemized list in it.
+    \begin{itemize}
+      \item This is an item
+      \item This is another item
+      \item Yet another item
+    \end{itemize}
+  \end{column}
+
+  \begin{column}{0.3\textwidth}
+    Here is the second column.  We will put a picture in it.
+    \centerline{\includegraphics[width=0.7\textwidth]{nnulogo.jpg}}
+  \end{column}
+\end{columns}
+\bigskip
+
+The line you are reading goes all the way across the slide.
+From the left margin to the right margin.
+
+\end{frame}
+
+%%----------slide  horizon split
+\begin{frame}{Splitting a slide into columns}
+
+The line you are reading goes all the way across the slide.
+From the left margin to the right margin.  Now we are going
+the split the slide into two columns.
+\bigskip
+
+\begin{columns}[t]
+  \begin{column}{0.5\textwidth}
+    Here is the first column.  We put an itemized list in it.
+    \begin{itemize}
+      \item This is an item
+      \item This is another item
+      \item Yet another item
+    \end{itemize}
+  \end{column}
+
+  \begin{column}{0.3\textwidth}
+    Here is the second column.  We will put a picture in it.
+    \centerline{\includegraphics[width=0.7\textwidth]{nnulogo.jpg}}
+  \end{column}
+\end{columns}
+\bigskip
+
+The line you are reading goes all the way across the slide.
+From the left margin to the right margin.
+
+\end{frame}
+
+%%----------------slide -split----------
+
+\begin{frame}{Splitting a slide into columns}
+
+The line you are reading goes all the way across the slide.
+From the left margin to the right margin.  Now we are going
+the split the slide into two columns.
+\bigskip
+
+\begin{columns}[T]
+  \begin{column}{0.5\textwidth}
+    Here is the first column.  We put an itemized list in it.
+    \begin{itemize}
+      \item This is an item
+      \item This is another item
+      \item Yet another item
+    \end{itemize}
+  \end{column}
+
+  \begin{column}{0.3\textwidth}
+    \centerline{\includegraphics[width=0.7\textwidth]{nnulogo.jpg}}
+    Here is the second column.  We will put a picture in it.
+  \end{column}
+\end{columns}
+\bigskip
+
+The line you are reading goes all the way across the slide.
+From the left margin to the right margin.
+
+\end{frame}
+
+
+%%---------------------------bibtex-----------------------------------
+\section{参考文献}
+%%-
+\begin{frame}\frametitle{参考文献}
+\footnotesize
+\begin{thebibliography}{10}
+{\beamertemplatebookbibitems
+
+\bibitem{zhangwenxiu}
+张文修, 吴伟志, 梁吉业, 李德玉.
+\newblock {\em 粗糙集理论与方法}.
+\newblock 科学出版社, 北京, 2001.}
+
+\bibitem{Katzberg1996ExtensionOfVPRS}
+J.~D. Katzberg and W.~Ziarko.
+\newblock Variable precision extension of rough sets.
+\newblock {\em Fundamenta Informaticae}, 27:155--168, 1996.
+
+\end{thebibliography}
+\end{frame}
+
+%%%%--------------last page---------------
+\setbeamertemplate{background canvas}[vertical shading][bottom=white,top=structure.fg!25]
+\begin{frame}
+ \begin{center}
+{\huge \emph{\textcolor[rgb]{0.50,0.00,1.00}{Thank  ~you!}}}\\
+\vspace{5mm}\large
+\begin{tabular}{ll}
+{\sc Author}:  & \textsf{\textcolor{magenta}{Z}hu\ \textcolor{magenta}{X}iao-\textcolor{magenta}{l}in}\\
+{\sc Address}: & School of geometry science\\
+               & nanjing normal University  \\
+               & nanjing, 210046, China\\
+%  {\sc Phone}:& +86--27--8737 7717\\
+%              & 13554343004\\
+  {\sc Email}: & \href{mailto:wobutianl@gmail.com}{\color{blue}huangzh@whu.edu.cn}\\
+\end{tabular}
+\end{center}
+\end{frame}
+
+\end{document}
+

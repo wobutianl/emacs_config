@@ -1,0 +1,33 @@
+;;; .arrived  -*- mode: emacs-lisp; coding: iso-2022-7bit -*-
+;; This file is generated automatically by emacs-w3m v1.4.420.
+
+(("http://www.baidu.com/link?url=mUBkO4BkoFJE-RNOJyn4o_6vGMCGc2tzqRhq0l3eK8_g0vLBUa9QGZ9emkRs5rKWwqMitZGgWsOY1ddisBO25q"
+  nil
+  (21403 43879)
+  (21434 26868 80000)
+  nil
+  nil)
+ ("http://www.baidu.com/s?wd=wobutianl&oq=wobutianl&ie=utf-8&nojs=1&bqid=9d02ef0c0000c489"
+  "wobutianl_百度搜索"
+  nil
+  (21434 26856 33000)
+  nil
+  nil)
+ ("http://www.baidu.com/s?wd=wobutianl&rsv_bp=0"
+  "wobutianl_百度搜索"
+  nil
+  (21434 26854 55000)
+  nil
+  nil)
+ ("http://www.baidu.com/baidu.html?from=noscript"
+  "百度一下，你就知道"
+  (21186 42733)
+  (21434 26833 790000)
+  nil
+  nil)
+ ("http://www.baidu.com"
+  "百度一下，你就知道"
+  nil
+  (21434 26832 367000)
+  nil
+  nil))

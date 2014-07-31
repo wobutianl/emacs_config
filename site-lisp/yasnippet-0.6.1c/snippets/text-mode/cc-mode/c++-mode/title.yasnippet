@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: title
+# key: title 
+# binding: "keybinding"
+# expand-env: ((some-var some-value))
+# --
+---
+layout: post
+title: "${1:Title}"
+description: ""
+category: $2
+tags:[$3]
+---
+{% include JB/setup %}
+$0

@@ -1,0 +1,5 @@
+digraph kiwi_struct {
+	filed[tiangle] -> record;
+	record -> table;
+	record -> list;
+	}

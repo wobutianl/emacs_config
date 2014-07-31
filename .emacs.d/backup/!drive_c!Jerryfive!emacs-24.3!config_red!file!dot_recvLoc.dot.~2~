@@ -1,0 +1,22 @@
+digraph G {
+	subgraph cluster_recv{
+		recvLocUpdate -> parseLocInfo -> sendToDataManageIF -> controlIF -> sendVehicleInfo ;
+		node[style=filled, color=white];
+		color = lightgrey;
+		style = filled;
+		label = "recvLocUpdate";
+		
+	}
+
+	subgraph cluster_DM{
+		color = lightblue;
+		label = "datamanageIF";
+		DM -> saveNewLocInfo [label="currentInfoIsNull"];
+		
+	}
+
+	subgraph cluster_controlIF{
+		
+}
+	
+}
