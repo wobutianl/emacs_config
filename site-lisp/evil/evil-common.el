@@ -2,7 +2,11 @@
 ;; Author: Vegard Øye <vegard_oye at hotmail.com>
 ;; Maintainer: Vegard Øye <vegard_oye at hotmail.com>
 
+<<<<<<< HEAD
 ;; Version: 1.0.8
+=======
+;; Version: 1.0.9
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
 
 ;;
 ;; This file is NOT part of GNU Emacs.
@@ -1537,7 +1541,11 @@ POS defaults to point."
                 (set-marker marker nil))
             evil-jump-list)
       (setq evil-jump-list nil)
+<<<<<<< HEAD
       (push-mark pos))))
+=======
+      (push-mark pos t))))
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
 
 (defun evil-get-register (register &optional noerror)
   "Return contents of REGISTER.
@@ -1560,6 +1568,7 @@ The following special registers are supported.
         (or (cond
              ((eq register ?\")
               (current-kill 0))
+<<<<<<< HEAD
              ((and (<= ?0 register) (<= register ?9))
               (let ((reg (- register ?0)))
                 (and (< reg (length kill-ring))
@@ -1570,6 +1579,16 @@ The following special registers are supported.
              ((eq register ?+)
               (let ((x-select-enable-clipboard t))
                 (current-kill 0)))
+=======
+             ((and (<= ?1 register) (<= register ?9))
+              (let ((reg (- register ?1)))
+                (and (< reg (length kill-ring))
+                     (current-kill reg t))))
+             ((eq register ?*)
+              (x-get-selection-value))
+             ((eq register ?+)
+              (x-get-clipboard))
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
              ((eq register ?%)
               (or (buffer-file-name) (error "No file name")))
              ((= register ?#)
@@ -1616,12 +1635,17 @@ register instead of replacing its content."
   (cond
    ((eq register ?\")
     (kill-new text))
+<<<<<<< HEAD
    ((and (<= ?0 register) (<= register ?9))
+=======
+   ((and (<= ?1 register) (<= register ?9))
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
     (if (null kill-ring)
         (kill-new text)
       (let ((kill-ring-yank-pointer kill-ring-yank-pointer)
             interprogram-paste-function
             interprogram-cut-function)
+<<<<<<< HEAD
         (current-kill (- register ?0))
         (setcar kill-ring-yank-pointer text))))
    ((eq register ?*)
@@ -1630,6 +1654,14 @@ register instead of replacing its content."
    ((eq register ?+)
     (let ((x-select-enable-clipboard t))
       (kill-new text)))
+=======
+        (current-kill (- register ?1))
+        (setcar kill-ring-yank-pointer text))))
+   ((eq register ?*)
+    (x-set-selection 'PRIMARY text))
+   ((eq register ?+)
+    (x-set-selection 'CLIPBOARD text))
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
    ((eq register ?-)
     (setq evil-last-small-deletion text))
    ((eq register ?_) ; the black hole register
@@ -1668,8 +1700,13 @@ register instead of replacing its content."
   (sort (append (mapcar #'(lambda (reg)
                             (cons reg (evil-get-register reg t)))
                         '(?\" ?* ?+ ?% ?# ?/ ?: ?. ?-
+<<<<<<< HEAD
                               ?0 ?1 ?2 ?3 ?4 ?5 ?6 ?7 ?8 ?9))
                 register-alist)
+=======
+                              ?1 ?2 ?3 ?4 ?5 ?6 ?7 ?8 ?9))
+                register-alist nil)
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
         #'(lambda (reg1 reg2) (< (car reg1) (car reg2)))))
 
 (defsubst evil-kbd-macro-suppress-motion-error ()
@@ -1954,6 +1991,11 @@ The tracked insertion is set to `evil-last-insertion'."
       (setq text (propertize text 'yank-handler (list yank-handler))))
     (when register
       (evil-set-register register text))
+<<<<<<< HEAD
+=======
+    (when evil-was-yanked-without-register
+      (evil-set-register ?0 text)) ; "0 register contains last yanked text
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
     (unless (eq register ?_)
       (kill-new text))))
 
@@ -1970,11 +2012,20 @@ The tracked insertion is set to `evil-last-insertion'."
     (setq text (propertize text 'yank-handler yank-handler))
     (when register
       (evil-set-register register text))
+<<<<<<< HEAD
+=======
+    (when evil-was-yanked-without-register
+      (evil-set-register ?0 text)) ; "0 register contains last yanked text
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
     (unless (eq register ?_)
       (kill-new text))))
 
 (defun evil-yank-rectangle (beg end &optional register yank-handler)
+<<<<<<< HEAD
   "Stores the rectangle defined by region BEG and END into the kill-ring."
+=======
+  "Saves the rectangle defined by region BEG and END into the kill-ring."
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
   (let ((lines (list nil)))
     (evil-apply-on-rectangle #'extract-rectangle-line beg end lines)
     ;; We remove spaces from the beginning and the end of the next.
@@ -1992,6 +2043,11 @@ The tracked insertion is set to `evil-last-insertion'."
                              'yank-handler yank-handler)))
       (when register
         (evil-set-register register text))
+<<<<<<< HEAD
+=======
+      (when evil-was-yanked-without-register
+        (evil-set-register ?0 text)) ; "0 register contains last yanked text
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
       (unless (eq register ?_)
         (kill-new text)))))
 
@@ -2637,8 +2693,16 @@ the new (extended) text object range.  See
                        #'(lambda (count)
                            (funcall forward-func (- count))))))
     (if (> count 0)
+<<<<<<< HEAD
         ;; ensure we select the next object
         (when (and beg end) (forward-char 1))
+=======
+        ;; Ensure we select the next object if there is an existing
+        ;; selection. If the selection contains only one character,
+        ;; we've just entered visual mode, and should select the
+        ;; current object as usual.
+        (when (and beg end (> (- end beg) 1)) (forward-char 1))
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
       ;; going backward
       (evil-swap forward backward)
       (setq count (abs count)))
@@ -2966,7 +3030,15 @@ is stored in `evil-temporary-undo' instead of `buffer-undo-list'."
        (let (buffer-undo-list)
          (prog1
              (progn ,@body)
+<<<<<<< HEAD
            (setq evil-temporary-undo (cons nil buffer-undo-list))))
+=======
+           (setq evil-temporary-undo buffer-undo-list)
+           ;; ensure evil-temporary-undo starts with exactly one undo
+           ;; boundary marker, i.e. nil
+           (unless (null (car-safe evil-temporary-undo))
+             (push nil evil-temporary-undo))))
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
      (unless (eq buffer-undo-list t)
        ;; undo is enabled, so update the global buffer undo list
        (setq buffer-undo-list

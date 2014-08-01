@@ -3,7 +3,11 @@
 ;; Author: Vegard Øye <vegard_oye at hotmail.com>
 ;; Maintainer: Vegard Øye <vegard_oye at hotmail.com>
 
+<<<<<<< HEAD
 ;; Version: 1.0.8
+=======
+;; Version: 1.0.9
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
 
 ;;
 ;; This file is NOT part of GNU Emacs.
@@ -692,6 +696,10 @@ If STATE is nil, Evil is disabled in the buffer."
     (color-theme-mode-map . nil)
     (comint-mode-map . nil)
     (compilation-mode-map . nil)
+<<<<<<< HEAD
+=======
+    (grep-mode-map . nil)
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
     (dictionary-mode-map . nil)
     (ert-results-mode-map . motion)
     (Info-mode-map . motion)
@@ -1318,6 +1326,13 @@ buffer-region of the newly inserted text.")
   "The last piece of deleted text.
 The text should be less than a line.")
 
+<<<<<<< HEAD
+=======
+(defvar evil-was-yanked-without-register t
+  "Whether text being saved to the numbered-register ring was
+not deleted and not yanked to a specific register.")
+
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
 (defvar evil-paste-count nil
   "The count argument of the current paste command.")
 
@@ -1523,7 +1538,39 @@ Otherwise the previous command is assumed as substitute.")
   "Keymap used in ex-search-mode.")
 (set-keymap-parent evil-ex-search-keymap minibuffer-local-map)
 
+<<<<<<< HEAD
 (defconst evil-version "1.0-dev"
+=======
+(defconst evil-version
+  (eval-when-compile
+    (with-temp-buffer
+      (let ((dir (file-name-directory (or load-file-name
+                                          byte-compile-current-file))))
+        (cond
+         ;; git repository
+         ((and (file-exists-p (concat dir "/.git"))
+               (condition-case nil
+                   (zerop (call-process "git" nil '(t nil) nil
+                                        "rev-parse"
+                                        "--short" "HEAD"))
+                 (error nil)))
+          (goto-char (point-min))
+          (concat "evil-git-"
+                  (buffer-substring (point-min)
+                                    (line-end-position))))
+         ;; mercurial repository
+         ((and (file-exists-p (concat dir "/.hg"))
+               (condition-case nil
+                   (zerop (call-process "hg" nil '(t nil) nil
+                                        "parents"
+                                        "--template"
+                                        "evil-hg-{node|short}"))
+                 (error nil)))
+          (goto-char (point-min))
+          (buffer-substring (point-min) (line-end-position)))
+         ;; no repo, use plain version
+         (t "1.0-dev")))))
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
   "The current version of Evil")
 
 (defun evil-version ()

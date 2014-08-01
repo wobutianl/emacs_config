@@ -3,7 +3,11 @@
 ;; Author: Vegard Øye <vegard_oye at hotmail.com>
 ;; Maintainer: Vegard Øye <vegard_oye at hotmail.com>
 
+<<<<<<< HEAD
 ;; Version: 1.0.8
+=======
+;; Version: 1.0.9
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
 
 ;;
 ;; This file is NOT part of GNU Emacs.
@@ -72,9 +76,16 @@ search module is used."
         isearch-success search-nonincremental-instead)
     (setq isearch-forward forward)
     (evil-save-echo-area
+<<<<<<< HEAD
       (if forward
           (isearch-forward regexp-p)
         (isearch-backward regexp-p))
+=======
+      (evil-with-input-method-in-normal-state
+       (if forward
+           (isearch-forward regexp-p)
+         (isearch-backward regexp-p)))
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
       (if (not isearch-success)
           (goto-char point)
         ;; always position point at the beginning of the match

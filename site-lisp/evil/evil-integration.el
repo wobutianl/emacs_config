@@ -3,7 +3,11 @@
 ;; Author: Vegard Øye <vegard_oye at hotmail.com>
 ;; Maintainer: Vegard Øye <vegard_oye at hotmail.com>
 
+<<<<<<< HEAD
 ;; Version: 1.0.8
+=======
+;; Version: 1.0.9
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
 
 ;;
 ;; This file is NOT part of GNU Emacs.
@@ -111,7 +115,11 @@
   '(progn
      ;; use the standard Dired bindings as a base
      (defvar dired-mode-map)
+<<<<<<< HEAD
      (evil-make-overriding-map dired-mode-map 'normal t)
+=======
+     (evil-make-overriding-map dired-mode-map 'normal)
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
      (evil-add-hjkl-bindings dired-mode-map 'normal
        "J" 'dired-goto-file                   ; "j"
        "K" 'dired-do-kill-lines               ; "k"
@@ -200,7 +208,11 @@
 (eval-after-load 'ibuffer
   '(progn
      (defvar ibuffer-mode-map)
+<<<<<<< HEAD
      (evil-make-overriding-map ibuffer-mode-map 'normal t)
+=======
+     (evil-make-overriding-map ibuffer-mode-map 'normal)
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
      (evil-define-key 'normal ibuffer-mode-map
        "j" 'evil-next-line
        "k" 'evil-previous-line

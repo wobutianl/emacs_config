@@ -1,21 +1,22 @@
 
 ;; ----- smex-history -----
 (
+ gtd
+ question
  auto-complete-mode
  auto-complete
- gtd
  jabber-connect
  jabber-chat-with
  org-clock-in
- cd
 )
 
 ;; ----- smex-data -----
 (
- (gtd . 5)
+ (gtd . 13)
  (org-clock-in . 1)
  (jabber-connect . 2)
  (jabber-chat-with . 2)
  (auto-complete . 1)
  (auto-complete-mode . 1)
+ (question . 5)
 )

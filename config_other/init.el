@@ -133,10 +133,18 @@
 (require 'color-theme)
 (require 'color-theme-molokai)
 (color-theme-molokai)
+<<<<<<< HEAD
 
 (setq idle-require-idle-delay 3)
 (setq idle-require-symbols '(init-misc
                              init-lisp
+=======
+;; misc has some crucial tools I need immediately
+(require 'init-misc)
+
+(setq idle-require-idle-delay 3)
+(setq idle-require-symbols '(init-lisp
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
                              init-eim
                              init-keyfreq
                              init-move-window-buffer

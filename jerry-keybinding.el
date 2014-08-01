@@ -19,3 +19,13 @@
 
 (define-key global-map [f12] 'org-remember)
 (define-key global-map [f11] 'org-capture)
+
+
+;;; org kbd 
+;;  c-c c-c  ;; org-clock-sum-today-by-tags  :: time calculate
+(global-set-key (kbd "C-c g") 'gtd)
+(global-set-key "\C-cl" 'org-store-link)
+
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
+(define-key global-map "\C-ca" 'org-agenda)

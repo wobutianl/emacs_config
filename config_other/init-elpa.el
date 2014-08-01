@@ -74,6 +74,11 @@ ARCHIVE is the string name of the package archive.")
 (setq package-archives '(("melpa" . "http://melpa.milkbox.net/packages/")
                          ("melpa-stable" . "http://hiddencameras.milkbox.net/packages/")
                          ))
+<<<<<<< HEAD
+=======
+;; well, melpa does not bother supporting emacs23 any more
+(if (not *emacs24*) (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
 
 ;; Un-comment below line if you download zip file from https://github.com/redguardtoo/myelpa/archive/master.zip and extract its content into ~/myelpa/
 ;; (setq package-archives '(("myelpa" . "~/myelpa")))
@@ -83,7 +88,10 @@ ARCHIVE is the string name of the package archive.")
 
 (defvar melpa-include-packages
   '(bbdb
+<<<<<<< HEAD
     xml-rpc
+=======
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
     json-rpc
     kv
     color-theme
@@ -162,7 +170,10 @@ ARCHIVE is the string name of the package archive.")
 (package-initialize)
 
 (require-package 'cl-lib '(0 0 5) nil)
+<<<<<<< HEAD
 (require-package 'xml-rpc)
+=======
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
 (require-package 'kv '(0 0 19) nil)
 (require-package 'dash '(2 5 0) nil)
 ; color-theme 6.6.1 in elpa is buggy
@@ -263,7 +274,11 @@ ARCHIVE is the string name of the package archive.")
 (require-package 'legalese)
 (require-package 'string-edit)
 (require-package 'dired-details)
+<<<<<<< HEAD
 ;; (require-package 'git-gutter '(0 63) nil)
+=======
+(require-package 'git-gutter '(0 69) nil)
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
 (require-package 'fakir)
 (require-package 'f)
 (require-package 'elnode) ;; elnode dependent on f

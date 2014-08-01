@@ -12,16 +12,11 @@
 (setq remember-handler-functions '(org-remember-handler))
 (add-hook 'remember-mode-hook 'org-remember-apply-template)
 
-(define-key global-map [f12] 'org-remember)
-(define-key global-map [f11] 'org-capture)
-
 ;;;;;;;;;;;;;remember-mode	  记忆模式  c-c c-r  
 ;;;;;   inbox, idea, movie, blog2publish, journal, clipboard, finance, book, movie, daily
 (setq org-remember-templates
-   '(("New" ?n "** %^{Brief Description} %^g\n%?\nAdded: %U" 	"~/ToDo/remember/inbox.org" "Remember")
-		
-    ("question" ?q "** %t :COACH: \n%[~/ToDo/remember/question.txt]\n" 
-			"~/ToDo/remember/question.org")
+   '(
+   ("New" ?n "** %^{Brief Description} %^g" 	"~/ToDo/remember/inbox.org" "Remember")
     )
   )
 
@@ -29,13 +24,16 @@
 (setq org-capture-templates
     '(
 	("t" "todo" entry (file+datetree "~/ToDo/newgtd.org" "TODO")
-      "* TODO %?\n  %i" :prepend t)
+      "* TODO %^{TODO: } %^g " :prepend t)
 
 	("d" "Diary" entry (file+datetree "~/ToDo/remember/diary.org")
      "* %?\nEntered on %U\n %i\n %a")
 	 
 	("l" "log" entry (file+datetree "~/ToDo/remember/log.org")
      "* %?\nEntered on %U\n %i\n %a")
+	 
+	("q" "question" entry (file+datetree "~/ToDo/remember/question.org")
+     "* Q: %^{Question} %^g\n     A: ")
 	 )
 )
  	
@@ -171,17 +169,19 @@
 (defun question ()
     (interactive)
    (find-file "~/ToDo/remember/question.org"))
+   
+
 
 ;; used by org-clock-sum-today-by-tags ;;; 时钟统计
 (defun filter-by-tags ()
    (let ((head-tags (org-get-tags-at)))
      (member current-tag head-tags)))
 
-(defun org-clock-sum-today-by-tags (timerange &optional tstart tend noinsert)       
+(defun w (timerange &optional tstart tend noinsert)       
   (interactive "P")                                                                 
   (let* ((timerange-numeric-value (prefix-numeric-value timerange))                 
          (files (org-add-archive-files (org-agenda-files)))                         
-         (include-tags '("@READING" "@CODE" "@WORKING" "@ENTERTAIN"    "@SPORT"  ))						                                   
+         (include-tags '("@stc_READING" "@stc_CODE" "@stc_WORKING" "@stc_ENTERTAIN"    "@stc_SPORT"  ))						                                   
          (tags-time-alist (mapcar (lambda (tag) `(,tag . 0)) include-tags))        
          (output-string "")
          (tstart (or tstart
@@ -216,18 +216,8 @@
 (org-babel-do-load-languages
     'org-babel-load-languages '((emacs-lisp . t)))	
  
-;;;  graphviz  c-c c 运行dot文件   Ctrl-c p：使用dot mode内部预览
-(load "graphviz-dot-mode.el" nil t t)
  
-;;; kbd 
-;(global-set-key (kbd "C-c dy") 'mydiary)
-(global-set-key (kbd "C-c g") 'gtd)
-(global-set-key "\C-cl" 'org-store-link)
 
-;(global-set-key "\C-cc"'org-capture)
-(global-set-key "\C-ca" 'org-agenda)
-(global-set-key "\C-cb" 'org-iswitchb)
-(define-key global-map "\C-ca" 'org-agenda)
 
 (add-hook 'org-agenda-mode-hook 'hl-line-mode)
 

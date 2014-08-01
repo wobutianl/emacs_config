@@ -12,10 +12,15 @@
         "xelatex -interaction nonstopmode -output-directory %o %f"))
 ;; }}
 
+<<<<<<< HEAD
 (if *is-a-mac*
   ; make soffice visible when converting odt to doc
   (setenv "PATH" (concat (getenv "PATH") "/Applications/LibreOffice.app/Contents/MacOS"))
   )
+=======
+(if (and *is-a-mac* (file-exists-p "/Applications/LibreOffice.app/Contents/MacOS/soffice"))
+    (setq org-export-odt-convert-processes '(("LibreOffice" "/Applications/LibreOffice.app/Contents/MacOS/soffice --headless --convert-to %f%x --outdir %d %i"))))
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
 
 ;; Various preferences
 (setq org-log-done t

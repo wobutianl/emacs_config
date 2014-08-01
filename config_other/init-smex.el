@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 (autoload 'smex "~/site-lisp/smex/smex" nil t)
+=======
+(autoload 'smex "smex" nil t)
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
 ;; (smex-initialize) ; Can be omitted. This might cause a (minimal) delay
                   ; when Smex is auto-initialized on its first run.
 

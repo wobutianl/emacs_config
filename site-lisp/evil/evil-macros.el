@@ -3,7 +3,11 @@
 ;; Author: Vegard Øye <vegard_oye at hotmail.com>
 ;; Maintainer: Vegard Øye <vegard_oye at hotmail.com>
 
+<<<<<<< HEAD
 ;; Version: 1.0.8
+=======
+;; Version: 1.0.9
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
 
 ;;
 ;; This file is NOT part of GNU Emacs.
@@ -35,7 +39,13 @@
 
 ;; set some error codes
 (put 'beginning-of-line 'error-conditions '(beginning-of-line error))
+<<<<<<< HEAD
 (put 'end-of-line 'error-conditions '(end-of-line error))
+=======
+(put 'beginning-of-line 'error-message "Beginning of line")
+(put 'end-of-line 'error-conditions '(end-of-line error))
+(put 'end-of-line 'error-message "End of line")
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
 
 (defun evil-motion-range (motion &optional count type)
   "Execute a motion and return the buffer positions.
@@ -381,9 +391,16 @@ if COUNT is positive, and to the left of it if negative.
        (setq ,count (or ,count 1))
        (when (/= ,count 0)
          (let ((type (evil-type ',object evil-visual-char))
+<<<<<<< HEAD
                (extend (evil-get-command-property
                         ',object :extend-selection
                         ',(plist-get keys :extend-selection)))
+=======
+               (extend (and (evil-visual-state-p)
+			    (evil-get-command-property
+			     ',object :extend-selection
+			     ',(plist-get keys :extend-selection))))
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
                (dir evil-visual-direction)
                mark point range selection)
            (cond

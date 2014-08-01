@@ -3,7 +3,11 @@
 ;; Author: Vegard Øye <vegard_oye at hotmail.com>
 ;; Maintainer: Vegard Øye <vegard_oye at hotmail.com>
 
+<<<<<<< HEAD
 ;; Version: 1.0.8
+=======
+;; Version: 1.0.9
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
 
 ;;
 ;; This file is NOT part of GNU Emacs.
@@ -47,7 +51,12 @@ AKA \"Command\" state."
   "Reset command loop variables in Normal state.
 Also prevent point from reaching the end of the line.
 If the region is activated, enter Visual state."
+<<<<<<< HEAD
   (unless (evil-initializing-p)
+=======
+  (unless (or (evil-initializing-p)
+              (null this-command))
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
     (setq command (or command this-command))
     (when (evil-normal-state-p)
       (setq evil-this-type nil
@@ -813,6 +822,10 @@ CORNER defaults to `upper-left'."
   :tag " <R> "
   :cursor hbar
   :message "-- REPLACE --"
+<<<<<<< HEAD
+=======
+  :input-method t
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
   (cond
    ((evil-replace-state-p)
     (overwrite-mode 1)

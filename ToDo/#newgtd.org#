@@ -1,0 +1,170 @@
+#+COLUMNS: %38ITEM(Details) %TAGS(Context) %7TODO(To Do) %5Effort(Time){:} %6CLOCKSUM{Total}
+
+# stc = suntec
+#+TAGS: { stc_READING(r)  stc_JOB(j) stc_ENTERTAIN(e) stc_SPORT(s) }
+#+TAGS: { stc_CODE(c) }
+#+TODO: TODO(t) | DONE(d) ABORT(a) WAITING(w)
+
+#+PROPERTY: CLOCK_INTO_DRAWER 
+
+
+* 2014
+** 2014-07 七月
+*** 2014-07-21 星期一
+**** DONE 解析出路径名
+     CLOSED: [2014-07-22 周二 12:04]
+**** TODO 问公司的号码（主号，分机号（申请信用卡））			:JOB:
+*** 2014-07-30 星期三
+**** TODO [#A] 查看locUpdate 代码				   :stc_CODE:
+     CLOCK: [2014-08-01 周五 11:08]--[2014-08-01 周五 11:44] =>  0:36
+     CLOCK: [2014-08-01 周五 09:20]--[2014-08-01 周五 09:50] =>  0:30
+     CLOCK: [2014-07-31 周四 16:28]--[2014-07-31 周四 17:16] =>  0:48
+     CLOCK: [2014-07-31 周四 14:42]--[2014-07-31 周四 15:07] =>  0:25
+     CLOCK: [2014-07-31 周四 14:16]--[2014-07-31 周四 14:37] =>  0:21
+     CLOCK: [2014-07-31 周四 13:55]--[2014-07-31 周四 14:05] =>  0:10
+*** 2014-07-31 星期四
+**** DONE 参加path组的培训					:stc_JOB:JOB:
+     CLOSED: [2014-07-31 周四 14:10] SCHEDULED: <2014-07-31 周四 10:00> 
+**** DONE [#B] 看完遇见未知的自己（张德芬）	                :stc_READING:
+     CLOSED: [2014-07-31 周四 14:10]
+** 2014-08 八月
+*** 2014-08-01 星期五
+**** TODO emacs 4 git					      :stc_ENTERTAIN:
+     CLOCK: [2014-08-01 周五 13:44]--[2014-08-01 周五 13:48] =>  0:04
+**** TODO 去看电影					      :stc_ENTERTAIN:
+**** DONE 沟通与合作						    :stc_JOB:
+     CLOSED: [2014-08-01 周五 17:04] SCHEDULED: <2014-08-01 周五 14:00>
+     CLOCK: [2014-08-01 周五 13:50]--[2014-08-01 周五 17:03] =>  3:13
+**** DONE search 培训						:stc_JOB:
+     CLOSED: [2014-08-01 周五 11:08] SCHEDULED: <2014-08-01 周五 10:00>
+     CLOCK: [2014-08-01 周五 09:55]--[2014-08-01 周五 11:02] =>  1:07
+
+
+* Statistic
+#+BEGIN_SRC emacs-lisp :results value
+(setq week-range (org-clock-special-range 'thisweek nil t))
+(org-clock-sum-today-by-tags nil (nth 0 week-range) (nth 1 week-range) t)
+#+END_SRC
+
+#+RESULTS:
+: [-Nothing-] Done nothing!!!
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t
+Clock summary at [2014-08-01 周五 13:38], for week 2014-W31.
+
+| File       | Headline                               | Time   |      |      |      |
+|------------+----------------------------------------+--------+------+------+------|
+|            | ALL *Total time*                       | *3:57* |      |      |      |
+|------------+----------------------------------------+--------+------+------+------|
+| newgtd.org | *File time*                            | *3:57* |      |      |      |
+|            | 2014                                   | 3:57   |      |      |      |
+|            | \__ 2014-07 七月                       |        | 2:50 |      |      |
+|            | \_____ 2014-07-30 星期三               |        |      | 2:50 |      |
+|            | \________ TODO [#A] 查看locUpdate 代码 |        |      |      | 2:50 |
+|            | \__ 2014-08 八月                       |        | 1:07 |      |      |
+|            | \_____ 2014-08-01 星期五               |        |      | 1:07 |      |
+|            | \________ DONE search 培训             |        |      |      | 1:07 |
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thismonth :fileskip0 t :indent t
+Clock summary at [2014-08-01 周五 13:38], for 八月 2014.
+
+| File       | Headline                               | Time   |      |      |      |
+|------------+----------------------------------------+--------+------+------+------|
+|            | ALL *Total time*                       | *2:13* |      |      |      |
+|------------+----------------------------------------+--------+------+------+------|
+| newgtd.org | *File time*                            | *2:13* |      |      |      |
+|            | 2014                                   | 2:13   |      |      |      |
+|            | \__ 2014-07 七月                       |        | 1:06 |      |      |
+|            | \_____ 2014-07-30 星期三               |        |      | 1:06 |      |
+|            | \________ TODO [#A] 查看locUpdate 代码 |        |      |      | 1:06 |
+|            | \__ 2014-08 八月                       |        | 1:07 |      |      |
+|            | \_____ 2014-08-01 星期五               |        |      | 1:07 |      |
+|            | \________ DONE search 培训             |        |      |      | 1:07 |
+#+END:
+
+
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "stc_ENTERTAIN"
+Clock summary at [2014-08-01 周五 13:38], for week 2014-W31.
+
+| File | Headline         | Time   |
+|------+------------------+--------|
+|      | ALL *Total time* | *0:00* |
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "stc_JOB"
+Clock summary at [2014-08-01 周五 13:38], for week 2014-W31.
+
+| File       | Headline                   | Time   |      |      |      |
+|------------+----------------------------+--------+------+------+------|
+|            | ALL *Total time*           | *1:07* |      |      |      |
+|------------+----------------------------+--------+------+------+------|
+| newgtd.org | *File time*                | *1:07* |      |      |      |
+|            | 2014                       | 1:07   |      |      |      |
+|            | \__ 2014-08 八月           |        | 1:07 |      |      |
+|            | \_____ 2014-08-01 星期五   |        |      | 1:07 |      |
+|            | \________ DONE search 培训 |        |      |      | 1:07 |
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "stc_READING"
+Clock summary at [2014-08-01 周五 13:39], for week 2014-W31.
+
+| File | Headline         | Time   |
+|------+------------------+--------|
+|      | ALL *Total time* | *0:00* |
+#+END:
+
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "stc_CODE"
+Clock summary at [2014-01-04 周六 08:43], for week 2014-W01.
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "stc_SPORT"
+Clock summary at [2014-01-07 周二 10:16], for week 2014-W02.
+
+
+* CHECK
+** Yearly check
+*** DONE 找到工作
+** Monthly check
+*** TODO 一段时间需要学习的内容
+**** TODO 穴道
+**** TODO 易经
+**** TODO latex
+**** TODO graphviz
+*** TODO 坚持100天的计划（早起，做运动，喝杯热水，写计划，记帐，写日记，用五笔）
+*** TODO 完成毕业论文第四，第二和第三章前部分
+** Weekly check
+*** TODO 完成毕业论文第四章
+** Daliy check
+*** APPT 《每周工作四小时》
+**** APPT 早上7：00 - 8 点：冥想+写作+目标复查+早餐
+    - 查看GTD
+    - 写作：日记
+    - 早餐：禁止吃油渣食品（牛奶+饼干+面包+粥 最好）
+**** APPT 8点到12点：四小时正式工作时间
+    - 没有电话，邮件，聊天工具，没有购物网站
+    - 只做一件事（查看GTD）
+    - 大脑累了就休息
+**** APPT 12点到1点：午饭+休息+查看上午的消息
+    - 查看上午的邮件+QQ留言
+**** APPT 下午1：30点到6点：学习+交流
+    - 讨论+约会(今天遇到的问题，怎么做的，以后要怎么做）
+    - 看书+论坛（codeplex+github...）
+    - 鲜果联播（汇集各种知识）
+**** APPT 下午6点到8点：晚饭+散步
+    - 散步：饭后不直接回实验室，去操场走走（一个人也要走走）
+**** APPT 晚上8点到9点：反省+第二天大纲
+    - 十多分钟反省（找个记录本子-反省本）
+    - 写大纲GTD（最好用纸-然后在写到emacs中去）
+**** APPT 9点到11点自由支配时间
+    - 给大脑分配任务（看算法，推导数学公式，等等）
+    - 折腾新东西
+**** APPT 11点睡觉
+ 
+   
+<<<<<<< HEAD
+
+=======
+>>>>>>> facdc4b9e60be7bab87d5cb23583fc67928026ab
