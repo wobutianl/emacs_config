@@ -1,22 +1,27 @@
 
 ;; ----- smex-history -----
 (
+ compile
+ gdb
+ eval-buffer
+ auto-complete-mode
+ vc-git-grep
  gtd
  question
- auto-complete-mode
- auto-complete
- jabber-connect
- jabber-chat-with
- org-clock-in
 )
 
 ;; ----- smex-data -----
 (
- (gtd . 13)
+ (gtd . 15)
  (org-clock-in . 1)
  (jabber-connect . 2)
  (jabber-chat-with . 2)
  (auto-complete . 1)
- (auto-complete-mode . 1)
+ (auto-complete-mode . 3)
  (question . 5)
+ (vc-git-grep . 1)
+ (eval-buffer . 3)
+ (gdb . 2)
+ (cedet-build-in-default-emacs . 1)
+ (compile . 1)
 )

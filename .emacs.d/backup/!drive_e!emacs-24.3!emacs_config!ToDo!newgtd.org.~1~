@@ -3,7 +3,6 @@
 # stc = suntec
 #+TAGS: { stc_READING(r)  stc_JOB(j) stc_ENTERTAIN(e) stc_SPORT(s) }
 #+TAGS: { stc_CODE(c) }
-#+TAGS: { home_LEARN(l) home_PLAY(p)  }
 #+TODO: TODO(t) | DONE(d) ABORT(a) WAITING(w)
 
 #+PROPERTY: CLOCK_INTO_DRAWER 
@@ -38,19 +37,8 @@
 **** DONE search 培训						:stc_JOB:
      CLOSED: [2014-08-01 周五 11:08] SCHEDULED: <2014-08-01 周五 10:00>
      CLOCK: [2014-08-01 周五 09:55]--[2014-08-01 周五 11:02] =>  1:07
-*** 2014-08-02 星期六
-**** TODO 做界面						 :home_LEARN:
-**** DONE 把时间当朋友						 :home_LEARN:
-     CLOCK: [2014-08-03 周日 8:00]--[2014-08-03 周日 12:00]  =>  4:00
-     CLOCK: [2014-08-02 周六 15:55]--[2014-08-02 周六 16:33] =>  0:38
-**** DONE emacs 4 c++						 :home_LEARN:
-     CLOSED: [2014-08-02 周六 18:29]
-     CLOCK: [2014-08-02 周六 16:49]--[2014-08-02 周六 16:49] =>  0:00
-**** TODO 评价系统的设计					 :home_LEARN:
-     CLOCK: [2014-08-02 周六 10:19]--[2014-08-02 周六 10:38] =>  0:19
-**** DONE wxGlade 						 :home_LEARN:
-     CLOSED: [2014-08-02 周六 10:19]
-     CLOCK: [2014-08-02 周六 09:33]--[2014-08-02 周六 09:54] =>  0:21
+
+
 * Statistic
 #+BEGIN_SRC emacs-lisp :results value
 (setq week-range (org-clock-special-range 'thisweek nil t))
@@ -97,22 +85,6 @@ Clock summary at [2014-08-01 周五 13:38], for 八月 2014.
 
 
 #+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "stc_ENTERTAIN"
-Clock summary at [2014-08-01 周五 13:38], for week 2014-W31.
-
-| File | Headline         | Time   |
-|------+------------------+--------|
-|      | ALL *Total time* | *0:00* |
-#+END:
-
-#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "home_LEARN"
-Clock summary at [2014-08-01 周五 13:38], for week 2014-W31.
-
-| File | Headline         | Time   |
-|------+------------------+--------|
-|      | ALL *Total time* | *0:00* |
-#+END:
-
-#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "home_PLAY"
 Clock summary at [2014-08-01 周五 13:38], for week 2014-W31.
 
 | File | Headline         | Time   |

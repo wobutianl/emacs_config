@@ -8,8 +8,8 @@
  (rear-context-string . "08-01 周五 09:52]\n")
  (position . 434))
 ("org-capture-last-stored"
- (filename . "c:/Jerryfive/emacs-24.3/config_red/ToDo/newgtd.org")
- (front-context-string . "**** TODO emacs ")
- (rear-context-string . " 2014-08-01 星期五\n")
- (position . 1132))
+ (filename . "e:/emacs-24.3/emacs_config/ToDo/remember/diary.org")
+ (front-context-string . "**** 把时间做朋友（书）\n-")
+ (rear-context-string . " 2014-08-03 星期日\n")
+ (position . 19050))
 )
