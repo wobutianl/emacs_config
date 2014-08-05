@@ -391,4 +391,18 @@ Entered on [2014-07-30 周三 09:09]
 Entered on [2014-07-22 周二 12:02]
  
  [[file:c:/Jerryfive/emacs-24.2/config_red/ToDo/newgtd.org::*%E8%A7%A3%E6%9E%90%E5%87%BA%E8%B7%AF%E5%BE%84%E5%90%8D][解析出路径名]]
-
+** 2014-08 八月
+*** 2014-08-04 星期一
+**** 配置虚拟机
+- Mac虚拟机：授权git，利用公共的id_rsa + id_rsa.pub来获取权限。
+- 配置git, 
+- 把自己加入到id_rsa中去（今天忘记了这一步）
+- clone code
+- 编译，运行
+- 遇到的问题：
+  - 没有把自己加入到id_rsa中去
+  - 最新的 mac 虚拟机, 运行代码有问题，换了一套代码也不行，在试验换虚拟机。
+  - 
+Entered on [2014-08-04 周一 14:13]
+ 
+ [[file:c:/Jerryfive/emacs-24.3/config_red/ToDo/remember/log.org::*%E6%B1%89%E5%AD%97%E8%A7%A3%E6%9E%90kiwi][汉字解析kiwi]]

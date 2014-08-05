@@ -24,7 +24,7 @@
 (setq org-capture-templates
     '(
 	("t" "todo" entry (file+datetree "~/ToDo/newgtd.org" "TODO")
-      "* TODO %^{TODO: } %^g " :prepend t)
+      "* TODO %^{TODO} %^g " :prepend t)
 
 	("d" "Diary" entry (file+datetree "~/ToDo/remember/diary.org")
      "* %?\nEntered on %U\n %i\n %a")
@@ -181,7 +181,7 @@
   (interactive "P")                                                                 
   (let* ((timerange-numeric-value (prefix-numeric-value timerange))                 
          (files (org-add-archive-files (org-agenda-files)))                         
-         (include-tags '("@stc_READING" "@stc_CODE" "@stc_WORKING" "@stc_ENTERTAIN"    "@stc_SPORT"  ))						                                   
+         (include-tags '("@stc_READING" "@stc_CODE" "@stc_WORKING" "@stc_ENTERTAIN"    "@stc_SPORT"  "@home_LEARN" "@home_PLAY" ))						                                   
          (tags-time-alist (mapcar (lambda (tag) `(,tag . 0)) include-tags))        
          (output-string "")
          (tstart (or tstart

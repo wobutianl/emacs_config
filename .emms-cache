@@ -1,0 +1,2 @@
+;;; .emms-cache -*- mode: emacs-lisp; coding: utf-8; -*-
+(puthash "d:/kugou/Sarah Brightman\241\242\301\365\273\266 - \316Һ\315\304\343.mp3" '(*track* (type . file) (name . "d:/kugou/Sarah Brightman\241\242\301\365\273\266 - \316Һ\315\304\343.mp3") (info-artist . "kugou") (info-title . "Sarah Brightman\241\242\301\365\273\266 - \316Һ\315\304\343")) emms-cache-db)

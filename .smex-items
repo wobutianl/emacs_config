@@ -1,28 +1,40 @@
 
 ;; ----- smex-history -----
 (
+ emms
  gtd
- git-log
- git-branch
- git-clone
- git-init
- git-status
- git-config-init
+ log
+ compile
+ gdb
+ eval-buffer
+ auto-complete-mode
 )
 
 ;; ----- smex-data -----
 (
- (gtd . 15)
+ (gtd . 18)
  (org-clock-in . 1)
  (jabber-connect . 2)
  (jabber-chat-with . 2)
  (auto-complete . 1)
- (auto-complete-mode . 1)
+ (auto-complete-mode . 3)
  (question . 5)
+ <<<<<<<
+ HEAD
  (git-config-init . 1)
  (git-status . 4)
  (git-init . 1)
  (git-clone . 1)
  (git-branch . 1)
  (git-log . 1)
+ =======
+ (vc-git-grep . 1)
+ (eval-buffer . 3)
+ (gdb . 2)
+ (cedet-build-in-default-emacs . 1)
+ (compile . 1)
+ >>>>>>>
+ emacs/work
+ (log . 1)
+ (emms . 2)
 )

@@ -9,7 +9,7 @@
  (position . 434))
 ("org-capture-last-stored"
  (filename . "c:/Jerryfive/emacs-24.3/config_red/ToDo/newgtd.org")
- (front-context-string . "**** TODO emacs ")
- (rear-context-string . " 2014-08-01 星期五\n")
- (position . 1132))
+ (front-context-string . "**** TODO emmacs")
+ (rear-context-string . " 2014-08-05 星期二\n")
+ (position . 2576))
 )

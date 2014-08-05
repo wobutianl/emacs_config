@@ -21,6 +21,12 @@
 (setq ac-trigger-commands
       (cons 'backward-delete-char-untabify ac-trigger-commands))
 	  
+;;use C-n/C-p to select candidates
+(define-key ac-complete-mode-map "\M-n" 'ac-next)
+(define-key ac-complete-mode-map "\M-p" 'ac-previous)
+(define-key ac-complete-mode-map "\t" 'ac-complete)
+(define-key ac-complete-mode-map "\r" nil)
+
 (setq ac-fuzzy-enable t)
 
 

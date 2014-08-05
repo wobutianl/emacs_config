@@ -1,0 +1,241 @@
+20070831: (SVN-r24306)
+- 加入AMR音频支持
+- CoreAVC解码器支持，将codecs.ini.enable.coreavc.rar中的codecs.ini解压到mplayer目录即可
+  删除codecs.ini，则disable.
+  * 目前使用CoreAVC解码时如果启用expand filter，画面会有问题
+- 刚打开文件时播放速度不正常的问题是由于mplayer.ini中autosync参数引起的，设为0则没有
+  此问题。 thx zanetu@TLF
+
+20070705: (SVN-r23720)
+- 解决不能播放包含中文字符的rtsp连接的问题
+
+20070704: (SVN-r23717)
+- 加入urlcp参数(默认值为GBK)，用于设定url的字符编码。解决包含中文字符的url的在线播放问题;
+- 修正以下问题：
+ * mplayer.ini設定fs=yes，播放中切回非fs狀態，play screen並非100% size
+ * subpos參數不管設定多少，播放時似乎都是預設在螢幕下方黑框垂直中央處？
+
+20070703: (SVN-r23713)
+- 官方SVN版本的ffdca解码DTS有问题，重新加入libdts用于DTS解码;
+- 修正以下问题：
+ *在mplayer.ini使用fs=yes，播放時按space暫停會畫面上會多出一個mplayer視窗框架;
+ *全螢幕時，滑鼠移到螢幕最最底部，點不到seek bar，要再往上移幾個4~5個pixels才能點到;
+ *"expand paramter now auto detect screen aspect"在自動播放下一文件後就失效;
+ *全螢幕時自動播放下一文件會導致mplayer發生錯誤自動關閉程式;
+
+20070702: (SVN-r23700)
+- impored subtilte reader, now unicode sub loaded properly.
+ * set mplayer.ini: subcp=GBK,BIG5,UTF-8,UTF-16
+- some bug fixed; (ass, resume play, ...)
+
+20070630: (SVN-r23698)
+- fix some ass subtilte bug;
+ * to enable ass sub support, please add "ass=yes" in mplayer.ini.
+ * ass subtile can't change pos & size when playing.
+ * higher cpu load than plain text subtilte.
+- fix a bug in "auto play next episode" function;
+
+20070629: (SVN-r23687)
+- new subfont parameter, now osd(font) & sub(subfont) can be different.
+  * you must add subfont paramter in mplayer.ini, otherwise text subtitle can't display.
+- expand paramter now auto detect screen aspect.
+- some bug fixed.
+
+20070401: (SVN-r22870)
+- 记忆播放功能：打开上次退出时未播放完毕的影片接着播放。
+  要打开此功能请修改kk.ini: auto_resume=1
+- 修正rar打包的文件超过4GB引起的问题。
+
+Hint:
+- 下载0day影片时先下载最后的一两个包，然后从头个包开始下载，
+就可以一边下载一边播放，且支持seek了（注意不要seek到还没有
+下载的部分。
+- 要实现播放连续剧时跳过片头片尾的功能请参阅man_page中关于
+ss参数及endpos参数的说明。
+- 播放H264文件不流畅，请去掉mplayer.ini中lavdopts参数前的
+注释符号"#"。关于此参数的详细说明，请查阅man_page.
+
+ps, 刚打开文件时播放速度不正常的问题一直未解决。哪位老兄有
+兴趣帮忙看看能否fix, thx.
+
+
+20070327: (SVN-r22818)
+- 播放未加密且存储方式打包的rar文件(大部分0day电影)支持seek;
+- 修正播放rar包功能的一些bug;
+
+20070325: (SVN-r22818)
+- 支持直接播放rar包中压缩的文件(需要unrar.dll);
+- 增加switch_font功能: 在font参数所设定的多个字体间切换;
+  默认按键"k", input.ini中设定; 
+- 增加字幕选取菜单;
+- 在打开文件对话框中增加额外命令行参数的设定栏;
+
+20061225: (SVN-r21765)
+- 增加fixedsize(mplayer.ini)参数:
+  1 播放新文件时不改变窗口大小   0 播放新文件时自动改变窗口大小
+- 增强读取srt字幕文件的兼容性;
+
+20061207: (SVN-r21532)
+- 修正独立GUI线程引起的几个问题;
+- kk.ini中增加选项gui_thread: 0 禁用独立GUI线程  1 启用独立GUI线程
+
+20061206: (SVN-r21512)
+- 增加单独的GUI线程;
+- 按住鼠标右键用滚轮进行seek;
+- 修正上个版本的若干bug;
+
+20061202: (SVN-r21430)
+- 同步到最新SVN版本;
+
+20060818: (SVN-r19435)
+- 修正vf_expand 的一个bug;
+- 修正全屏的一个bug;(thx killmesoftly)
+
+20060619: (SVN-r18756)
+- 增强subcp参数：加入UTF8支持。（在subcp参数最后加上",utf8")
+  当以subcp参数前面定义的编码读取字幕失败时，以utf8编码读取；
+- 增强读取srt字幕的兼容性：正确识别无空行分隔的两段字幕；
+- 新增参数log: （此参数必须在kk.ini中设置，抱歉）
+  0=不生成log文件 1=生成log文件 2=控制台显示log（官方版的方式）
+
+20060618: (SVN-r18746)
+- 修正切换音轨和声道的问题；
+- 修改参数ontop：
+   0=不在最前端 ，1=总在最前端，2=播放时在最前端；
+
+20060617: (SVN-r18739)
+- 增加timeout参数：设定网络连接超时；
+
+20051119:
+- 增加截屏PNG压缩参数(0:不压缩-9:最大压缩)；
+- 修改mplayer.ini：使用dsound作为ao设备，使用softvol调节音量。
+  增加保存用户设置的音量的代码；
+- 修改mplayer.ini：加入idle选项，影片播放完毕不关闭播放器；
+- 修正手动调节画面大小功能中的一个bug；
+
+20051105:
+- 昨天遗漏的cvs新增功能：按 's' 键截屏。
+文件命名形式为：shot0001_hh-mm-ss.png
+使用此功能，必须在vf设置中加入'screenshot'.(mplayer.ini)
+会有很小的性能损失，如要禁用，自行从vf中去掉。
+修改热键请修改input.ini
+
+20050717:
+- 用鼠标横向拖动字幕时可改变字幕大小。
+同时按住Ctrl键则只改变字幕的宽度(仅vob字幕);
+- 全屏时，按住右Ctrl键的同时按数字键盘的1-9键可调整图像大小比例，
+按住左Ctrl键的同时按数字键盘的1-9键可移动图像位置。
+
+20050703:
+- 修正多显示器时窗口播放的bug;
+- 修正上一版主菜单中配置文件无法打开的bug;
+- 增加了新的禁止屏保的代码;
+
+20050131:
+- 修正直接播放DVD镜像文件的若干bug (支持自动播放下一碟特性);
+- 在打开文件对话框中可以选择DVD文件夹VIDEO_TS所在目录，
+  用于播放复制到硬盘中的DVD (支持自动播放下一碟特性);
+- 修正 vf_expand 的一个bug, 消除播放窗口底部可能出现的彩色条纹;
+- 修正单帧步进功能, 默认按键"." (在input.ini中设定);
+
+20050124:
+- 取消20050121版本中隐藏/显示菜单的功能，增加选项"switchview"(0-2)
+  2 - 自动隐藏/显示窗口的非视频区域；
+  1 - 手动隐藏/显示窗口的非视频区域，默认按键是F12(input.ini中设定)；
+  0 - 禁止此功能。
+  (蛮无聊的功能，一个朋友缠着我要我做的:D)
+- 全屏时菜单的隐藏/显示改为和进度条一样：
+  鼠标移动到屏幕上方时显示，离开时隐藏。
+
+20050121:
+- 新增"switchchannel"选项: 当只有一条音轨时，按"a"键切换声道(如双语VCD)。
+  取值范围1-2，分别对应两种切换声道的方式。大家都试试，反馈一下哪种好一些。
+- 新增隐藏/显示菜单的功能，默认按键是F12(input.ini中设定)。
+  此功能全屏播放时也有效，并且在全屏时可以使用鼠标右键在屏幕上方点击来切换。
+- 在 input.ini 中加入变速播放的默认按键：
+  F6 正常播放速度x1.0      F7 播放速度 -0.25     F8 播放速度 +0.25
+
+2005.01.17:
+- improved "autoplay=1" compatible;
+- fix play audio-only file crash bug;
+- fix read avi index (seek) bug;
+
+2005.01.15:
+- fix colorkey bug;
+- fix "subpos=-1" bug;
+- modify "aspect=-1", fix the error aspect get from AVI (like some rips by FIT);
+- add "autoplay=1", auto play the next episode (like CD1, then CD2 ...);
+　ps: autoplay not perfect, the movie's filename must be named as *1.???, *2.??? ... or *a.??? *b.???...
+
+2005.01.09:
+- 修正vd_ffmpeg uninit vo codec 时崩溃的bug;
+- 修正切换文本字幕时MPlayer崩溃的bug;
+- 同步遗漏的部分官方代码：1-8按键调节图象，不需使用eq filter
+- fix2修正了subpos 和 wmv 的问题
+
+2004.08.29:
+- 解決0827無聲的問題：
+  當系統不支持WaveFormatExtensible時，改用WaveFormatEx
+  初始化WaveOut設備。無此問題的不用更新了
+
+2004.08.08:
+- 修正視頻分辨率大於桌面分辨率時視頻初始化的bug;(thx zme111)
+- 啟用全屏模式下keep_aspect設置，添加快捷鍵"A";(input.ini)
+
+2004.08.02:
+- 修正播放列表的bug
+- 修正打開文件對話框的bug
+- 調整mplayer.ini中video filter加載順序
+
+2004.07.25:
+- 同步官方CVS0719代碼 
+- 修正不退出mplayer直接打開另一個rm文件時，real解碼器未正常初始化的bug 
+
+2004.06.15:
+- 修正 loop 播放文本字幕亂碼的bug; 
+- 修改 loop 模式對整個播放隊列生效，而不僅僅是第一個文件; 
+
+2004.06.01:
+- spupal 參數：強制設定vobsub字幕亮度（忽略內置及custom pal） 0-255 0: disabled (default) 
+- 切換全屏時的 bug 修正 
+
+2004.05.20:
+- 修改systray參數:
+  0=顯示在任務欄 1=顯示在系統托盤 2=顯示在系統托盤且最小化時自動暫停 
+- 增加"Use Custom Palette"菜單項：可在播放時選擇是否使用vobsub字幕的自定義調色板。 
+- 修改mkv、ogm內置字幕處理：暫時忽略subcp參數。 
+- vobsub字幕按j鍵切換；文本字幕(srt...)按k鍵切換；mkv、ogm、dvd 內置字幕按s鍵切換。 
+- ac3解碼增加ac3acm.acm支持：MPlayer內置的ac3解碼容錯性太差，如果文件有問題，
+  某些時候會導致播放速度混亂。ac3acm.acm(Codecs目錄下)同樣基於liba52代碼，
+  但容錯性更佳。註：如果要使用內置ac3解碼，刪除ac3acm.acm文件即可。 
+- 一些細微調整及bug修正。 
+
+2004.05.13:
+- 修改ini後，按F5(input.ini中設定)鍵重新載入當前文件
+- 修正F5重新載入功能的若干bug; 
+- systray參數：yes=顯示在系統托盤 no=顯示在任務欄; 
+- 修改benchmark參數：
+  0=沒有benchmark信息 1=輸出benchmark信息 2=輸出benchmark信息，退出時自動打開; 
+- 修正 expand filter 自動disable功能中的一個bug 
+
+2004.05.11:
+- 增強subcp參數: 支持多編碼 (例如: subcp=gbk,big5 以逗號間隔)。
+  這樣可以同時載入簡繁體字幕，或者當只有某一種編碼的字幕且與subcp所
+  設定編碼不一致時，無需再更改配置文件。
+  註：開始播放時會優先選擇位置靠前的編碼的字幕。
+- 增強font參數(配合上面的特性): 默認ini檔中使用的simhei.ttf(黑體)
+  可以同時顯示簡繁體字幕。但如果你要對不同的編碼使用不同的字體顯示，
+  可以加上多個TTF字體，以逗號間隔。註：字體順序須與subcp編碼順序一致。
+  另外，如果使用Windows系統自帶的字體，可以不加路徑。
+- 增加sub-ignore-errors參數(字幕容錯性處理): 加載字幕時所允許的
+  編碼錯誤最大值。默認值:5 設為0時即原來的方式，出現錯誤就不加載該字幕。
+- 修正初始化代碼中一個可能導致在某些路徑下運行出錯的bug, thx lyh728
+- 修正vobsub字幕修改idx文件的scale參數後字幕水平位置不居中的bug 
+- ... tiny bugs fix 
+- 視頻初始化失敗時：依次去掉 yuy2, eq|eq2, expand filter 重試 
+- rar壓縮字幕支持：使用winrar提供的unrar.dll臨時解壓字幕文件到c:，
+  請保證c:可寫及有足夠空間，加載完畢就自動刪除了 
+- 字幕打包為rar時，可以將idx文件一併壓縮(如果你不需要臨時修改idx文件的話) 
+- rar字幕包裡的idx和sub文件名可以和視頻文件不一致，
+  只需要rar檔的文件名和視頻文件名一致。 MPlayer會先依據視頻文件名在rar包
+  中查找文件名匹配的文件，如果找不到會試圖打開擴展名匹配的文件。
