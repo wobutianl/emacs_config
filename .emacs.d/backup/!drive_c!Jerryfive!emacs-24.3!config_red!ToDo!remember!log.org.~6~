@@ -423,20 +423,3 @@ Entered on [2014-08-04 周一 14:13]
   - 我可以在哪用（应用于 GIS 的软件操作）
 
 Entered on [2014-08-05 周二 14:53]
-*** 2014-08-06 星期三
-**** nutshell/develop
-- 代码修改
-  - 先要把代码拷贝到 ubuntu -> iAuto 中，替换掉原来的文件
-  - ubuntu下用sourceInsight(wine)方式
-  - 或者用emacs / vim
-- 代码编译
-  - cd iAuto
-  - . build/envsetup.sh
-  - lunch full-eng
-  - make libGuide-navi -j8 2>1.txt （这里表示多少个线程和错误放到哪里）
-- sourceInsight(使用)
-  - 学会基本快捷键（复制，剪切，搜索，跳转，定义，引用，跳到行，高亮，书签）
-  - 自定义快捷键（注释（单行，多行，if,endif））
-
-Entered on [2014-08-06 周三 14:31]
-

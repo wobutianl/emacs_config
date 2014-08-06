@@ -1,18 +1,18 @@
 
 ;; ----- smex-history -----
 (
+ log
  emms
  gtd
- log
+ org-insert-drawer
  compile
  gdb
  eval-buffer
- auto-complete-mode
 )
 
 ;; ----- smex-data -----
 (
- (gtd . 18)
+ (gtd . 19)
  (org-clock-in . 1)
  (jabber-connect . 2)
  (jabber-chat-with . 2)
@@ -35,6 +35,7 @@
  (compile . 1)
  >>>>>>>
  emacs/work
- (log . 1)
- (emms . 2)
+ (log . 2)
+ (emms . 10)
+ (org-insert-drawer . 1)
 )

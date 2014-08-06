@@ -434,9 +434,7 @@ Entered on [2014-08-05 周二 14:53]
   - . build/envsetup.sh
   - lunch full-eng
   - make libGuide-navi -j8 2>1.txt （这里表示多少个线程和错误放到哪里）
-- sourceInsight(使用)
-  - 学会基本快捷键（复制，剪切，搜索，跳转，定义，引用，跳到行，高亮，书签）
-  - 自定义快捷键（注释（单行，多行，if,endif））
+- 代码运行
 
 Entered on [2014-08-06 周三 14:31]
 

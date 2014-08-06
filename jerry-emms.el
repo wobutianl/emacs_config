@@ -5,20 +5,23 @@
 (add-to-list 'load-path
              (expand-file-name "~/site-lisp/emms-3.0"))
 
-(require 'emms-source-file)
-(require 'emms-source-playlist)
-(require 'emms-player-simple)
-(require 'emms-player-mplayer)
-(require 'emms-playlist-mode)
-(require 'emms-info)
-(require 'emms-cache)
-(require 'emms-mode-line)
-(require 'emms-playing-time)
-(require 'emms-score)
-(require 'emms-volume)
+;(require 'emms-source-file)
+;(require 'emms-source-playlist)
+;(require 'emms-player-simple)
+;(require 'emms-player-mplayer)
+;(require 'emms-playlist-mode)
+;(require 'emms-info)
+;(require 'emms-cache)
+;(require 'emms-mode-line)
+;(require 'emms-playing-time)
+;(require 'emms-score)
+;(require 'emms-volume)
+
+
 (require 'emms-setup)
-(emms-standard)
 (emms-default-players)
+(emms-standard)
+
 
 ;; autodetect musci files id3 tags encodeing
 (require 'emms-i18n)
