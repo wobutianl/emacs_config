@@ -1,0 +1,2 @@
+;; org-persist.el - USER-20140729ZO at <2014-08-03 ÖÜÈÕ 23:45>
+(setq stored-clock-history '(("e:/emacs-24.3/emacs_config/ToDo/newgtd.org" . 2068) ("e:/emacs-24.3/emacs_config/ToDo/newgtd.org" . 1966) ("e:/emacs-24.3/emacs_config/ToDo/newgtd.org" . 1656) ("e:/emacs-24.3/emacs_config/ToDo/newgtd.org" . 1824) ("e:/emacs-24.3/emacs_config/ToDo/newgtd.org" . 1589)))

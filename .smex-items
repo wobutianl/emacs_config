@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- log
- emms
- gtd
- org-insert-drawer
- compile
- gdb
+ ecb-activate
  eval-buffer
+ ecb-byte-compile
+ emms
+ xterm-mouse-mode
+ log
+ gtd
 )
 
 ;; ----- smex-data -----
@@ -29,13 +29,16 @@
  (git-log . 1)
  =======
  (vc-git-grep . 1)
- (eval-buffer . 3)
+ (eval-buffer . 10)
  (gdb . 2)
  (cedet-build-in-default-emacs . 1)
  (compile . 1)
  >>>>>>>
  emacs/work
  (log . 2)
- (emms . 10)
+ (emms . 13)
  (org-insert-drawer . 1)
+ (xterm-mouse-mode . 2)
+ (ecb-activate . 2)
+ (ecb-byte-compile . 1)
 )

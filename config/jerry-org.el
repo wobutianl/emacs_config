@@ -7,41 +7,38 @@
 (require 'org-install)
 (require 'org-remember)
 
-(setq org-default-notes-file "~/emacs/ToDo/newgtd.org")
+(setq org-default-notes-file "~/ToDo/newgtd.org")
 (setq remember-annotation-functions '(org-remember-annotation))
 (setq remember-handler-functions '(org-remember-handler))
 (add-hook 'remember-mode-hook 'org-remember-apply-template)
-
-(define-key global-map [f12] 'org-remember)
-(define-key global-map [f11] 'org-capture)
-
 
 ;;;;;;;;;;;;;remember-mode	  记忆模式  c-c c-r  
 ;;;;;   inbox, idea, movie, blog2publish, journal, clipboard, finance, book, movie, daily
 (setq org-remember-templates
    '(
-	("New" ?n "* TODO %^{Brief Description} %^g\n%?\nAdded: %U" 	"~/emacsToDo/remember.org" "Tasks")
+   ("New" ?n "** %^{Brief Description} %^g" 	"~/ToDo/remember/inbox.org" "Remember")
     )
-)
+  )
 
 ;;;;;;;org-capture c-c c-c    
 (setq org-capture-templates
     '(
-	("T" "Todo" entry (file+headline "~/emacs/ToDo/newgtd.org" "Todo")
-      "* TODO %?\n  %i" :prepend t)
+	("t" "todo" entry (file+datetree "~/ToDo/newgtd.org" "TODO")
+      "* TODO %^{TODO} %^g " :prepend t)
 
-	("d" "Diary" entry (file+datetree "~/emacs/ToDo/diary.org")
+	("d" "Diary" entry (file+datetree "~/ToDo/remember/diary.org")
      "* %?\nEntered on %U\n %i\n %a")
 	 
-	("w" "work" entry (file+datetree "~/emacs/ToDo/work.org" "work")
+	("l" "log" entry (file+datetree "~/ToDo/remember/log.org")
      "* %?\nEntered on %U\n %i\n %a")
-     )
+	 
+	("q" "question" entry (file+datetree "~/ToDo/remember/question.org")
+     "* Q: %^{Question} %^g\n     A: ")
+	 )
 )
  	
 ;;;;;;;;;;;org-agenda c-c c-a  agenda 查找的路径
-(setq org-agenda-files (list
- 	"~/emacs/ToDo"))
-	
+(setq org-agenda-files (list  "~/ToDo"))
 	
 ;;;;c-c  c-t  todo 关键字
 (setq org-todo-keywords
@@ -61,11 +58,9 @@
   ("h" "Office and Home Lists"
    ((agenda)
     (tags-todo "@READING")
-    (tags-todo "@COMPUTER")
+    (tags-todo "@CODE")
     (tags-todo "@WORKING")	
 	(tags-todo "@ENTERTAIN")
-	(tags-todo "@QQ")
-	(tags-todo "@CALL")
     (tags-todo "@SPORT")
     ))
 
@@ -104,8 +99,8 @@
 (setq org-enforce-todo-dependencies t)
 
 ;; 设置农历
-;(add-to-list 'load-path "~/el")
-;(require 'cal-china-x)
+(add-to-list 'load-path "~/site-lisp")
+(require 'cal-china-x)
 
 ;;日历显示节日标记
 (setq mark-holidays-in-calendar t)
@@ -143,26 +138,32 @@
 
 (defun gtd ()
     (interactive)
-    (find-file "~/emacs/ToDo/newgtd.org"))
+    (find-file "~/ToDo/newgtd.org"))
+	
+(defun log ()
+    (interactive)
+    (find-file "~/ToDo/remember/log.org"))
 	
 (defun mydiary ()
     (interactive)
-   (find-file "~/emacs/ToDo/diary.org"))
-
-(defun mydiary ()
+   (find-file "~/ToDo/remember/diary.org"))
+   
+(defun question ()
     (interactive)
-   (find-file "~/emacs/ToDo/work.org"))
+   (find-file "~/ToDo/remember/question.org"))
+   
+
 
 ;; used by org-clock-sum-today-by-tags ;;; 时钟统计
 (defun filter-by-tags ()
    (let ((head-tags (org-get-tags-at)))
      (member current-tag head-tags)))
 
-(defun org-clock-sum-today-by-tags (timerange &optional tstart tend noinsert)       
+(defun w (timerange &optional tstart tend noinsert)       
   (interactive "P")                                                                 
   (let* ((timerange-numeric-value (prefix-numeric-value timerange))                 
          (files (org-add-archive-files (org-agenda-files)))                         
-         (include-tags '("@READING" "@COMPUTER" "@WORKING" "@ENTERTAIN"  "@QQ"   "@SPORT"  "@CALL"))						                                   
+         (include-tags '("@stc_READING" "@stc_CODE" "@stc_WORKING" "@stc_ENTERTAIN"    "@stc_SPORT"  "@home_LEARN" "@home_PLAY" ))						                                   
          (tags-time-alist (mapcar (lambda (tag) `(,tag . 0)) include-tags))        
          (output-string "")
          (tstart (or tstart
@@ -197,18 +198,8 @@
 (org-babel-do-load-languages
     'org-babel-load-languages '((emacs-lisp . t)))	
  
-;;;  graphviz  c-c c 运行dot文件   Ctrl-c p：使用dot mode内部预览
-;(load "graphviz-dot-mode.el" nil t t)
  
-;;; kbd 
-;(global-set-key (kbd "C-c dy") 'mydiary)
-(global-set-key (kbd "C-c g") 'gtd)
-(global-set-key "\C-cl" 'org-store-link)
 
-;(global-set-key "\C-cc"'org-capture)
-(global-set-key "\C-ca" 'org-agenda)
-(global-set-key "\C-cb" 'org-iswitchb)
-(define-key global-map "\C-ca" 'org-agenda)
 
 (add-hook 'org-agenda-mode-hook 'hl-line-mode)
 

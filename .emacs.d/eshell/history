@@ -1,0 +1,8 @@
+g++
+g++ test.cpp
+ls
+a.exe
+gcc test.cpp
+g++ test.cpp 
+ls
+a.exe
