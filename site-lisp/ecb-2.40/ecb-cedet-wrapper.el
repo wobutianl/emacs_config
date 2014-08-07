@@ -37,12 +37,11 @@
 
 
 (require 'semantic)
-
-(require 'semantic/ctxt)  
-(require 'semantic/analyze)  
-(require 'semantic/db)  
-(require 'semantic/db-find)  
-(require 'semantic/db-mode) 
+(require 'semantic-ctxt)
+(require 'semantic-analyze)
+(require 'semanticdb)
+(require 'semanticdb-find)
+(require 'semanticdb-mode)
 
 (defconst ecb-semantic-2-loaded (string-match "^2" semantic-version))
 

@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- ecb-activate
- eval-buffer
- ecb-byte-compile
  emms
- xterm-mouse-mode
  log
+ eval-buffer
+ xterm-mouse-mode
  gtd
+ question
+ git-status
 )
 
 ;; ----- smex-data -----
@@ -35,8 +35,8 @@
  (compile . 1)
  >>>>>>>
  emacs/work
- (log . 2)
- (emms . 13)
+ (log . 3)
+ (emms . 14)
  (org-insert-drawer . 1)
  (xterm-mouse-mode . 2)
  (ecb-activate . 2)

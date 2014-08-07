@@ -46,19 +46,19 @@
 (color-theme-initialize) 
 (color-theme-euphoria)
 
-;(load "~/jerry-language")  ;; input type
+(load "~/config/jerry-language")  ;; input type
 
-;(load "~/jerry-smex")    ;; strength m-x
+(load "~/config/jerry-smex")    ;; strength m-x
 
-(load "~/jerry-org-other")  ;; org-mode (mydiary)
+(load "~/config/jerry-org")  ;; org-mode (mydiary)
 
-;(load "~/jerry-yasnippet")   ;; yasnippet
+(load "~/config/jerry-yasnippet")   ;; yasnippet
 
-;(load "~/jerry-calendar")  ;; calendar
+(load "~/config/jerry-calendar")  ;; calendar
 
-;(load "~/jerry-tabbar")  ;; tabbar
+(load "~/config/jerry-tabbar")  ;; tabbar
 
-;(load "~/jerry-AutoComplete")  ;; auto complete
+(load "~/config/jerry-AutoComplete")  ;; auto complete
 
-;(load "~/jerry-keybinding")  ;; tabbar
+(load "~/config/jerry-keybinding")  ;; tabbar
 

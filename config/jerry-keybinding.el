@@ -18,7 +18,7 @@
 
 (global-set-key [f9] 'speedbar)   ;;设置f9调用speedbar命令
 
-(global-set-key [f10] 'todo-show)
+
 (define-key global-map [f12] 'org-remember)
 (define-key global-map [f11] 'org-capture)
 

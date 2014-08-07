@@ -4,12 +4,12 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-remember-last-stored"
  (filename . "c:/Jerryfive/emacs-24.3/config_red/ToDo/remember/inbox.org")
- (front-context-string . "** GP = Guide Po")
- (rear-context-string . "08-01 鍛ㄤ簲 09:52]\n")
- (position . 434))
+ (front-context-string . "** 把打卡功能做成一个真的卡片")
+ (rear-context-string . "TD任务列表显示，操作在手机端\n")
+ (position . 604))
 ("org-capture-last-stored"
  (filename . "c:/Jerryfive/emacs-24.3/config_red/ToDo/newgtd.org")
- (front-context-string . "**** TODO 淇敼nuts")
- (rear-context-string . " 2014-08-06 鏄熸湡涓塡n")
- (position . 3091))
+ (front-context-string . "**** TODO CI 书		")
+ (rear-context-string . " 2014-08-07 星期四\n")
+ (position . 3764))
 )

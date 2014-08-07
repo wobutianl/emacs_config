@@ -1,0 +1,25 @@
+#+TITLE: NLP
+
+* 自然语言处理主要做什么？
+** 对自然的语言做出相应的反应。
+* 主要内容
+** 主要技术
+*** ML （machine learning ）
+*** IR (information retrieval)信息检索
+*** GM (probability Graphic model) 概率图模型
+*** knowledge graph 知识图谱
+** 主要分析内容
+*** 分词 + 词性标注
+*** 语法分析 + 语义角色标注
+*** 命名实体识别
+*** 指代消解 + 情绪分析 + 信息抽取 + 文本分类，聚类
+* 主要技术
+** 分析模型
+*** SVM
+*** ME
+*** Bayes
+** 结构分析
+*** markov
+*** CRF
+** 基于任务的对话系统
+*** 流程：多次交互，确认任务信息

@@ -83,6 +83,14 @@
      CLOSED: [2014-08-06 周三 18:04]
      CLOCK: [2014-08-06 周三 09:44]--[2014-08-06 周三 09:52] =>  0:08
      CLOCK: [2014-08-06 周三 09:04]--[2014-08-06 周三 09:44] =>  0:40
+*** 2014-08-07 星期四
+**** TODO CI 书							:stc_READING:
+**** TODO 总结培训笔记						    :stc_JOB:
+     CLOCK: [2014-08-07 周四 14:08]--[2014-08-07 周四 16:16] =>  2:08
+**** DONE 修改JA158/master代码					    :stc_JOB:
+     CLOCK: [2014-08-07 周四 10:53]--[2014-08-07 周四 12:13] =>  1:20
+**** DONE uml培训						    :stc_JOB:
+     CLOCK: [2014-08-07 周四 10:00]--[2014-08-07 周四 10:33] =>  0:33
 * Statistic
 #+BEGIN_SRC emacs-lisp :results value
 (setq week-range (org-clock-special-range 'thisweek nil t))
