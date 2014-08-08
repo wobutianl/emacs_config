@@ -40,7 +40,7 @@
 ;;  (define-key c++-mode-map [f3] 'replace-regexp)
 )
 
-(load-file "~/site-lisp/cedet-1.1/common/cedet.el")
+(load-file "~/site-lisp/cedet/lisp/cedet/cedet.el")
 
 (setq semanticdb-project-roots 
       (list
@@ -75,13 +75,15 @@
         )
 )
 
+
+
 '(compile-command "g++")
 
-;(setq ecb-version-check nil)
-;(add-to-list 'load-path "~/site-lisp/ecb-2.40")
-;(require 'ecb)
+(setq ecb-version-check nil)
+(add-to-list 'load-path "~/site-lisp/ecb-master")
+(require 'ecb)
 ;;; 自动启动ecb，并且不显示每日提示
-;(setq ecb-auto-activate t      ecb-tip-of-the-day nil)
+(setq ecb-auto-activate t      ecb-tip-of-the-day nil)
 	  
 ;;;; 各窗口间切换
 (global-set-key [M-left] 'windmove-left)

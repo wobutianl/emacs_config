@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ list-packages
+ ecb-activate
  emms
- gtd
- log
- eval-buffer
- xterm-mouse-mode
- question
- git-status
+ animate-birthday-present
+ life
+ hanoi
+ 5x5
 )
 
 ;; ----- smex-data -----
@@ -36,9 +36,14 @@
  >>>>>>>
  emacs/work
  (log . 3)
- (emms . 16)
+ (emms . 21)
  (org-insert-drawer . 1)
  (xterm-mouse-mode . 2)
- (ecb-activate . 2)
+ (ecb-activate . 5)
  (ecb-byte-compile . 1)
+ (list-packages . 3)
+ (5x5 . 1)
+ (hanoi . 1)
+ (life . 1)
+ (animate-birthday-present . 1)
 )

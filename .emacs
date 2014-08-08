@@ -6,7 +6,7 @@
  '(blink-cursor-mode nil)
  '(cua-mode t nil (cua-base))
  '(display-time-mode t)
- '(line-number-mode nil)
+ '(ecb-options-version "2.40")
  '(show-paren-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
