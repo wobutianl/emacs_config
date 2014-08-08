@@ -1,2 +1,2 @@
-;; org-persist.el - ZHUXIAOLIN-PC at <2014-08-07 周四 13:04>
-(setq stored-clock-history '(("c:/Jerryfive/emacs-24.3/config_red/ToDo/newgtd.org" . 2354) ("c:/Jerryfive/emacs-24.3/config_red/ToDo/newgtd.org" . 3306) ("c:/Jerryfive/emacs-24.3/config_red/ToDo/newgtd.org" . 3092)))
+;; org-persist.el - ZHUXIAOLIN-PC at <2014-08-07 周四 18:17>
+(setq stored-clock-history '(("c:/Jerryfive/emacs-24.3/config_red/ToDo/newgtd.org" . 3092) ("c:/Jerryfive/emacs-24.3/config_red/ToDo/newgtd.org" . 4080) ("c:/Jerryfive/emacs-24.3/config_red/ToDo/newgtd.org" . 3968) ("c:/Jerryfive/emacs-24.3/config_red/ToDo/newgtd.org" . 3866) ("c:/Jerryfive/emacs-24.3/config_red/ToDo/newgtd.org" . 3765)))
