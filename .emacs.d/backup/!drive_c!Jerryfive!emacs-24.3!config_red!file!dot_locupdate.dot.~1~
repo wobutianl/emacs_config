@@ -1,0 +1,4 @@
+diagraph  locUpdate {
+	recLocUpdate -> doLocUpdate;
+	
+}

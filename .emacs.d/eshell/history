@@ -1,0 +1,13 @@
+g++
+g++ test.cpp
+ls
+a.exe
+gcc test.cpp
+g++ test.cpp 
+ls
+a.exe
+cscope.exe
+cscope
+cscope.exe
+cscope.exe
+find E:\saga_src\saga-gis-code\saga-gis\src "*.[chs]"-print > cscope.files

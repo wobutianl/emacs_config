@@ -1,0 +1,10 @@
+digraph G {
+	subgraph cluster_recv{
+		recvLocUpdate -> parseLocInfo -> sendToDataManageIF -> controlIF -> sendVehicleInfo ;
+		node[style=filled, color=white];
+		color = lightgrey;
+		style = filled;
+		label = "recvLocUpdate";
+		
+}
+}

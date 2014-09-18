@@ -1,0 +1,15 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("org-remember-last-stored"
+ (filename . "d:/jerryfive/emacs/config/ToDo/remember/inbox.org")
+ (front-context-string . "** 专利：USB接口的打气，空")
+ (rear-context-string . "在，但可以实现单一的打卡与联网\n")
+ (position . 642))
+("org-capture-last-stored"
+ (filename . "d:/jerryfive/emacs/config/ToDo/newgtd.org")
+ (front-context-string . "**** TODO 软件开发者路")
+ (rear-context-string . " 2014-09-18 星期四\n")
+ (position . 12368))
+)

@@ -1,0 +1,13 @@
+#+TITLE: Location
+
+* 自己的想法
+** 什么是Location
+** Location 的坐标与 GPS 坐标相符吗？
+** Location 有没有采用过北斗卫星?
+
+* 培训的内容
+- Location :: 由sensor  + GPS 组成的确定你当前在WGS84坐标系下的位置的服务。
+- GPS :: 可以获取 经纬度 + 海拔 + 速度 + 方向 + 时间
+- sensor :: 相对于GPS的绝对定位，sensor以相对于当前位置的偏移记录
+
+* 培训对自己想法的解答

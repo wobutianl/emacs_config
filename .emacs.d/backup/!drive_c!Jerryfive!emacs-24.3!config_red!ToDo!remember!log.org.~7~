@@ -1,0 +1,440 @@
+
+* 2014
+** 2014-07 七月
+*** 2014-07-07 星期一
+- 苗战东组长，给我介绍整个公司的情况
+	以前做Pioneer的，KWG项目（川越市-日本）
+		（ZONE + lite + cyber(主打项目）
+	（现在这个项目已经很少了）
+
+	现在公司：suntec（iauto）项目
+	- NaviCloud：手机端（中国）已结束
+	- iDDN ：手机端面Iphone（日本），正在进行
+	- ipro :手机Android（日本），在进行
+	- TMAP（东南亚）：快结束
+	- Cyber（日本）：这个项目还没有定下来。
+	- Post13（北美+东南亚）：八月份的样子下来。（我主要也是做这个项目）
+
+	两个采用的是不同的Framwork。
+	以前用的是KIWI数据格式，需要自己去解析
+	现在用的是：L-Format，由DSP封装好的。
+
+	代码的编写：编写规范，命名之类的。
+  
+- 确定这周要做的东西：
+	1：看完C++primer Plus （写两个小东西）
+	2：看KIWI格式介绍，解析这个数据格式。
+	3：了解整个项目的框架。
+
+- 苗战东组长又把钱（午饭的钱）打还给我了，晕。
+
+- 配置Emacs，用于 笔记 + GTD + 网页 + Python + C++。（末完成）
+*** 2014-07-08 星期二
+**** Emacs配置
+***** 配置Emacs：配置 Python + C++编程环境（末完成）
+- 其中：Python没有完成Pymacs + Pycompele
+- C++：没有完成 cedet, dev-c++ 的配置。
+
+***** 看KIWI数据格式协议书
+- 数据类型
+***** 睡觉被组长看到了，然后被叫醒了。
+
+Entered on [2014-07-08 周二 15:19]
+ 
+ [[file:c:/Jerryfive/emacs-24.2/config_red/ToDo/remember/log.org]]
+*** 2014-07-10 星期四
+**** 重装软件
+- 装机必备的软件：
+  everything, QQ, QQ download, VMWare, FireFox, JPWB, Emacs, Office, VS2008, 
+  sourceInsight, Python, foxmail, graphviz, 
+- kiwi 数据解析
+  fread(point, size, size_num, *file)
+  fseek(*file, offset, seek_type)
+  sizeof(char, unsigned short int , short int , unsigned int, int, ....)
+- 道路数据
+  有道路的Offset, 并且找到了位置所在。
+  有道路的Table Size， 和 record Size .
+  所以应该只有一个road Table 。
+
+Entered on [2014-07-10 周四 09:38]
+*** 2014-07-11 星期五
+**** Git 学习
+- GIT : 记录若干文件内容变化，便于查阅特定版本修订情况的系统。
+  可以对任意文件进行版本控制。
+- VCS ： Version Control System （版本控制系统）
+  CVCS：Centralized Version Control Systems（集中式版本控制系统）
+       有一个单一的集中管理服务器，用来保存所有文件版本，人们通过客户端转接到这台服务器，提交或取出（Checkout)
+  DVCS：Distributed Version Control System（分布式版本控制系统）Git， Mercurial， Bazaar， Darcs
+       客户端并不只是提取最新版本的文件快照，而是把仓库完事地镜像下来（相当于一次完事备份）。
+       缺点：每个地方的数据量太大，最开始速度慢。
+- Git：Git只关心文件数据的整体是否发生变化（不去管文件内容的细节变化）
+       Git 绝大多数操作只需要访问本地文件和资源（完整备份的好处）
+       Git保存前都会做内容的检验（Hash检验）
+       Git几乎只做添加数据的操作，所以不用担心数据的丢失。
+- 文件的三种状态：
+  已提交（Committed）， 已修改（Modified）， 已暂存（Staged）
+  已提交 ：安全保存在本地数据库中。
+  已修改：修改了某个文件，但还没提交
+  已暂存：把已修改的文件放在下次提交时要保存的清单中。
+- Git工作流程：
+  1，在工作目录中修改某些文件 -》 对修改的文件进行快照，然后保存到暂存区域
+  -》 提交更新，将保存在暂存区域的文件快照永久置信到Git目录中。
+- 用法：（git config)
+  - 文本编辑器：Vim做为默认编辑器
+  - 差异分析工具：VimDiff， 合并冲突时决定使用哪种差异分析工具。
+    - kdiff3, tkdiff, meld, xxdiff, emerge, vimdiff, gvimdiff,ecmerge, opendiff
+  - 查看配置：git config --list
+
+- 第二章：Git基础命令
+- 取得项目的Git仓库
+  1、在现存的目录下，导入所有文件来创建新的Git仓库
+  2、从已有的Git仓库克隆出一个新的镜像仓库来
+  初始化目录 git init (会生成一个.git 目录）
+  git add 把要纳入版本控制的文件添加进来。
+  git commit -m 提交
+- 现有仓库的克隆：
+  把已有的项目复制一份出来（git clone） ： 以前用的CheckOut
+  git clone [url] [目录名]
+  Git 支持：git:// , http(s)://, user@server:/path.git，ssh  传输协议。
+  git 状态检查：git status 
+  git add 状态变为：暂存状态（changed to be committed), add file into staged area.
+      对每一次修改都要git add 一次。
+- 忽略某些文件：
+  .gitignore的文件，列出要忽略的文件模式。简化了的正则表达式语法。
+- 查看暂存和未暂存文件
+  git diff :查看未暂存的文件
+  git diff --cached ：查看已暂存的文件
+  git diff --staged : 查看已暂存的文件（和上一个相同，现在通用）
+  git commit  （后面的参数表示的含义不太清楚）
+      git commit -m "***" 表示对这个提交的说明。
+      git commit -a ...   表示直接路过 git add ，提交已跟踪的文件。
+- 移除文件
+  需要从已跟踪文件清单（已暂存区域移除）：不能直接手动删除
+  git rm -f(force) 强制删除。
+  从仓库中删除文件： git rm --cached **
+- 移动文件：
+  git mv  **   **  相当于重命名。
+- 查看提交历史
+  git log  ( 参数 -p: 显示内容差异， -2：显示最近两次，很多其它参数）
+- 撤消操作：
+  修改最后一次提交：git commit --amend ：修改提交
+  git reset HEAD ** :取消暂存
+  git checkout -- ** ：取消对文件的修改。
+  原则：任何已提交的数据都可以被恢复！！（所以不用怕提交）
+- 远程仓库的使用：
+  git remote 列出远程库的名字。（-v:详细地址）
+  添加一个新的远程仓库：git remote add [shortname] [url]
+  git fetch ** 获取远程仓库的信息，  获取远程仓库的数据：
+  git pull :用于跟踪某个远端仓库的分支。
+  推送： git push [remote-name] [branch-name],前提，需要先获取最新版本，与自己的合并过才能提交成功。
+  查看信息：git remote show origin 
+  远程仓库的删除和重命名：git remote rename ** ** // git remote rm ** 
+- 打标签：作用：确定版本 e.g.: v1.0
+  显示已有标签：git tag 
+  新建标签：轻量级的 、、 含附注的(推荐）
+      新建：git tag -a tag_name -m "附注信息"
+  签署标签：GPG：有自己的私钥(需要验证）
+      git tag -s tag_name -m Message
+  验证标签：git tag -v tag_name 
+  轻量级的：什么都不用，保存对象的一个标识而已。
+  分享标签：git push Branch_name tag_name(or --tags)
+- 技巧：
+  两次Tab，自动补全
+  别名：git config --global alias.co checkout
+  git config --global alias.unstage 'reset HEAD --'
+  git config --global alias.last 'log -1 HEAD'
+
+  - 第三章：Git分支
+    分支：你可以从开发主线上分离出来，在不影响主线的同时继续工作。
+    分支：就是建立一个新的指向当前目录的指针
+	git branch branch_name 新建branch
+	git chechout branch_name 切换到新的branch
+    分支创建 -》 分支切换 -》 分支合并 -》 分支删除 -》 合并冲突 -》 冲突解决。
+    分支管理：git branch -d // -v // --merged // --no-merged 
+- 分支开发：
+  一般存在：Master分支（代表稳定版本），Develop分支（开发版本），Topic（前沿版本）
+      对于突然的想法，或者某个部分的更新，创建一个分支，做完就合并，短期存在的分支。
+      这些都是在本地的Git仓库中进行的。
+  远程分支：（remote branch)
+      有点复杂，远程分支克隆下来，在自己的本地分支上开发，克隆最新的分支，提交自己的分支到远程，合并到远程Master，删除自己在远程的分支。。。
+  衍合：rebase:复杂：一旦分支中的提交对象发布到公共仓库，就千万不要对该分支进行衍合操作。
+
+- 第四章：服务器上的Git
+- 
+
+
+
+存在问题：
+1：git bash中怎么切换目录到指定目录
+
+
+
+Entered on [2014-07-11 周五 09:38]
+ 
+ [[file:c:/Jerryfive/emacs-24.2/config_red/ToDo/remember/log.org::*%E9%87%8D%E8%A3%85%E8%BD%AF%E4%BB%B6][重装软件]]
+*** 2014-07-16 星期三
+**** 翻译Kiwi数据格式
+- 怎么去阅读表格
+  - Offset: 表示一个记录，表格，list，或者frame的开头。
+  - Data Length:数据的长度
+
+- 读取数据的时候（尤其是读取二进制数据时）
+  - 注意数据的对齐：如果不对齐，需要强制对齐：#pragma pack(1)
+  - 进行二进制操作时：多考虑：二进制位运算（取反，移位，求与，或，非……）
+
+- 字节类型
+  - 一个字节：char
+  - 两个字节：unsigned short
+  - 四个字节：unsigned int 
+
+Entered on [2014-07-16 周三 14:42]
+ 
+ [[file:c:/Jerryfive/emacs-24.2/config_red/ToDo/remember/log.org::*2014-07-11%20%E6%98%9F%E6%9C%9F%E4%BA%94][2014-07-11 星期五]]
+*** 2014-07-17 星期四
+**** kiwi数据
+- kiwi数据出问题
+  - 读取的数据错误，偏移量比数据量要大，应该怎么去思考
+    - 是不是读到了文件尾
+    - 是不是文件读取方式有问题
+    - 是不是数据出问题了
+    - 是不是数据结构（位对齐）
+- 问题求解过程
+  - 发现问题（在做的过程中，遇到什么问题，记录下来）
+    - 记录些什么（1：问题发生的点，2：问题触发的条件，3：问题错误提示，）
+  - 思考问题：
+    - 有些什么原因会发生这个情况？
+    - 和之前的代码有什么改动？
+    - 这属于什么类型的错误？
+    - 可以到哪里找答案
+  - 解决问题：
+    - 网络，寻找
+    - 网络，问问题（需要对问题进行提炼，就是第一步）
+    - 问同事。
+- 数据走查
+  - 用UltraEdit去查看数据的二进制数据。然后和读取的数据进行比较，看是否正确。
+  - 
+Entered on [2014-07-17 周四 15:12]
+*** 2014-07-21 星期一
+**** c++字节问题
+- 存在的问题：
+  - 输出中文乱码
+  - 因为存在中文问题，在输出的时候存在乱码问题，不知道是宽字符问题，还是中文编码问题。
+  - 利用：MultiByteToWideChar(),CP_ALL 未定义的问题
+  - 原来汉字的解析也是要交换字节与字节之间的位置的。（可是怎么知道要不要交换呢？）
+- 做到：选择任意道路，输出其相应的信息（道路名等）
+  - 存在的问题，没有去识别道路始点名，和道路终点名。
+- 做Link数据：
+Entered on [2014-07-21 周一 09:26]
+ 
+ [[file:c:/Jerryfive/emacs-24.2/config_red/ToDo/newgtd.org::*%E8%A7%A3%E6%9E%90%E5%87%BA%E8%B7%AF%E5%BE%84%E5%90%8D][解析出路径名]]
+*** 2014-07-24 星期四
+**** sourceInsight
+- 构造函数
+  - 初始化对像的数据成员
+
+Entered on [2014-07-24 周四 14:53]
+ 
+ [[file:c:/Jerryfive/emacs-24.2/file/org_mode_key.org]]
+*** 2014-07-25 星期五
+**** git
+git 大部分只是添加数据，不用担心数据丢失。
+- git的三个区域 ::  working directory + staging area + git directory(repo)
+- 文件的三种状态 :: unchecked + staged + commited //
+
+
+- git 设置
+  - git config --global user.name "**"
+  - git config --global user.email  ***@**.com
+  - git config --global core.editor emacs  （设置编辑器）
+  - git config --global merge.tool vimdiff （差异分析工具）
+- 初始化本地git repo(仓库)
+  - git init
+  - git add *.c  (or filename 1...n)
+  - git commit -m 'explain'  (or --no-edit)
+  - git clone  url  [本地 文件夹名]
+- 信息查看
+  - git status (filename)
+  - vim .gitignore
+  - git diff  [--cached //  --staged)
+  - git log
+  - gitk 
+- 移除文件
+  - rm filename
+  - git rm filename
+  - git rm --cached filename
+  - git rm \*~  (递归删除）
+  - git mv filename1 filename2 （重命名）
+- 过程仓库
+  - git remote  [-v]
+  - git remote add [shortname] [url] 添加远程仓库，为仓库设别名
+  - git fetch  [remote name]获取仓库有的，本地没有的,不自动合并到当前分支，需要自己合并
+  - git push [remote name][local branch name] 推送数据到远程仓库
+  - git remote show [remote name]
+  - git remote rename [remote name1] [remote name2]
+  - git remote rm [remote name]
+- 打标签
+  - 相当于提交的版本号 v 1.0, 2.0 之类
+  - git tag
+- 别名
+  - git config --global alias.co checkout
+  - git config --global alias.br branch
+  - git config --global alias.ci commit
+- git 分支
+  - git branch branch-name  新建branch(在当前分支下新建）
+  - git checkout branch-name 切换 或者 新建分支
+  - git checkout -b branch-name 新建并切换到该分区
+  - 当前master ： git merge other-branch-name 把新branch合并到master
+  - git branch -d branch-name  删除分支
+  - 一般用法：master  +  develop +  topic 三个长期分支
+- 远程分支
+  - git fetch [remote branch name] 获取远程分支数据
+  - git checkout -b local-branch-name  origin/remote-branch-name 同步远程分支到本地
+  - git push origin :remote-branch-name 删除远程分支
+- 合并
+  - merge  //  rebase 
+
+
+
+
+
+
+Entered on [2014-07-25 周五 15:24]
+ 
+ [[file:c:/Jerryfive/emacs-24.2/file/org_mode_key.org]]
+*** 2014-07-28 星期一
+**** 如何做一个“优秀的员工”
+- 做一个有同理心的人（站在别人的角度看问题）
+- 听话，出活
+- 想要在人前显贵，必须在背地理受罪
+- 能忍多大事，能成多大事
+- 总躲着领导，你就危险了
+- 帮助别人，千万别吝啬
+- 目标再目标，量化再量化
+- 找到解决办法是我的义务
+- 尽量不说：不是我，我没有
+- 言多必失
+- 知道什么时候离开
+Entered on [2014-07-28 周一 09:26]
+*** 2014-07-29 星期二
+**** guide 组主要与哪些打交道
+- 声音
+  - 声音的生成
+  - 确定声音什么时候播
+- ETA（estimated time of arrival）
+  - 诱导开始怎么显示（通过起点，终点，得到ETA 值（可以通过学习优化））
+  - 运行中的数据显示（时时计算（考虑哪些因素））
+- ETC 电子自动收费通道
+  - 画出ETC标识，返回给UI
+  - ETC on , off 。进入ETC 入口， 过了ETC。
+- silent guide
+  - 主要是指UI guide
+- request ??
+  - 这个不太理解
+- route info
+  - ETA， route info ,道路名之类
+- 方向面板（不通类型道路的方向标识）
+  - 案内交差点（案内：引导）
+  - 通过交差点
+  - 高速路
+- 扩大图（在特定点的扩大显示）
+  - 2D显示
+  - 案内地（引导点）
+- 信号机表示（红绿灯）
+- 行走路线（这个不太清楚）
+- popup(弹出框)
+  - 具体有什么？
+- lane 车道
+- 料金
+- 细街道
+Entered on [2014-07-29 周二 13:42]
+ 《拆掉思维里的墙》
+ 《14堂人生创意课》
+ 《遇见未知的自己》
+ 《幸福的方法》
+ 《高难度谈话》
+ 《斯坦福的银色子弹》
+ 《少有人走的路》
+ 《承认不完美，心灵才自由》
+ 《高效能人士的7个习惯》
+ 《情商》
+ 《从为什么开始》
+ 《把时间当朋友》
+ 《暗时间》
+ 《只需倾听》
+ 《请理解我》
+ [[file:c:/Jerryfive/emacs-24.3/config_red/file/brave.org::%E3%80%8A%E6%8B%86%E6%8E%89%E6%80%9D%E7%BB%B4%E9%87%8C%E7%9A%84%E5%A2%99%E3%80%8B%0A%E3%80%8A14%E5%A0%82%E4%BA%BA%E7%94%9F%E5%88%9B%E6%84%8F%E8%AF%BE%E3%80%8B%0A%E3%80%8A%E9%81%87%E8%A7%81%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1%E3%80%8B%0A%E3%80%8A%E5%B9%B8%E7%A6%8F%E7%9A%84%E6%96%B9%E6%B3%95%E3%80%8B%0A%E3%80%8A%E9%AB%98%E9%9A%BE%E5%BA%A6%E8%B0%88%E8%AF%9D%E3%80%8B%0A%E3%80%8A%E6%96%AF%E5%9D%A6%E7%A6%8F%E7%9A%84%E9%93%B6%E8%89%B2%E5%AD%90%E5%BC%B9%E3%80%8B%0A%E3%80%8A%E5%B0%91%E6%9C%89%E4%BA%BA%E8%B5%B0%E7%9A%84%E8%B7%AF%E3%80%8B%0A%E3%80%8A%E6%89%BF%E8%AE%A4%E4%B8%8D%E5%AE%8C%E7%BE%8E%EF%BC%8C%E5%BF%83%E7%81%B5%E6%89%8D%E8%87%AA%E7%94%B1%E3%80%8B%0A%E3%80%8A%E9%AB%98%E6%95%88%E8%83%BD%E4%BA%BA%E5%A3%AB%E7%9A%847%E4%B8%AA%E4%B9%A0%E6%83%AF%E3%80%8B%0A%E3%80%8A%E6%83%85%E5%95%86%E3%80%8B%0A%E3%80%8A%E4%BB%8E%E4%B8%BA%E4%BB%80%E4%B9%88%E5%BC%80%E5%A7%8B%E3%80%8B%0A%E3%80%8A%E6%8A%8A%E6%97%B6%E9%97%B4%E5%BD%93%E6%9C%8B%E5%8F%8B%E3%80%8B%0A%E3%80%8A%E6%9A%97%E6%97%B6%E9%97%B4%E3%80%8B%0A%E3%80%8A%E5%8F%AA%E9%9C%80%E5%80%BE%E5%90%AC%E3%80%8B%0A%E3%80%8A%E8%AF%B7%E7%90%86%E8%A7%A3%E6%88%91%E3%80%8B][file:c:/Jerryfive/emacs-24.3/config_red/file/brave.org::《拆掉思维里的墙》
+《14堂人生创意课》
+《遇见未知的自己》
+《幸福的方法》
+《高难度谈话》
+《斯坦福的银色子弹》
+《少有人走的路》
+《承认不完美，心灵才自由》
+《高效能人士的7个习惯》
+《情商》
+《从为什么开始》
+《把时间当朋友》
+《暗时间》
+《只需倾听》
+《请理解我》]]
+*** 2014-07-30 星期三
+**** boost::bind
+- bind的作用 :: bind是一组重载的函数模板，用来向一个函数（函数对象）绑定某些参数
+- bind的返回值是：一个函数对象
+- 一般在传递参数时使用（比如：创建boost::thread线程时，用bind来绑定n个参数给函数对象）
+Entered on [2014-07-30 周三 09:09]
+ 
+ [[file:c:/Jerryfive/emacs-24.3/config_red/ToDo/remember/log.org::*2014-07-16%20%E6%98%9F%E6%9C%9F%E4%B8%89][2014-07-16 星期三]]
+** 2014-07-22 星期二
+*** 汉字解析kiwi
+- 
+Entered on [2014-07-22 周二 12:02]
+ 
+ [[file:c:/Jerryfive/emacs-24.2/config_red/ToDo/newgtd.org::*%E8%A7%A3%E6%9E%90%E5%87%BA%E8%B7%AF%E5%BE%84%E5%90%8D][解析出路径名]]
+** 2014-08 八月
+*** 2014-08-04 星期一
+**** 配置虚拟机
+- Mac虚拟机：授权git，利用公共的id_rsa + id_rsa.pub来获取权限。
+- 配置git, 
+- 把自己加入到id_rsa中去（今天忘记了这一步）
+- clone code
+- 编译，运行
+- 遇到的问题：
+  - 没有把自己加入到id_rsa中去
+  - 最新的 mac 虚拟机, 运行代码有问题，换了一套代码也不行，在试验换虚拟机。
+  - 
+Entered on [2014-08-04 周一 14:13]
+ 
+ [[file:c:/Jerryfive/emacs-24.3/config_red/ToDo/remember/log.org::*%E6%B1%89%E5%AD%97%E8%A7%A3%E6%9E%90kiwi][汉字解析kiwi]]
+*** 2014-08-05 星期二
+**** 代码走查
+- 苹果客户端，与windows主机建立共享连接
+  - 先在windows上建立一个共享文件夹，然后分配权限
+  - 然后在苹果虚拟机中connect to server，输入 sram://windows ip
+  - 输入windows的用户 名和密码就可以连接了。
+- 职业，学业，事业
+  - 学业 －> 毕业 -> 职业 -> 发展 -> 事业
+  - 学业 －> 毕业 ： 职业 -> 退休 ： 事业 -> 退位
+  - 都只是自己生活的一个圈子，你怎么在这个圈子中过好，仅此而已。只是职业圈子是一定会存在的一个圈子而已。
+- NLP 自然语言学习
+  - 学习的内容
+  - 学习的算法
+  - 在导航中的应用
+  - 我可以在哪用（应用于 GIS 的软件操作）
+
+Entered on [2014-08-05 周二 14:53]
+*** 2014-08-06 星期三
+**** nutshell/develop
+- 代码修改
+  - 先要把代码拷贝到 ubuntu -> iAuto 中，替换掉原来的文件
+  - ubuntu下用sourceInsight(wine)方式
+  - 或者用emacs / vim
+- 代码编译
+  - cd iAuto
+  - . build/envsetup.sh
+  - lunch full-eng
+  - make libGuide-navi -j8 2>1.txt （这里表示多少个线程和错误放到哪里）
+- 代码运行
+
+Entered on [2014-08-06 周三 14:31]
+

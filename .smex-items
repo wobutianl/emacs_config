@@ -1,0 +1,52 @@
+
+;; ----- smex-history -----
+(
+ emms
+ emms-random
+ org-agenda
+ emms-pause
+ gtd
+ org-insert-drawer
+ git-status
+)
+
+;; ----- smex-data -----
+(
+ (gtd . 33)
+ (org-clock-in . 1)
+ (jabber-connect . 2)
+ (jabber-chat-with . 2)
+ (auto-complete . 1)
+ (auto-complete-mode . 3)
+ (question . 5)
+ <<<<<<<
+ HEAD
+ (git-config-init . 3)
+ (git-status . 7)
+ (git-init . 2)
+ (git-clone . 1)
+ (git-branch . 1)
+ (git-log . 1)
+ =======
+ (vc-git-grep . 1)
+ (eval-buffer . 10)
+ (gdb . 2)
+ (cedet-build-in-default-emacs . 1)
+ (compile . 1)
+ >>>>>>>
+ emacs/work
+ (log . 4)
+ (emms . 46)
+ (org-insert-drawer . 2)
+ (xterm-mouse-mode . 2)
+ (ecb-activate . 5)
+ (ecb-byte-compile . 1)
+ (list-packages . 3)
+ (5x5 . 1)
+ (hanoi . 1)
+ (life . 1)
+ (animate-birthday-present . 1)
+ (emms-random . 13)
+ (org-agenda . 16)
+ (emms-pause . 1)
+)

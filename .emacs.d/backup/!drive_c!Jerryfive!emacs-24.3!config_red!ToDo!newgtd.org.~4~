@@ -1,0 +1,1015 @@
+#+COLUMNS: %38ITEM(Details) %TAGS(Context) %7TODO(To Do) %5Effort(Time){:} %6CLOCKSUM{Total}
+#+TAGS: { LEARN(l) ENTERTAIN(e) JOB(j) OTHER(o) }
+#+TAGS: { READING(r) ENGLISH(E) CODE(c) PAPER(p) }
+#+TAGS: { FILM(f) MUSIC(m) WEB(w) SPORT(s) GAME(g) QQ(q) }
+#+TAGS: { SHOPPING(S) LIFE(L) DAIRY(d) }
+#+TAGS: { 每周工作四小时  公正 }
+#+TODO: TODO(t) | DONE(d) CANCELLED(c) 
+#+PROPERTY: CLOCK_INTO_DRAWER 
+
+* 每天必做（2小时）[0/9]
+  SCHEDULED: <2014-01-09 周四 +1d>
+** TODO 读英语（30分钟）7:30-8:00			      :LEARN:ENGLISH:
+   SCHEDULED: <2014-01-16 周四 +1d>
+   :LOGBOOK:
+   CLOCK: [2014-01-09 周四 13:36]--[2014-01-09 周四 13:52] =>  0:16
+   :END:
+   - State "DONE"       from "TODO"       [2014-01-09 周四 09:05]
+   :PROPERTIES:
+   :LAST_REPEAT: [2014-01-16 周四 08:42]
+   :END:
+** TODO 做思维导图（10分钟）8:00				 :LEARN:LIFE:
+   SCHEDULED: <2014-01-15 周三 +1d>
+   - State "DONE"       from "TODO"       [2014-01-15 周三 09:23]
+   - State "DONE"       from "TODO"       [2014-01-14 周二 08:59]
+   - State "DONE"       from "TODO"       [2014-01-13 周一 09:18]
+   - State "DONE"       from "TODO"       [2014-01-12 周日 23:13]
+   - State "DONE"       from "TODO"       [2014-01-11 周六 10:47]
+   :LOGBOOK:
+   CLOCK: [2014-01-20 周一 09:15]--[2014-01-20 周一 09:24] =>  0:09
+   CLOCK: [2014-01-15 周三 08:49]--[2014-01-15 周三 09:23] =>  0:34
+   CLOCK: [2014-01-14 周二 08:54]--[2014-01-14 周二 08:59] =>  0:05
+   CLOCK: [2014-01-13 周一 08:55]--[2014-01-13 周一 09:18] =>  0:23
+   CLOCK: [2014-01-11 周六 10:19]--[2014-01-11 周六 10:47] =>  0:28
+   :END:
+   - State "DONE"       from "TODO"       [2014-01-09 周四 09:24]
+   :PROPERTIES:
+   :LAST_REPEAT: [2014-01-15 周三 09:23]
+   :END:
+** TODO 写日记（10分钟）8:15					:OTHER:DAIRY:
+   SCHEDULED: <2014-01-16 周四 +1d>
+   - State "DONE"       from "TODO"       [2014-01-19 周日 23:13]
+   - State "DONE"       from "TODO"       [2014-01-13 周一 22:58]
+   - State "DONE"       from "TODO"       [2014-01-12 周日 23:13]
+   - State "DONE"       from "TODO"       [2014-01-11 周六 12:15]
+   :LOGBOOK:
+   CLOCK: [2014-01-19 周日 23:07]--[2014-01-19 周日 23:13] =>  0:06
+   CLOCK: [2014-01-13 周一 22:46]--[2014-01-13 周一 22:58] =>  0:12
+   CLOCK: [2014-01-11 周六 10:47]--[2014-01-11 周六 11:21] =>  0:34
+   :END:
+   - State "DONE"       from "TODO"       [2014-01-09 周四 12:32]
+   :PROPERTIES:
+   :LAST_REPEAT: [2014-01-19 周日 23:13]
+   :END:
+** TODO 背单词（10分钟）8:25 				      :LEARN:ENGLISH:
+   SCHEDULED: <2014-01-10 周五 +1d>
+   - State "DONE"       from "TODO"       [2014-01-09 周四 12:47]
+   :PROPERTIES:
+   :LAST_REPEAT: [2014-01-09 周四 12:47]
+   :END:
+** TODO 写总结（10分钟）22:00 					     :OTHER:LIFE:
+  SCHEDULED: <2014-01-09 周四 +1d>
+
+** TODO 看鲜果新闻					      :OTHER:READING:
+   SCHEDULED: <2014-01-13 周一 +1w>
+** TODO 写周总结						 :OTHER:LIFE:
+   SCHEDULED: <2014-01-13 周一 +1w>
+** TODO 写月总结 						 :OTHER:LIFE:
+   SCHEDULED: <2014-01-13 周一 +1m>
+** TODO 写年总结						 :OTHER:LIFE:
+   SCHEDULED: <2014-01-13 周一 +1y>
+
+
+* 2014
+** 2014-01 一月
+*** 月计划[]
+**** TODO 完成论文
+*** 第　1　周
+**** TODO 
+***** TODO 模型的描述，规则					:LEARN:PAPER:
+*** 2014-01-03 星期五
+**** DONE 休息
+     :LOGBOOK:
+     CLOCK: [2014-01-03 周五 18:19]--[2014-01-03 周五 19:19] =>  1:00
+     CLOCK: [2014-01-03 周五 18:14]--[2014-01-03 周五 18:15] =>  0:01
+     :END:
+**** DONE 去吃饭
+     CLOSED: [2014-01-03 周五 18:15]
+     :LOGBOOK:
+     CLOCK: [2014-01-03 周五 17:47]--[2014-01-03 周五 18:13] =>  0:26
+     :END:
+**** DONE 电话
+     CLOSED: [2014-01-03 周五 18:15]
+     :LOGBOOK:
+     CLOCK: [2014-01-03 周五 14:24]--[2014-01-03 周五 14:38] =>  0:14
+     :END:
+**** TODO 做模型						   :@English:
+     :LOGBOOK:
+     CLOCK: [2014-01-03 周五 14:38]--[2014-01-03 周五 16:13] =>  1:35
+     CLOCK: [2014-01-03 周五 12:15]--[2014-01-03 周五 14:24] =>  2:09
+     CLOCK: [2014-01-03 周五 11:59]--[2014-01-03 周五 12:14] =>  0:15
+     :END:
+**** DONE 吃饭
+     CLOSED: [2014-01-03 周五 18:15]
+     :LOGBOOK:
+     CLOCK: [2014-01-03 周五 11:23]--[2014-01-03 周五 11:53] =>  0:30
+     :END:
+**** TODO 做健康评价模型
+     :LOGBOOK:
+     CLOCK: [2014-01-03 周五 11:03]--[2014-01-03 周五 11:23] =>  0:20
+     :END:
+**** DONE 袁老师来跟我们聊聊.
+     CLOSED: [2014-01-03 周五 18:15]
+**** TODO 设置GTD文件
+     :LOGBOOK:
+     CLOCK: [2014-01-03 周五 09:30]--[2014-01-03 周五 10:10] =>  0:40
+     :END:
+***** DONE 回去洗澡，
+      CLOSED: [2014-01-02 周四 13:30]
+      :LOGBOOK:
+      CLOCK: [2014-01-02 周四 11:57]--[2014-01-02 周四 13:30] =>  1:33
+      :END:
+**** DONE 吃早餐
+     CLOSED: [2014-01-03 周五 18:15]
+     :LOGBOOK:
+     CLOCK: [2014-01-03 周五 09:21]--[2014-01-03 周五 09:28] =>  0:07
+     :END:
+**** TODO 显示图						  :@Academic:
+     :LOGBOOK:
+     CLOCK: [2014-01-03 周五 20:23]--[2014-01-03 周五 22:10] =>  1:47
+     CLOCK: [2014-01-03 周五 20:22]--[2014-01-03 周五 20:22] =>  0:00
+     :END:
+*** 2014-01-04 星期六
+**** 每天必做（2小时）
+***** 阅读（30分钟）
+***** 读英语（30分钟）
+***** 做思维导图（10分钟）
+***** 写日记（10分钟）
+***** 背单词（10分钟）
+***** 写总结（10分钟）
+*** 2014-01-05 星期日
+*** 第　2　周 [0/3]
+**** TODO 完成模型的定义，规则制定，描述			:LEARN:PAPER:
+**** TODO 完成人口模型的显示					:LEARN:PAPER:
+**** TODO 参加专利审查的考试					   :JOB:LIFE:
+*** 2014-01-06 星期一
+**** DONE 打乒乓球					    :ENTERTAIN:SPORT:
+     :LOGBOOK:
+     CLOCK: [2014-01-06 周一 18:27]--[2014-01-06 周一 20:07] =>  1:40
+     :END:
+**** DONE 模型的描述，规则					:OTHER:PAPER:
+     :LOGBOOK:
+     CLOCK: [2014-01-06 周一 14:48]--[2014-01-06 周一 16:48] =>  2:00
+     CLOCK: [2014-01-06 周一 13:38]--[2014-01-06 周一 14:16] =>  0:38
+     CLOCK: [2014-01-06 周一 10:37]--[2014-01-06 周一 11:30] =>  0:53
+     :END:
+**** 每天必做（2小时）[5/6]
+***** DONE 读英语（30分钟）				      :LEARN:ENGLISH:
+      :LOGBOOK:
+      CLOCK: [2014-01-06 周一 08:01]--[2014-01-06 周一 08:12] =>  0:11
+      :END:
+***** DONE 阅读（30分钟）				   :LEARN:READING:每周工作四小时:
+      :LOGBOOK:
+      CLOCK: [2014-01-06 周一 08:21]--[2014-01-06 周一 09:04] =>  0:43
+      :END:
+***** DONE 做思维导图（10分钟）					 :LEARN:LIFE:
+      :LOGBOOK:
+      CLOCK: [2014-01-06 周一 09:05]--[2014-01-06 周一 09:16] =>  0:11
+      :END:
+***** DONE 写日记（10分钟）					 :OTHER:LIFE:
+      :LOGBOOK:
+      CLOCK: [2014-01-06 周一 09:18]--[2014-01-06 周一 09:26] =>  0:08
+      :END:
+***** DONE 背单词（10分钟）				      :LEARN:ENGLISH:
+      :LOGBOOK:
+      CLOCK: [2014-01-06 周一 09:31]--[2014-01-06 周一 10:20] =>  0:49
+      :END:
+***** TODO 写总结（10分钟） 					 :OTHER:LIFE:
+*** 2014-01-07 星期二
+**** DONE 打球						    :ENTERTAIN:SPORT:
+     :LOGBOOK:
+     CLOCK: [2014-01-07 周二 20:13]--[2014-01-07 周二 22:49] =>  2:36
+     :END:
+**** DONE 休息，聊天,找礼物				       :ENTERTAIN:QQ:
+     :LOGBOOK:
+     CLOCK: [2014-01-07 周二 15:22]--[2014-01-07 周二 16:49] =>  1:27
+     :END:
+**** DONE 洗澡，洗衣						 :OTHER:LIFE:
+     :LOGBOOK:
+     CLOCK: [2014-01-07 周二 11:47]--[2014-01-07 周二 13:33] =>  1:46
+     :END:
+**** TODO 做安卓的统计功能
+     :LOGBOOK:
+     CLOCK: [2014-01-07 周二 22:51]--[2014-01-07 周二 23:45] =>  0:54
+     CLOCK: [2014-01-07 周二 18:00]--[2014-01-07 周二 20:12] =>  2:12
+     CLOCK: [2014-01-07 周二 16:50]--[2014-01-07 周二 17:21] =>  0:31
+     CLOCK: [2014-01-06 周一 20:15]--[2014-01-06 周一 23:48] =>  3:33
+     :END:
+**** TODO 基于模型描述的数据抽取 				:LEARN:PAPER:
+**** TODO 基于模型描述的数据推送				:LEARN:PAPER:
+**** TODO 模型的操作分类和描述					:LEARN:PAPER:
+     :LOGBOOK:
+     CLOCK: [2014-01-07 周二 10:49]--[2014-01-07 周二 10:55] =>  0:06
+     CLOCK: [2014-01-07 周二 10:20]--[2014-01-07 周二 10:35] =>  0:15
+     :END:
+**** 每天必做（2小时）[6/6]
+***** DONE 阅读（30分钟）			      :LEARN:READING:每周工作四小时:
+      :LOGBOOK:
+      CLOCK: [2014-01-07 周二 08:52]--[2014-01-07 周二 09:38] =>  0:46
+      :END:
+***** DONE 读英语（30分钟）				      :LEARN:ENGLISH:
+      :LOGBOOK:
+      CLOCK: [2014-01-07 周二 08:41]--[2014-01-07 周二 08:52] =>  0:11
+      :END:
+***** DONE 做思维导图（10分钟）					 :LEARN:LIFE:
+      :LOGBOOK:
+      CLOCK: [2014-01-07 周二 09:45]--[2014-01-07 周二 09:53] =>  0:08
+      :END:
+***** DONE 写日记（10分钟）					 :OTHER:LIFE:
+      :LOGBOOK:
+      CLOCK: [2014-01-07 周二 09:53]--[2014-01-07 周二 10:04] =>  0:11
+      :END:
+***** DONE 背单词（10分钟）				      :LEARN:ENGLISH:
+      :LOGBOOK:
+      CLOCK: [2014-01-07 周二 13:35]--[2014-01-07 周二 13:46] =>  0:11
+      :END:
+***** DONE 写总结（10分钟）					 :OTHER:LIFE:
+      :LOGBOOK:
+      CLOCK: [2014-01-08 周三 12:47]--[2014-01-08 周三 12:49] =>  0:02
+      CLOCK: [2014-01-08 周三 09:23]--[2014-01-08 周三 09:24] =>  0:01
+      :END:
+*** 2014-01-08 星期三
+**** DONE 看动画...					     :ENTERTAIN:FILM:
+     :LOGBOOK:
+     CLOCK: [2014-01-08 周三 20:10]--[2014-01-08 周三 20:29] =>  0:19
+     :END:
+**** DONE 打电话					       :ENTERTAIN:QQ:
+     :LOGBOOK:
+     CLOCK: [2014-01-08 周三 08:47]--[2014-01-08 周三 08:48] =>  0:01
+     :END:
+**** DONE 做安卓的统计功能				     :ENTERTAIN:CODE:
+     :LOGBOOK:
+     CLOCK: [2014-01-13 周一 20:17]--[2014-01-13 周一 22:40] =>  2:23
+     CLOCK: [2014-01-13 周一 13:46]--[2014-01-13 周一 18:21] =>  4:35
+     CLOCK: [2014-01-08 周三 20:29]--[2014-01-08 周三 23:59] =>  3:30
+     CLOCK: [2014-01-08 周三 19:02]--[2014-01-08 周三 20:09] =>  1:07
+     CLOCK: [2014-01-08 周三 16:23]--[2014-01-08 周三 17:31] =>  1:08
+     CLOCK: [2014-01-07 周二 22:51]--[2014-01-07 周二 23:45] =>  0:54
+     CLOCK: [2014-01-07 周二 18:00]--[2014-01-07 周二 20:12] =>  2:12
+     CLOCK: [2014-01-07 周二 16:50]--[2014-01-07 周二 17:21] =>  0:31
+     CLOCK: [2014-01-06 周一 20:15]--[2014-01-06 周一 23:48] =>  3:33
+     :END:
+**** TODO 基于模型描述的数据抽取 				:LEARN:PAPER:
+     :LOGBOOK:
+     CLOCK: [2014-01-11 周六 14:11]--[2014-01-11 周六 16:54] =>  2:43
+     CLOCK: [2014-01-08 周三 14:50]--[2014-01-08 周三 16:23] =>  1:33
+     CLOCK: [2014-01-08 周三 09:31]--[2014-01-08 周三 11:40] =>  2:09
+     :END:
+**** TODO 基于模型描述的数据推送				:LEARN:PAPER:
+**** TODO 模型的操作分类和描述					:LEARN:PAPER:
+     :LOGBOOK:
+     CLOCK: [2014-01-07 周二 10:49]--[2014-01-07 周二 10:55] =>  0:06
+     CLOCK: [2014-01-07 周二 10:20]--[2014-01-07 周二 10:35] =>  0:15
+     :END:
+
+**** 每天必做（2小时）[3/6]
+***** DONE 读英语（30分钟）				      :LEARN:ENGLISH:
+      :LOGBOOK:
+      CLOCK: [2014-01-08 周三 08:48]--[2014-01-08 周三 09:04] =>  0:16
+      :END:
+***** DONE 做思维导图（10分钟）					 :LEARN:LIFE:
+      :LOGBOOK:
+      CLOCK: [2014-01-08 周三 09:11]--[2014-01-08 周三 09:21] =>  0:10
+      :END:
+***** DONE 写日记（10分钟）					 :OTHER:LIFE:
+      :LOGBOOK:
+      CLOCK: [2014-01-08 周三 09:24]--[2014-01-08 周三 09:31] =>  0:07
+      :END:
+***** TODO 阅读（30分钟）                                     :LEARN:READING:
+***** TODO 背单词（10分钟）                                   :LEARN:ENGLISH:
+***** TODO 写总结（10分钟）                                      :OTHER:LIFE:
+*** 2014-01-09 星期四
+**** TODO pdf　to word　acrobat and word 2013			 :OTHER:LIFE:
+**** DONE 写研究背景						:LEARN:PAPER:
+     :LOGBOOK:
+     CLOCK: [2014-01-09 周四 09:35]--[2014-01-09 周四 11:39] =>  2:04
+     :END:
+**** 每天必做（2小时）[4/6]
+***** TODO 读英语（30分钟）                                   :LEARN:ENGLISH:
+***** DONE 做思维导图（10分钟）					 :LEARN:LIFE:
+      :LOGBOOK:
+      CLOCK: [2014-01-09 周四 09:10]--[2014-01-09 周四 09:24] =>  0:14
+      :END:
+***** DONE 写日记（10分钟）					 :OTHER:LIFE:
+      :LOGBOOK:
+      CLOCK: [2014-01-09 周四 12:20]--[2014-01-09 周四 12:29] =>  0:09
+      :END:
+***** DONE 阅读（30分钟）				   :LEARN:READING:公正:
+      :LOGBOOK:
+      CLOCK: [2014-01-09 周四 12:48]--[2014-01-09 周四 12:48] =>  0:00
+      :END:
+***** DONE 背单词（10分钟）				      :LEARN:ENGLISH:
+      :LOGBOOK:
+      CLOCK: [2014-01-09 周四 12:33]--[2014-01-09 周四 12:47] =>  0:14
+      :END:
+***** TODO 写总结（10分钟）                                      :OTHER:LIFE:
+*** 2014-01-11 星期六
+**** TODO 打乒乓球					    :ENTERTAIN:SPORT:
+*** 2014-01-12 星期日
+**** TODO 写第三章第一节[2/3] 					:LEARN:PAPER:
+***** DONE 模型的构成
+      :LOGBOOK:
+      CLOCK: [2014-01-13 周一 09:33]--[2014-01-13 周一 11:29] =>  1:56
+      :END:
+***** DONE 模型的描述
+***** TODO 要做的图
+**** TODO 技术路线图解释[0/3] 					:LEARN:PAPER:
+***** TODO 抽取路线图
+      :LOGBOOK:
+      CLOCK: [2014-01-14 周二 13:31]--[2014-01-14 周二 14:58] =>  1:27
+      CLOCK: [2014-01-13 周一 11:29]--[2014-01-13 周一 11:32] =>  0:03
+      :END:
+***** TODO 推送路线图
+***** TODO 想要做的图
+**** DONE 打球（乒乓）					    :ENTERTAIN:SPORT:
+     :LOGBOOK:
+     CLOCK: [2014-01-12 周日 18:58]--[2014-01-12 周日 20:34] =>  1:36
+     :END:
+**** DONE 配置Git Extension 2 GitHub				 :LEARN:CODE:
+     :LOGBOOK:
+     CLOCK: [2014-01-12 周日 10:30]--[2014-01-12 周日 13:43] =>  3:13
+     :END:
+*** 2014-01-13 星期一
+**** TODO 技术路线图解释					:LEARN:PAPER:
+     :LOGBOOK:
+     CLOCK: [2014-01-14 周二 09:13]--[2014-01-14 周二 11:27] =>  2:14
+     :END:
+***** TODO 抽取，推送
+*** 2014-01-14 星期二
+**** TODO latex cls 模板					:LEARN:PAPER:
+     :LOGBOOK:
+     CLOCK: [2014-01-14 周二 19:54]--[2014-01-14 周二 22:22] =>  2:28
+     :END:
+**** DONE android百度云					:ENTERTAIN:CODE:LIFE:
+*** 2014-01-15 星期三
+**** TODO 改进音乐播放器				    :OTHER:CODE:LIFE:
+     :LOGBOOK:
+     CLOCK: [2014-01-15 周三 22:30]--[2014-01-15 周三 23:57] =>  1:27
+     :END:
+**** TODO 要做的图都写好地方，要修改，都做好标记		:LEARN:PAPER:
+     SCHEDULED: <2014-01-16 周四>
+**** TODO 把现在写的东西都放到tex中。				:LEARN:PAPER:
+     SCHEDULED: <2014-01-16 周四>
+     :LOGBOOK:
+     CLOCK: [2014-01-16 周四 13:52]--[2014-01-16 周四 15:54] =>  2:02
+     CLOCK: [2014-01-16 周四 08:45]--[2014-01-16 周四 11:37] =>  2:52
+     :END:
+**** DONE 安软件						 :OTHER:LIFE:
+     :LOGBOOK:
+     CLOCK: [2014-01-15 周三 19:37]--[2014-01-15 周三 21:29] =>  1:52
+     :END:
+***** TODO 安WingIDE5.0
+***** TODO 安VS2012
+***** TODO 破解office 2013
+***** TODO 安 ArcGIS*
+**** DONE 安WIN8.1 						 :OTHER:LIFE:
+     :LOGBOOK:
+     CLOCK: [2014-01-15 周三 08:42]--[2014-01-15 周三 08:49] =>  0:07
+     :END:
+*** 2014-01-16 星期四
+**** DONE 打乒乓					    :ENTERTAIN:SPORT:
+     CLOCK: [2014-01-16 周四 15:54]--[2014-01-18 周六 09:59] => 42:05
+**** DONE vmare录制现在的实体机				:OTHER:CODE:WEB:LIFE:
+     SCHEDULED: <2014-01-16 周四>
+     :LOGBOOK:
+     CLOCK: [2014-01-16 周四 13:21]--[2014-01-16 周四 13:51] =>  0:30
+     CLOCK: [2014-01-16 周四 12:04]--[2014-01-16 周四 13:13] =>  1:09
+     :END:
+*** 2014-01-18 星期六
+**** TODO 做图							:LEARN:PAPER:
+     CLOCK: [2014-01-19 周日 21:11]--[2014-01-19 周日 22:26] =>  1:15
+     CLOCK: [2014-01-18 周六 09:59]--[2014-01-18 周六 19:23] =>  9:24
+** 2014-07 七月
+*** 2014-07-21 星期一
+**** DONE 解析出路径名
+     CLOSED: [2014-07-22 周二 12:04]
+**** TODO 问公司的号码（主号，分机号（申请信用卡））			:JOB:
+*** 2014-07-30 星期三
+**** TODO [#A] 查看locUpdate 代码				   :JOB:CODE:
+     CLOCK: [2014-07-31 周四 14:16]--[2014-07-31 周四 14:37] =>  0:21
+     CLOCK: [2014-07-31 周四 13:55]--[2014-07-31 周四 14:05] =>  0:10
+*** 2014-07-31 星期四
+**** DONE 参加path组的培训						:JOB:
+     CLOSED: [2014-07-31 周四 14:10] SCHEDULED: <2014-07-31 周四 10:00> 
+**** DONE [#B] 看完遇见未知的自己（张德芬）		      :LEARN:READING:
+     CLOSED: [2014-07-31 周四 14:10]
+* Statistic
+#+BEGIN_SRC emacs-lisp :results value
+(setq week-range (org-clock-special-range 'thisweek nil t))
+(org-clock-sum-today-by-tags nil (nth 0 week-range) (nth 1 week-range) t)
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+[-ENTERTAIN-] 18:58
+[-OTHER-] 05:55
+[-READING-] 01:29
+[-ENGLISH-] 01:52
+[-CODE-] 12:55
+[-PAPER-] 09:59
+[-FILM-] 00:19
+[-SPORT-] 04:16
+[-QQ-] 01:28
+[-LIFE-] 03:07
+#+end_example
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t
+Clock summary at [2014-01-09 周四 13:01], for week 2014-W02.
+
+| File       | Headline                               | Time    |       |       |       |      |
+|------------+----------------------------------------+---------+-------+-------+-------+------|
+|            | ALL *Total time*                       | *42:35* |       |       |       |      |
+|------------+----------------------------------------+---------+-------+-------+-------+------|
+| newgtd.org | *File time*                            | *42:35* |       |       |       |      |
+|            | 2014                                   | 42:35   |       |       |       |      |
+|            | \__ 2014-01 一月                       |         | 42:35 |       |       |      |
+|            | \_____ 2014-01-06 星期一               |         |       |  7:13 |       |      |
+|            | \________ DONE 打乒乓球                |         |       |       |  1:40 |      |
+|            | \________ DONE 模型的描述，规则        |         |       |       |  3:31 |      |
+|            | \________ 每天必做（2小时）[5/6]       |         |       |       |  2:02 |      |
+|            | \___________ DONE 读英语（30分钟）     |         |       |       |       | 0:11 |
+|            | \___________ DONE 阅读（30分钟）       |         |       |       |       | 0:43 |
+|            | \___________ DONE 做思维导图（10分钟） |         |       |       |       | 0:11 |
+|            | \___________ DONE 写日记（10分钟）     |         |       |       |       | 0:08 |
+|            | \___________ DONE 背单词（10分钟）     |         |       |       |       | 0:49 |
+|            | \_____ 2014-01-07 星期二               |         |       | 14:50 |       |      |
+|            | \________ DONE 打球                    |         |       |       |  2:36 |      |
+|            | \________ DONE 休息，聊天,找礼物       |         |       |       |  1:27 |      |
+|            | \________ DONE 洗澡，洗衣              |         |       |       |  1:46 |      |
+|            | \________ TODO 做安卓的统计功能        |         |       |       |  7:10 |      |
+|            | \________ TODO 模型的操作分类和描述    |         |       |       |  0:21 |      |
+|            | \________ 每天必做（2小时）[6/6]       |         |       |       |  1:30 |      |
+|            | \___________ DONE 阅读（30分钟）       |         |       |       |       | 0:46 |
+|            | \___________ DONE 读英语（30分钟）     |         |       |       |       | 0:11 |
+|            | \___________ DONE 做思维导图（10分钟） |         |       |       |       | 0:08 |
+|            | \___________ DONE 写日记（10分钟）     |         |       |       |       | 0:11 |
+|            | \___________ DONE 背单词（10分钟）     |         |       |       |       | 0:11 |
+|            | \___________ DONE 写总结（10分钟）     |         |       |       |       | 0:03 |
+|            | \_____ 2014-01-08 星期三               |         |       | 17:51 |       |      |
+|            | \________ DONE 看动画...               |         |       |       |  0:19 |      |
+|            | \________ DONE 打电话                  |         |       |       |  0:01 |      |
+|            | \________ TODO 做安卓的统计功能        |         |       |       | 12:55 |      |
+|            | \________ TODO 基于模型描述的数据抽取  |         |       |       |  3:42 |      |
+|            | \________ TODO 模型的操作分类和描述    |         |       |       |  0:21 |      |
+|            | \________ 每天必做（2小时）[3/6]       |         |       |       |  0:33 |      |
+|            | \___________ DONE 读英语（30分钟）     |         |       |       |       | 0:16 |
+|            | \___________ DONE 做思维导图（10分钟） |         |       |       |       | 0:10 |
+|            | \___________ DONE 写日记（10分钟）     |         |       |       |       | 0:07 |
+|            | \_____ 2014-01-09 星期四               |         |       |  2:41 |       |      |
+|            | \________ TODO 写研究背景              |         |       |       |  2:04 |      |
+|            | \________ 每天必做（2小时）[3/6]       |         |       |       |  0:37 |      |
+|            | \___________ DONE 做思维导图（10分钟） |         |       |       |       | 0:14 |
+|            | \___________ DONE 写日记（10分钟）     |         |       |       |       | 0:09 |
+|            | \___________ DONE 背单词（10分钟）     |         |       |       |       | 0:14 |
+#+END:
+
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "LEARN"
+Clock summary at [2014-01-09 周四 13:01], for week 2014-W02.
+
+| File       | Headline                               | Time    |       |      |      |      |
+|------------+----------------------------------------+---------+-------+------+------+------|
+|            | ALL *Total time*                       | *10:32* |       |      |      |      |
+|------------+----------------------------------------+---------+-------+------+------+------|
+| newgtd.org | *File time*                            | *10:32* |       |      |      |      |
+|            | 2014                                   | 10:32   |       |      |      |      |
+|            | \__ 2014-01 一月                       |         | 10:32 |      |      |      |
+|            | \_____ 2014-01-06 星期一               |         |       | 1:54 |      |      |
+|            | \________ 每天必做（2小时）[5/6]       |         |       |      | 1:54 |      |
+|            | \___________ DONE 读英语（30分钟）     |         |       |      |      | 0:11 |
+|            | \___________ DONE 阅读（30分钟）       |         |       |      |      | 0:43 |
+|            | \___________ DONE 做思维导图（10分钟） |         |       |      |      | 0:11 |
+|            | \___________ DONE 背单词（10分钟）     |         |       |      |      | 0:49 |
+|            | \_____ 2014-01-07 星期二               |         |       | 1:37 |      |      |
+|            | \________ TODO 模型的操作分类和描述    |         |       |      | 0:21 |      |
+|            | \________ 每天必做（2小时）[6/6]       |         |       |      | 1:16 |      |
+|            | \___________ DONE 阅读（30分钟）       |         |       |      |      | 0:46 |
+|            | \___________ DONE 读英语（30分钟）     |         |       |      |      | 0:11 |
+|            | \___________ DONE 做思维导图（10分钟） |         |       |      |      | 0:08 |
+|            | \___________ DONE 背单词（10分钟）     |         |       |      |      | 0:11 |
+|            | \_____ 2014-01-08 星期三               |         |       | 4:29 |      |      |
+|            | \________ TODO 基于模型描述的数据抽取  |         |       |      | 3:42 |      |
+|            | \________ TODO 模型的操作分类和描述    |         |       |      | 0:21 |      |
+|            | \________ 每天必做（2小时）[3/6]       |         |       |      | 0:26 |      |
+|            | \___________ DONE 读英语（30分钟）     |         |       |      |      | 0:16 |
+|            | \___________ DONE 做思维导图（10分钟） |         |       |      |      | 0:10 |
+|            | \_____ 2014-01-09 星期四               |         |       | 2:32 |      |      |
+|            | \________ TODO 写研究背景              |         |       |      | 2:04 |      |
+|            | \________ 每天必做（2小时）[3/6]       |         |       |      | 0:28 |      |
+|            | \___________ DONE 做思维导图（10分钟） |         |       |      |      | 0:14 |
+|            | \___________ DONE 背单词（10分钟）     |         |       |      |      | 0:14 |
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "ENTERTAIN"
+Clock summary at [2014-01-09 周四 13:01], for week 2014-W02.
+
+| File       | Headline                         | Time    |       |       |       |
+|------------+----------------------------------+---------+-------+-------+-------|
+|            | ALL *Total time*                 | *18:58* |       |       |       |
+|------------+----------------------------------+---------+-------+-------+-------|
+| newgtd.org | *File time*                      | *18:58* |       |       |       |
+|            | 2014                             | 18:58   |       |       |       |
+|            | \__ 2014-01 一月                 |         | 18:58 |       |       |
+|            | \_____ 2014-01-06 星期一         |         |       |  1:40 |       |
+|            | \________ DONE 打乒乓球          |         |       |       |  1:40 |
+|            | \_____ 2014-01-07 星期二         |         |       |  4:03 |       |
+|            | \________ DONE 打球              |         |       |       |  2:36 |
+|            | \________ DONE 休息，聊天,找礼物 |         |       |       |  1:27 |
+|            | \_____ 2014-01-08 星期三         |         |       | 13:15 |       |
+|            | \________ DONE 看动画...         |         |       |       |  0:19 |
+|            | \________ DONE 打电话            |         |       |       |  0:01 |
+|            | \________ TODO 做安卓的统计功能  |         |       |       | 12:55 |
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "JOB"
+Clock summary at [2014-01-07 周二 10:16], for week 2014-W02.
+
+| File | Headline         | Time   |
+|------+------------------+--------|
+|      | ALL *Total time* | *0:00* |
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "OTHER"
+Clock summary at [2014-01-07 周二 10:16], for week 2014-W02.
+
+| File       | Headline                           | Time   |      |      |      |      |
+|------------+------------------------------------+--------+------+------+------+------|
+|            | ALL *Total time*                   | *3:50* |      |      |      |      |
+|------------+------------------------------------+--------+------+------+------+------|
+| newgtd.org | *File time*                        | *3:50* |      |      |      |      |
+|            | 2014                               | 3:50   |      |      |      |      |
+|            | \__ 2014-01 一月                   |        | 3:50 |      |      |      |
+|            | \_____ 2014-01-06 星期一           |        |      | 3:39 |      |      |
+|            | \________ DONE 模型的描述，规则    |        |      |      | 3:31 |      |
+|            | \________ 每天必做（2小时）[5/6]   |        |      |      | 0:08 |      |
+|            | \___________ DONE 写日记（10分钟） |        |      |      |      | 0:08 |
+|            | \_____ 2014-01-07 星期二           |        |      | 0:11 |      |      |
+|            | \________ 每天必做（2小时）[4/6]   |        |      |      | 0:11 |      |
+|            | \___________ DONE 写日记（10分钟） |        |      |      |      | 0:11 |
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "READING"
+Clock summary at [2014-01-07 周二 10:16], for week 2014-W02.
+
+| File       | Headline                         | Time   |      |      |      |      |
+|------------+----------------------------------+--------+------+------+------+------|
+|            | ALL *Total time*                 | *1:29* |      |      |      |      |
+|------------+----------------------------------+--------+------+------+------+------|
+| newgtd.org | *File time*                      | *1:29* |      |      |      |      |
+|            | 2014                             | 1:29   |      |      |      |      |
+|            | \__ 2014-01 一月                 |        | 1:29 |      |      |      |
+|            | \_____ 2014-01-06 星期一         |        |      | 0:43 |      |      |
+|            | \________ 每天必做（2小时）[5/6] |        |      |      | 0:43 |      |
+|            | \___________ DONE 阅读（30分钟） |        |      |      |      | 0:43 |
+|            | \_____ 2014-01-07 星期二         |        |      | 0:46 |      |      |
+|            | \________ 每天必做（2小时）[4/6] |        |      |      | 0:46 |      |
+|            | \___________ DONE 阅读（30分钟） |        |      |      |      | 0:46 |
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "ENGLISH"
+Clock summary at [2014-01-04 周六 08:43], for week 2014-W01.
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "CODE"
+Clock summary at [2014-01-04 周六 08:43], for week 2014-W01.
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "PAPER"
+Clock summary at [2014-01-04 周六 08:43], for week 2014-W01.
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "FILM"
+Clock summary at [2014-01-04 周六 08:43], for week 2014-W01.
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "MUSIC"
+Clock summary at [2014-01-04 周六 08:43], for week 2014-W01.
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "WEB"
+Clock summary at [2014-01-04 周六 08:43], for week 2014-W01.
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "SPORT"
+Clock summary at [2014-01-07 周二 10:16], for week 2014-W02.
+
+| File       | Headline                 | Time   |      |      |      |
+|------------+--------------------------+--------+------+------+------|
+|            | ALL *Total time*         | *1:40* |      |      |      |
+|------------+--------------------------+--------+------+------+------|
+| newgtd.org | *File time*              | *1:40* |      |      |      |
+|            | 2014                     | 1:40   |      |      |      |
+|            | \__ 2014-01 一月         |        | 1:40 |      |      |
+|            | \_____ 2014-01-06 星期一 |        |      | 1:40 |      |
+|            | \________ DONE 打乒乓球  |        |      |      | 1:40 |
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "GAME"
+Clock summary at [2014-01-04 周六 08:43], for week 2014-W01.
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "QQ"
+Clock summary at [2014-01-04 周六 08:43], for week 2014-W01.
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "SHOPPING"
+Clock summary at [2014-01-04 周六 08:43], for week 2014-W01.
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "LIFE"
+Clock summary at [2014-01-04 周六 08:43], for week 2014-W01.
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "DAIRY"
+Clock summary at [2014-01-04 周六 08:43], for week 2014-W01.
+#+END:
+
+#+BEGIN: clocktable :maxlevel 5 :scope agenda-with-archives :block thisweek :fileskip0 t :indent t :tags "每周工作四小时"
+Clock summary at [2014-01-07 周二 10:16], for week 2014-W02.
+
+| File       | Headline                         | Time   |      |      |      |      |
+|------------+----------------------------------+--------+------+------+------+------|
+|            | ALL *Total time*                 | *1:29* |      |      |      |      |
+|------------+----------------------------------+--------+------+------+------+------|
+| newgtd.org | *File time*                      | *1:29* |      |      |      |      |
+|            | 2014                             | 1:29   |      |      |      |      |
+|            | \__ 2014-01 一月                 |        | 1:29 |      |      |      |
+|            | \_____ 2014-01-06 星期一         |        |      | 0:43 |      |      |
+|            | \________ 每天必做（2小时）[5/6] |        |      |      | 0:43 |      |
+|            | \___________ DONE 阅读（30分钟） |        |      |      |      | 0:43 |
+|            | \_____ 2014-01-07 星期二         |        |      | 0:46 |      |      |
+|            | \________ 每天必做（2小时）[4/6] |        |      |      | 0:46 |      |
+|            | \___________ DONE 阅读（30分钟） |        |      |      |      | 0:46 |
+#+END:
+
+
+* CHECK
+** Yearly check
+*** DONE 找到工作
+** Monthly check
+*** TODO 一段时间需要学习的内容
+**** TODO 穴道
+**** TODO 易经
+**** TODO latex
+**** TODO graphviz
+*** TODO 坚持100天的计划（早起，做运动，喝杯热水，写计划，记帐，写日记，用五笔）
+*** TODO 完成毕业论文第四，第二和第三章前部分
+** Weekly check
+*** TODO 完成毕业论文第四章
+** Daliy check
+*** APPT 《每周工作四小时》
+**** APPT 早上7：00 - 8 点：冥想+写作+目标复查+早餐
+    - 查看GTD
+    - 写作：日记
+    - 早餐：禁止吃油渣食品（牛奶+饼干+面包+粥 最好）
+**** APPT 8点到12点：四小时正式工作时间
+    - 没有电话，邮件，聊天工具，没有购物网站
+    - 只做一件事（查看GTD）
+    - 大脑累了就休息
+**** APPT 12点到1点：午饭+休息+查看上午的消息
+    - 查看上午的邮件+QQ留言
+**** APPT 下午1：30点到6点：学习+交流
+    - 讨论+约会(今天遇到的问题，怎么做的，以后要怎么做）
+    - 看书+论坛（codeplex+github...）
+    - 鲜果联播（汇集各种知识）
+**** APPT 下午6点到8点：晚饭+散步
+    - 散步：饭后不直接回实验室，去操场走走（一个人也要走走）
+**** APPT 晚上8点到9点：反省+第二天大纲
+    - 十多分钟反省（找个记录本子-反省本）
+    - 写大纲GTD（最好用纸-然后在写到emacs中去）
+**** APPT 9点到11点自由支配时间
+    - 给大脑分配任务（看算法，推导数学公式，等等）
+    - 折腾新东西
+**** APPT 11点睡觉
+ 
+*** APPT 早晨							      :@HOME:
+**** APPT [#A] 早起
+**** APPT [#A] 铺床
+**** APPT [#A] 喝一杯白开水
+**** APPT [#B] 吃善存
+**** APPT [#B] 做热身运动
+**** APPT [#B] 浏览鲜果新闻，python小组
+   :LOGBOOK:
+   CLOCK: [2013-12-20 Fri 08:59]--[2013-12-20 Fri 10:14] =>  1:15
+   :END:
+**** APPT [#B] 查看/写 当天的任务
+    :PROPERTIES:daily test
+    :ORDERED:  Daily
+    :END: 
+ 
+**** APPT [#D] 学习一个东西，就要写一个完整的读书笔记，发布博客
+**** APPT [#A] 写日记
+**** APPT [#A] 记账
+** Personal check
+*** APPT 每天都要记日记
+*** APPT 富兰克林的十三种品质
+**** APPT 节制：食不过饱，酒不过量
+***** Temperance： Eat not to dullness; drink not to elevantion
+**** APPT 缄默：避免空谈，言必对己或他人有益
+***** Silence:Speak not but what may benefit others or yourself; 
+      avoid trifling conversation
+**** APPT 秩序：放东西的地方，做事情的时间要心中有数
+***** Order：Let all your things have their places;
+      let each part of your business have its time
+**** APPT 决心：该做的一定要做，做就要做好
+***** Resolution:Resolve to perform what you ought;
+      perform without fail what you resolve
+**** APPT 节俭：对人对己有益才可用钱，绝不浪费
+***** Frugality:Make no expense but to do good to others or yourself;
+      i.e.,waste nothing
+**** APPT 勤奋：珍惜光阴，做有益之事，避免无谓之举
+***** Industry:Lose no time;be always employ'd in sth useful;
+      cut off all unneccessary actions
+**** APPT 真诚：不欺骗，有良知，为人厚道，说话实在
+***** Sincerity:Use no hurtful deceit; think innocently and justly,
+     and ,if you speak, speak accordingly
+**** APPT 正义：不做不利于人的事，不逃避自己的义务
+***** Justice:Wrong none by doing injuries,or omitting the benefits 
+     that are your duty
+**** APPT 中庸：避免走极端，容忍别人给你的伤害，认为是你应该承受之事
+***** Moderation:Avoid extreams;forbear resenting injuries so much
+     as you think they deserve
+**** APPT 整洁：保持身体，衣服和住所的整洁
+***** Cleaniness:Tolerate no uncleanliness in body,cloaths,or habitation
+**** APPT 冷静：不因小事，寻常之事，不可避免之事而慌乱
+***** Tranquility：Be not distuibed at trifles,or at accidents common or unavoidable
+**** APPT 节欲s：少行房事，除非考虑到身体健康或者延续子嗣；
+              不要房事过度，伤害身体或者损害自己或者他人的安宁与名誉
+***** Chastity:Rarely use venery but for health or offspring, never
+     to dulness,weakness,or the injury of your own or another's peace or reputation
+**** APPT 谦逊：效法耶稣和苏格拉底
+***** Humility:Imitate Jesus and Socrates			      :@HOME:
+***     
+     
+
+* Todo
+** TODO 学习五笔字根，tc快捷键
+   :LOGBOOK:
+   CLOCK: [2014-01-05 周日 14:49]--[2014-01-05 周日 16:25] =>  1:36
+   :END:
+** Todo 完成org todo refile to finish.org
+** DONE 折腾emacs latex
+   CLOSED: [2013-12-23 周一 09:43]
+   :LOGBOOK:
+   CLOCK: [2013-12-22 Sun 11:57]--[2013-12-22 Sun 12:08] =>  0:11
+   :END:
+** DONE 折腾SQL server 添加hotel数据库
+   CLOSED: [2013-12-27 周五 12:56]
+   :LOGBOOK:
+   CLOCK: [2013-12-21 Sat 10:35]--[2013-12-21 Sat 12:17] =>  1:42
+   CLOCK: [2013-12-21 Sat 09:26]--[2013-12-21 Sat 10:28] =>  1:02
+   :END:
+** DONE 折腾Python（hotel DB）					      :@HOME:
+   CLOSED: [2013-12-20 Fri 22:46]
+   :LOGBOOK:
+   CLOCK: [2013-12-20 Fri 20:34]--[2013-12-20 Fri 22:46] =>  2:12
+   :END:
+** DONE 午餐，洗澡，洗衣服。
+   CLOSED: [2013-12-20 Fri 14:02]
+   :LOGBOOK:
+   CLOCK: [2013-12-20 Fri 11:49]--[2013-12-20 Fri 13:51] =>  2:02
+   :END:
+** DONE 休息
+   CLOSED: [2013-12-19 Thu 15:58]
+   :LOGBOOK:
+   CLOCK: [2013-12-19 Thu 15:27]--[2013-12-19 Thu 15:53] =>  0:26
+   :END:
+** DONE 杨书记的谈话改为19号下午一点				    :@OFFICE:
+   CLOSED: [2013-12-19 Thu 13:40]
+   :LOGBOOK:
+   CLOCK: [2013-12-19 Thu 13:00]--[2013-12-19 Thu 13:40] =>  0:40
+   :END:
+** DONE 整理网站
+   CLOSED: [2013-12-19 Thu 11:56]
+   :LOGBOOK:
+   CLOCK: [2013-12-19 Thu 09:51]--[2013-12-19 Thu 11:56] =>  2:05
+   :END:
+** DONE 休息，听茅山道士					      :@HOME:
+   CLOSED: [2013-12-18 Wed 14:20]
+   :LOGBOOK:
+   CLOCK: [2013-12-18 Wed 13:22]--[2013-12-18 Wed 14:02] =>  0:40
+   :END:
+** DONE 整理百度云，上传资料到百度云				      :@HOME:
+   CLOSED: [2013-12-14 周六 10:43]
+
+** DONE 折腾rainlendar，包括和皮肤				      :@HOME:
+   CLOSED: [2013-12-17 Tue 21:38]
+   :LOGBOOK:
+   CLOCK: [2013-12-17 Tue 20:05]--[2013-12-17 Tue 21:38] =>  1:33
+   :END:
+** DONE cygwin是否可以package					      :@HOME:
+   CLOSED: [2013-12-16 周一 10:25]
+
+** DONE cygwin命令
+   CLOSED: [2013-12-17 Tue 21:39]
+
+** DONE 迁移win下的emacs到cygwin
+   CLOSED: [2013-12-18 Wed 14:21]
+
+** DONE 师兄要出一个表（作者，单位，关键词的表）		      :@HOME:
+   CLOSED: [2013-12-17 Tue 18:10]
+   :LOGBOOK:
+   CLOCK: [2013-12-17 Tue 15:24]--[2013-12-17 Tue 17:17] =>  1:53
+   :END:
+** DONE 完成谷歌日历生日日历的建设				      :@HOME:
+   CLOSED: [2013-12-17 Tue 10:21]
+   :LOGBOOK:
+   CLOCK: [2013-12-17 Tue 09:02]--[2013-12-17 Tue 10:21] =>  1:19
+   :END:
+** DONE 找一个手机系统，原则：流畅，省电			      :@HOME:
+   CLOSED: [2013-12-16 Mon 16:49]
+   CLOCK: [2013-12-16 Mon 14:04]--[2013-12-16 Mon 15:44] =>  1:40
+** DONE cygwin 完成ssh配置， 和手机org-mode配置			      :@HOME:
+   CLOSED: [2013-12-16 Mon 12:36] SCHEDULED: <2013-12-16 周一>
+   CLOCK: [2013-12-16 周一 10:56]--[2013-12-16 周一 10:58] =>  0:02
+** DONE 完成emacs org GTD 配置（文件配置）			      :@HOME:
+   CLOSED: [2013-12-16 Mon 12:52] DEADLINE: <2001-01-11 周四> SCHEDULED: <2022-01-10 周一>** TODO 每个org-mode命令都尝试一次
+   DEADLINE: <2038-01-11 周一> SCHEDULED: <2001-
+   CLOCK: [2013-12-16 周一 10:40]--[2013-12-16 周一 10:42] =>  0:02
+** DONE 中午回去洗衣服						      :@HOME:
+   CLOSED: [2013-12-16 Mon 16:52] DEADLINE: <2001-01-02 周二> SCHEDULED: <2001-01-12 周五>
+   CLOCK: [2013-12-16 Mon 12:37]--[2013-12-16 Mon 14:03] =>  1:26
+** DONE 17号12：30参加杨书记的谈话（地科楼进门右侧楼梯上去三楼右侧第一个办公室） :@HOME:
+   CLOSED: [2013-12-17 Tue 13:01] SCHEDULED: <2031-01-12 周日>
+   :LOGBOOK:
+   CLOCK: [2013-12-17 Tue 12:30]--[2013-12-17 Tue 13:01] =>  0:31
+   :END:
+** DONE 出门<2013-12-14 周六 11:00>				      :@HOME:
+   CLOSED: [2013-12-16 周一 10:25] DEADLINE: <2013-12-15 周日
+   CLOCK: [2013-12-16 周一 10:42]--[2013-12-16 周一 10:56] =>  0:14
+** TODO 模型定义
+   :LOGBOOK:
+   CLOCK: [2014-01-04 周六 14:11]--[2014-01-04 周六 15:00] =>  0:49
+   :END:
+** TODO 打球
+   :LOGBOOK:
+   CLOCK: [2014-01-04 周六 15:00]--[2014-01-04 周六 16:52] =>  1:52
+   :END:
+** TODO 休息
+   :LOGBOOK:
+   CLOCK: [2014-01-04 周六 16:55]--[2014-01-04 周六 16:55] =>  0:00
+   :END:
+** DONE 中午回去洗澡[0/0]					      :OTHER:
+   CLOSED: [2013-12-27 周五 12:56]
+   :LOGBOOK:
+   CLOCK: [2013-12-27 周五 11:21]--[2013-12-27 周五 12:56] =>  1:35
+   :END:
+** DONE 中午回去洗澡<2013-12-23 周一 12:00>
+   CLOSED: [2013-12-23 周一 13:26]
+   :LOGBOOK:
+   CLOCK: [2013-12-23 周一 11:33]--[2013-12-23 周一 13:26] =>  1:53
+   :END:
+* Reading
+*** TODO 奇特的一生					      :@HOME:READING:
+    :LOGBOOK:
+    CLOCK: [2013-12-17 Tue 22:16]--[2013-12-17 Tue 22:46] =>  0:30
+    CLOCK: [2013-12-17 Tue 22:08]--[2013-12-17 Tue 22:15] =>  0:07
+    CLOCK: [2013-12-16 Mon 17:09]--[2013-12-16 Mon 17:21] =>  0:12
+    :END:
+
+*** TODO 《每天工作四小时》
+*** TODO 《公正：该如何做才好》
+*** TODO 《如何阅读源代码》
+    :LOGBOOK:
+    CLOCK: [2013-12-22 周日 22:50]--[2013-12-22 周日 23:27] =>  0:37
+    :END:
+*** TODO 《Meditation for Dummies》
+* Paper
+** DONE 完成实习报告					  :@Academic:@OFFICE:
+   CLOSED: [2013-12-19 Thu 11:56]
+   <2013-12-18 Wed 13:00>
+*** DONE 构思实习报告题目
+    CLOSED: [2013-12-18 Wed 17:27]
+    :LOGBOOK:
+    CLOCK: [2013-12-18 Wed 13:03]--[2013-12-18 Wed 13:19] =>  0:16
+    :END:
+*** DONE 开始写-数据库的原理，应用与发展
+    CLOSED: [2013-12-18 Wed 23:21]
+    :LOGBOOK:
+    CLOCK: [2013-12-18 Wed 19:41]--[2013-12-18 Wed 23:21] =>  3:40
+    CLOCK: [2013-12-18 Wed 15:00]--[2013-12-18 Wed 16:00] =>  1:00
+    :END:
+** TODO 毕业论文						    :PROJECT:
+   DEADLINE: <2014-01-18 周六> SCHEDULED: <2013-12-01 周日>
+*** TODO [#A] 完成论文第四章（原型系统实现）
+    DEADLINE: <2013-12-12 周四> SCHEDULED: <2013-12-10 周二>
+**** DONE 完成ribbon界面的设计<2013-12-11 周三 10:00>
+     CLOSED: [2013-12-11 周三 21:23] DEADLINE: <2013-12-11 周三 11:00>
+**** DONE mongodb的分页显示功能
+     CLOSED: [2013-12-17 Tue 14:54]
+     :LOGBOOK:
+     CLOCK: [2013-12-17 Tue 11:06]--[2013-12-17 Tue 11:20] =>  0:14
+     :END:
+**** DONE 完成ribbon功能的（按钮事件）[1/4]<2013-12-11 周三 11:10>
+     CLOSED: [2013-12-12 周四 14:08] DEADLINE: <2013-12-11 周三 11:40>
+**** TODO 完成任务模型构建（人口迁移）<2013-12-11 周三 13:00>
+     DEADLINE: <2013-12-12 周四 12:00>
+**** DONE 完成数据库查询（前面做过）<2013-12-11 周三 14:20>
+     CLOSED: [2013-12-17 Tue 13:02] DEADLINE: <2013-12-12 周四 16:00>
+     :LOGBOOK:
+     CLOCK: [2013-12-17 Tue 10:22]--[2013-12-17 Tue 11:06] =>  0:44
+     :END:
+**** DONE 完成数据搜索界面（需要重新设计）<2013-12-11 周三 15:40>
+     CLOSED: [2013-12-19 Thu 14:21] DEADLINE: <2013-12-12 周四>
+     :LOGBOOK:
+     CLOCK: [2013-12-19 Thu 14:12]--[2013-12-19 Thu 14:21] =>  0:09
+     CLOCK: [2013-12-18 Wed 09:11]--[2013-12-18 Wed 11:26] =>  2:15
+     CLOCK: [2013-12-17 Tue 14:02]--[2013-12-17 Tue 14:54] =>  0:52
+     :END:
+**** DONE 完成矢量显示，属性表显示
+     CLOSED: [2013-12-19 Thu 19:36]
+     :LOGBOOK:
+     CLOCK: [2013-12-19 Thu 19:28]--[2013-12-19 Thu 19:36] =>  0:08
+     CLOCK: [2013-12-19 Thu 15:58]--[2013-12-19 Thu 17:30] =>  1:32
+     :END:
+**** TODO [#A] 完成数据准备, 完成模型建立, 完成界面设计, 完成图形显示. :SCHOOL:@Academic:
+     :LOGBOOK:
+     CLOCK: [2014-01-03 周五 19:19]--[2014-01-03 周五 19:20] =>  0:01
+     :END:
+**** TODO 完成空间分布图显示
+**** TODO 查找地学模型
+     :LOGBOOK:
+     CLOCK: [2013-12-27 周五 13:09]--[2013-12-27 周五 14:10] =>  1:01
+     CLOCK: [2013-12-27 周五 09:21]--[2013-12-27 周五 11:16] =>  1:55
+     :END:
+**** TODO 完成数据抽取
+     :LOGBOOK:
+     CLOCK: [2013-12-19 Thu 22:05]--[2013-12-19 Thu 22:47] =>  0:42
+     CLOCK: [2013-12-19 Thu 19:40]--[2013-12-19 Thu 21:20] =>  1:40
+     :END:
+**** TODO 查看需要做的图
+     :LOGBOOK:
+     CLOCK: [2013-12-23 周一 13:37]--[2013-12-23 周一 15:17] =>  1:40
+     CLOCK: [2013-12-23 周一 11:04]--[2013-12-23 周一 11:07] =>  0:03
+     CLOCK: [2013-12-23 周一 09:48]--[2013-12-23 周一 10:57] =>  1:09
+     :END:
+**** DONE 抽取数据的显示（shp数据，表格数据）
+     CLOSED: [2013-12-21 Sat 21:03]
+***** DONE 抽取shp显示
+      CLOSED: [2013-12-20 Fri 14:27]
+      :LOGBOOK:
+      CLOCK: [2013-12-20 Fri 10:16]--[2013-12-20 Fri 11:24] =>  1:08
+      :END:
+***** DONE 抽取表格显示
+      CLOSED: [2013-12-21 Sat 21:03]
+      :LOGBOOK:
+      CLOCK: [2013-12-21 Sat 20:44]--[2013-12-21 Sat 21:03] =>  0:19
+      :END:
+***** DONE 抽取shp + 属性数据共同显示
+      CLOSED: [2013-12-21 Sat 21:03]
+      :LOGBOOK:
+      CLOCK: [2013-12-20 Fri 14:27]--[2013-12-20 Fri 15:22] =>  0:55
+      :END:
+***** DONE 抽取shp + 表格数据显示
+      CLOSED: [2013-12-21 Sat 21:03]
+**** TODO 完成饼状图显示，直方图显示，散点图显示，雷达图显示
+     :LOGBOOK:
+     CLOCK: [2013-12-21 Sat 21:04]--[2013-12-21 Sat 22:10] =>  1:06
+     :END:
+**** DONE 完成模型构建显示（主要是与图片对应）
+     CLOSED: [2013-12-12 周四 14:45]
+**** TODO 完成模型和操作描述的XML显示（即系统实现XML的描述）<2013-12-13 周五 18:00>
+     :LOGBOOK:
+     CLOCK: [2014-01-05 周日 10:27]--[2014-01-05 周日 11:55] =>  1:28
+     CLOCK: [2013-12-22 Sun 15:03]--[2013-12-22 Sun 16:09] =>  1:06
+     :END:
+*** TODO [#B] 完善论文绪论（重新写研究背景和研究现状）
+    DEADLINE: <2013-12-16 周一> SCHEDULED: <2013-12-13 周五>
+
+
+* learning
+** reading
+** coding
+
+* Sport
+** Archive							    :ARCHIVE:
+*** DONE 打羽毛球
+    CLOSED: [2013-12-22 Sun 17:12]
+    :LOGBOOK:
+    CLOCK: [2013-12-22 Sun 16:21]--[2013-12-22 Sun 17:12] =>  0:51
+    :END:
+    :PROPERTIES:
+    :ARCHIVE_TIME: 2014-01-03 周五 18:24
+    :END:
+*** DONE 打羽毛球						      :@HOME:
+    CLOSED: [2013-12-18 Wed 17:24]
+    :LOGBOOK:
+    CLOCK: [2013-12-18 Wed 16:00]--[2013-12-18 Wed 17:26] =>  1:26
+    :END:
+    :PROPERTIES:
+    :ARCHIVE_TIME: 2014-01-03 周五 18:25
+    :END:
+* Entertainment							      :@HOME:
+** Archive							    :ARCHIVE:
+*** DONE 做运动 8:50-9:00
+    CLOSED: [2014-01-03 周五 18:24]
+    :PROPERTIES:
+    :ARCHIVE_TIME: 2014-01-03 周五 18:24
+    :END:
+** DONE 看极速风流						  :ENTERTAIN:
+   :LOGBOOK:
+   CLOCK: [2014-01-05 周日 16:44]--[2014-01-05 周日 18:03] =>  1:19
+   :END:
+
+   
+

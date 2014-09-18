@@ -1,0 +1,51 @@
+
+* 2014
+** 2014-07 七月
+*** 2014-07-07 星期一
+- 苗战东组长，给我介绍整个公司的情况
+	以前做Pioneer的，KWG项目（川越市-日本）
+		（ZONE + lite + cyber(主打项目）
+	（现在这个项目已经很少了）
+
+	现在公司：suntec（iauto）项目
+	- NaviCloud：手机端（中国）已结束
+	- iDDN ：手机端面Iphone（日本），正在进行
+	- ipro :手机Android（日本），在进行
+	- TMAP（东南亚）：快结束
+	- Cyber（日本）：这个项目还没有定下来。
+	- Post13（北美+东南亚）：八月份的样子下来。（我主要也是做这个项目）
+
+	两个采用的是不同的Framwork。
+	以前用的是KIWI数据格式，需要自己去解析
+	现在用的是：L-Format，由DSP封装好的。
+
+	代码的编写：编写规范，命名之类的。
+  
+- 确定这周要做的东西：
+	1：看完C++primer Plus （写两个小东西）
+	2：看KIWI格式介绍，解析这个数据格式。
+	3：了解整个项目的框架。
+
+- 苗战东组长又把钱（午饭的钱）打还给我了，晕。
+
+- 配置Emacs，用于 笔记 + GTD + 网页 + Python + C++。（末完成）
+*** 2014-07-08 星期二
+**** Emacs配置
+***** 配置Emacs：配置 Python + C++编程环境（末完成）
+- 其中：Python没有完成Pymacs + Pycompele
+- C++：没有完成 cedet, dev-c++ 的配置。
+
+***** 看KIWI数据格式协议书
+- 数据类型
+***** 睡觉被组长看到了，然后被叫醒了。
+
+Entered on [2014-07-08 周二 15:19]
+ 
+ [[file:c:/Jerryfive/emacs-24.2/config_red/ToDo/remember/log.org]]
+*** 2014-07-10 星期四
+**** 重装软件
+- 装机必备的软件：
+  everything, QQ, QQ download, VMWare, FireFox, JPWB, Emacs, Office, VS2008, 
+  sourceInsight, Python, foxmail
+- 
+Entered on [2014-07-10 周四 09:38]
