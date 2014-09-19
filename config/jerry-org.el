@@ -16,7 +16,7 @@
 ;;;;;   inbox, idea, movie, blog2publish, journal, clipboard, finance, book, movie, daily
 (setq org-remember-templates
    '(
-   ("New" ?n "** %^{Brief Description}  " 	"~/ToDo/remember/inbox.org" "Remember")
+   ("New" ?n "** %^{Brief Description}  " 	"~/ToDo/inbox.org" "Remember")
     )
   )
 
@@ -26,13 +26,16 @@
 	("t" "todo" entry (file+datetree "~/ToDo/newgtd.org" "TODO")
       "* TODO %^{TODO} %^g " :prepend t)
 
-	("d" "Diary" entry (file+datetree "~/ToDo/remember/diary.org")
+	("d" "Diary" entry (file+datetree "~/ToDo/diary.org")
      "* %?\nEntered on %U\n %i\n %a")
 	 
-	("l" "log" entry (file+datetree "~/ToDo/remember/log.org")
-      "* FINISH %^{FINISH} %^g " :prepend t)
+	("l" "log" entry (file+datetree "~/ToDo/log.org")
+      "* Log %^{Log } %^g " :prepend t)
+	  
+	("s" "daylife" entry (file+datetree "~/ToDo/daylife.org")
+      "* %?\nEntered on %U\n %i\n %a")
 	 
-	("q" "question" entry (file+datetree "~/ToDo/remember/question.org")
+	("q" "question" entry (file+datetree "~/ToDo/question.org")
      "* Q: %^{Question} %^g\n     A: ")
 	 )
 	 
@@ -145,11 +148,15 @@
 	
 (defun log ()
     (interactive)
-    (find-file "~/ToDo/remember/log.org"))
+    (find-file "~/ToDo/log.org"))
 	
 (defun mydiary ()
     (interactive)
-   (find-file "~/ToDo/remember/diary.org"))
+   (find-file "~/ToDo/diary.org"))
+   
+(defun wiki ()
+    (interactive)
+   (find-file "~/file/wiki.org"))
    
 (defun question ()
     (interactive)

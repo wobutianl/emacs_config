@@ -1,0 +1,26 @@
+* Tasks
+** life 看indious电影，写个emacs影评			      :entertainment:
+   - State "life"       from "TODO"       [2013-12-16 周一 10:14]
+
+Added: [2013-12-09 周一 16:59]
+** TODO 完成emacs GTD的配置					      :emacs:
+
+Added: [2013-12-16 周一 10:12]
+** TODO 中午回去洗衣服						   :personal:
+
+Added: [2013-12-16 周一 10:14]
+** TODO 八段锦+五笔						     :myself:
+
+Added: [2014-01-02 周四 09:55]
+* Remember
+** 多少距离算是on route						       :work:
+
+Added: [2014-08-01 周五 09:52]
+** GP = Guide Point , GM=GuideMain,  %^g
+%?
+Added: [2014-08-01 周五 09:54]
+** 时间以周为单位进行，生活以日为单位过着，计划以小时为单位走着
+** 对android的简化：留下必要的功能（针对导航设备而言））
+** 手机后面板作为一个GTD任务列表显示，操作在手机端
+** 把打卡功能做成一个真的卡片，脱离手机存在，但可以实现单一的打卡与联网
+** 专利：USB接口的打气，空气抱枕。			      :entertainment:

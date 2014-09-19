@@ -1,0 +1,72 @@
+digraph G {
+	compound = true;
+	
+	subgraph cluster_recv{
+		recvLocUpdate -> parseLocInfo -> sendToDataManageIF -> controlIF -> sendVehicleInfo ;
+		node[style=filled, color=white];
+		color = lightgrey;
+		style = filled;
+		label = "recvLocUpdate";
+		
+	}
+	
+	controlIF -> doUpdate [lhead = cluster_controlIF];
+	
+	subgraph cluster_DM{
+		color = lightblue;
+		label = "datamanageIF";
+		DM -> saveNewLocInfo [label="currentInfoIsNull"];
+		
+	}
+	sendToDataManageIF -> DM [lhead = cluster_DM];
+	
+	subgraph cluster_controlIF{
+		label ="contrlIF";
+		doUpdate -> getLDM -> guideIFUpdate -> guideMainLocUpdate -> controlPassCrossNotityUpdate -> dispInfoMUpdate ;
+		
+	}
+	guideIFUpdate -> doUpdateAllGuideData [lhead = cluster_guideIF];
+	guideMainLocUpdate -> locUpdate [lhead = cluster_guideMain];
+	controlPassCrossNotityUpdate -> notifyUpdate [lhead = cluster_controlPC];
+	dispInfoUpdate -> updateDispInfo [lhead = cluster_dispInfoMan];
+
+	subgraph cluster_guideIF{
+		node[style=filled, color = green];
+		color = lightgrey;
+		label = "guideIF";
+		doUpdateAllGuideData -> getCrossGroupInfo -> updateVehicle -> updatePassGroup -> renewGP -> updateCrossGroup -> updateJamFore -> addGP;
+		
+	}
+	
+	subgraph cluster_guideMain{
+		label = "guideMain";
+		node [color = red];
+		color = blue;
+		
+		locUpdate -> vehicleInfo [label="on/off"];
+		vehicleInfo -> theLastLinkOfVehicle ;
+		theLastLinkOfVehicle -> setCanGuide [label = "current loc can guide and at special status"];
+		setCanGuide -> updateDropControl [label="??"];
+		updateDropControl -> updatePCCrossControl -> updateArrivalInfo -> setFinishStatus [label="arrival at dest"];
+		
+		theLastLinkOfVehicle -> updateArrivalInfo [label=" current loc cannot guide"];
+	}
+
+	subgraph cluster_controlPC{
+		notifyUpdate -> getLDMData -> getSetDist -> getSetVelocity -> updatePCPassCrossItem;
+		node[color=cyan];
+		color=green;
+		label = "contro Pass Cross";
+		
+	}
+
+	subgraph cluster_dispInfoMan{
+		updateDispInfo -> setupDispInfo -> updateDispInfo -> draw;
+		setupDispInfo -> dispInfoBase;
+		draw -> getDrawPermit -> data2UI;
+		node[color = yellow];
+		label="dispInfoManager";
+		
+}
+
+}

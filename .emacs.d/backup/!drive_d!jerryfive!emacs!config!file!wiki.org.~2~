@@ -1,0 +1,21 @@
+#+TITLE: emacs-wiki-org
+
+首页
+
+* 个人信息
+- [[~/ownfile/softwareList.org][个人软件]]
+- [[~/ownfile/codelanguage.org][编程语言]]
+- [[~/ownfile/curriculum.org][履历]]
+
+* 读书笔记
+- [[~/file/bookslist.org][booklist]]
+* 项目文件
+- Android-Telli
+- C++-Guide
+
+* 工作Log
+- [[~/ToDo/log.org][工作Log]]
+* 个人记事DayLife
+- [[~/ToDo/daylife.org][个人记事-DayLife]]
+* GTD
+- [[~/ToDo/newgtd.org][个人GTD]]

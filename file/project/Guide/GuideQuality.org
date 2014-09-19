@@ -1,0 +1,54 @@
+#+TITLE: Guide 品质
+
+* Content
+** 起源
+- 日本方面给了一些基准的道路和诱导点要求。
+- 我们要针对他们给的基准进行测试，是不是达到了诱导要求。
+- 这个时候就会发生：他们给的起，止点生成的路，和我们生成的，不一致的问题。
+- 如何解决这个不一致带来的诱导品质不佳的问题？
+- 修改道路，去匹配日本方面给的基准道路。
+** 说明
+- 诱导点的划分：
+  - 弱点：不是很重要的点，有了最好，没有也没事。
+  - 特定点：一定要诱导的点，没有，没分，主要是一些长距离的道路
+  - 特征点：一些特殊情况的点。
+  - 差分：  还不知道？？？？？？？
+- 分数说明：
+  - 每个点都有不同的分数。特定点的最高。
+  - 每个诱导点类型，要达到相应的分数才行。
+** 一般流程
+- 去ici网站查看道路分数
+  - [[http://ici/view/2.QualityCheck/][guide品质检查]]
+- 选择分数低的道路，查看相应道路情况
+  - 会显示：我们生成的GuidePoint 与日本给的基准点不一致的情况
+- 新建Path：主要功能都在鼠标右键
+  - 去网址：[[http://172.26.11.39:8005/JP][新建Path]]
+  - 找对应的起止点：[[http://naviqc-course/UploadCourse][上传的网址]] 下有一个Detail，显示所有道路信息。
+  - 在 新建Path 的网址上设置相应的起止点，会自动生成一条Path。
+- 对比生成的Path与日本方面的基准Path的不同。
+- 去 新建Path网下，去设置起止点，设置途径地，让生成的Path与日本方面的Path相一致。
+- 从新建Path 下导出符合要求的Path 的 Json信息。
+- 替换掉已有的 Path_json下的 Path_info 信息。
+- 去上传的网址，上传替换后的Path_json   
+- 查看结果：上传网址 ->  Detail -> 对应的道路。
+
+** 完整流程
+- 获取日本方面的基准信息（这个我还不知道怎么获取的）一般是.xls文件
+- 利用脚本去获取 path_json 信息
+  - 脚本地址：\\solar\pset\group\NaviDevelop\Group\Lib\Guide\User\dongdaoguang\spec_guide_special\export_excel.py
+  - 脚本流程：
+    - 读取 Excel（基准）起， 止点信息，
+    - 通过Path URL 获取Path_info（这个不是基准Path）
+    - 通过Guide URL 获取 Guide_Info（这个不是基准Guide）
+    - 读取 Excel（基准）中的Guide_Info_base
+    - 替换 掉 Guide_Info
+    - 导出 成为 Json
+- 将得到的Json 上传到 ** 上
+  - 网址：[[http://naviqc-course/UploadCourse][Json上传网址]]
+  - 选择对应的：country -> group:/*Guide*/ -> courseType:/*基准*/ -> version:/*数据版本*/ ->..
+- 后面同一般操作
+
+** 特殊情况
+- 一般只要设置 起止点。
+- 有的要设置途径地
+- 有的实在无法确认的，就要去问组长啦。。。

@@ -1,0 +1,25 @@
+Android
+* First level
+** Second level
+*** Third level
+
+Horizontal rules
+----
+Emphasis
+*emphasis*
+**strong emphasis**
+***very strong emphasis***
+_underlined text_
+=verbatim=
+<verbatim>This tag should be </verbatim>
+a refernce[1].which is just a number 
+Footnotes:
+[1] Footnotes are diference
+
+double bars || seperate 
+single bars | separate 
+Here are more | body
+Triple bars ||| separate 
+
+
+

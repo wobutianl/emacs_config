@@ -1,0 +1,14 @@
+#+TITLE: softwareList
+
+* 电脑常用软件
+- emacs
+  - for GTD
+  - for wiki
+  - for music
+- source insight
+  - for code view
+- Vim
+  - for code view 
+
+* 手机常用软件
+- 

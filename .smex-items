@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ eval-buffer
+ emacs-wiki-find-file
  emms
- emms-random
  org-agenda
+ emms-random
  emms-pause
  gtd
- org-insert-drawer
- git-status
 )
 
 ;; ----- smex-data -----
@@ -29,14 +29,14 @@
  (git-log . 1)
  =======
  (vc-git-grep . 1)
- (eval-buffer . 10)
+ (eval-buffer . 13)
  (gdb . 2)
  (cedet-build-in-default-emacs . 1)
  (compile . 1)
  >>>>>>>
  emacs/work
  (log . 4)
- (emms . 46)
+ (emms . 48)
  (org-insert-drawer . 2)
  (xterm-mouse-mode . 2)
  (ecb-activate . 5)
@@ -46,7 +46,8 @@
  (hanoi . 1)
  (life . 1)
  (animate-birthday-present . 1)
- (emms-random . 13)
- (org-agenda . 16)
+ (emms-random . 14)
+ (org-agenda . 18)
  (emms-pause . 1)
+ (emacs-wiki-find-file . 1)
 )
