@@ -1,0 +1,22 @@
+#+TITLE: Facts and Fallacies of Software Engineering读书笔记
+
+* Facts
+** management
+- the most important factor in software work, is not the tools and techniques
+ used by the programmar ,but rather the quality of the programmers themselves
+  - 编码最重要的是人！
+- The best programmers are up to 28 times better than the worst programmers, according to "individual differences" research. Given that their pay is never commensurate, they are the biggest bargains in the software field.
+  - 好，坏程序员差距28倍
+- Adding people to a late project makes it later.
+  - 在项目结束时加新人，会推迟项目
+- Hype is the plague on the house of software. Most software tool and technique improvements account for about a 5 to 35 percent increase in productivity and quality. But at one time or another, most of those same improvements have been claimed by someone to have "order of magnitude" benefits.
+  - 工具和技术可能有25%的效率提升，但不可能数量级的提升。
+- 
+
+** about the life
+** quality
+** research
+* Fallacies
+** management
+** about the life
+** education

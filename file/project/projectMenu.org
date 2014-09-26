@@ -1,6 +1,11 @@
 #+TITLE: project menu 项目列表
+[[~/file/wiki.org][首页]]
 
 * Android
-- Telli
+- [[~/file/project/Android/summary-v0.2.org][Telli项目总结]]
+- [[~/file/project/Android/Telli_v3.org][Telli说明文档]]
+- 
 * Guide
 - Guide
+  - [[~/file/project/Guide/GuideQuality.org][Guide品质]]
+  - 

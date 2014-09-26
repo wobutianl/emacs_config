@@ -1,5 +1,6 @@
 #+TITLE: codeLanguage
 
+[[~/file/wiki.org][首页]]
 * 使用范围
 - 工作
 - 文本处理

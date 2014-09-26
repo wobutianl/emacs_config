@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="gbk"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Facts and Fallacies of Software Engineering读书笔记</title>
+<meta http-equiv="Content-Type" content="text/html;charset=gbk"/>
+<meta name="title" content="Facts and Fallacies of Software Engineering读书笔记"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2014-09-24T10:59+0800"/>
+<meta name="author" content="zhuxiaolin"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">Facts and Fallacies of Software Engineering读书笔记</h1>
+
+<p>这本书大体介绍下，就是现在争论比较多的一些软件开发的原则。
+</p>
+<p>
+一些是事实的，一些是谬误的。
+</p>
+<p>
+只有做过开发的才比较清楚。现在学一学，对自己有一定的好处，尤其是在工具，技术，等的理解上。
+</p>
+<p>
+所有的一切到最后都是归结为：人。
+</p>
+<p>
+人才是软件的创造，理解，使用者。软件是为人所服务的。
+</p>
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Facts</a>
+<ul>
+<li><a href="#sec-1-1">1.1 management</a></li>
+<li><a href="#sec-1-2">1.2 about the life</a></li>
+<li><a href="#sec-1-3">1.3 quality</a></li>
+<li><a href="#sec-1-4">1.4 research</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 Fallacies（这里都是错误的想法）</a>
+<ul>
+<li><a href="#sec-2-1">2.1 management</a></li>
+<li><a href="#sec-2-2">2.2 about the life</a></li>
+<li><a href="#sec-2-3">2.3 education</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Facts</h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> management</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<ul>
+<li>the most important factor in software work, is not the tools and techniques
+ used by the programmar ,but rather the quality of the programmers themselves
+<ul>
+<li>编码最重要的是人！
+</li>
+</ul>
+
+</li>
+<li>The best programmers are up to 28 times better than the worst programmers, according to "individual differences" research. Given that their pay is never commensurate, they are the biggest bargains in the software field.
+<ul>
+<li>好，坏程序员差距28倍
+</li>
+</ul>
+
+</li>
+<li>Adding people to a late project makes it later.
+<ul>
+<li>在项目结束时加新人，会推迟项目
+</li>
+</ul>
+
+</li>
+<li>Hype is the plague on the house of software. Most software tool and technique improvements account for about a 5 to 35 percent increase in productivity and quality. But at one time or another, most of those same improvements have been claimed by someone to have "order of magnitude" benefits.
+<ul>
+<li>工具和技术可能有25%的效率提升，但不可能数量级的提升。
+</li>
+</ul>
+
+</li>
+<li>Learning a new tool or technique actually lowers programmer productivity and product quality initially. The eventual benefit is achieved only after this learning curve is overcome. Therefore, it is worth adopting new tools and techniques, but only (a) if their value is seen realistically and (b) if patience is used in measuring benefits.
+<ul>
+<li>工具真正有用是在度过了学习曲线之后。
+</li>
+</ul>
+
+</li>
+<li>Software developers talk a lot about tools. They evaluate quite a few, buy a fair number, and use practically none.
+<ul>
+<li>工具说多了没用，要真正使用
+</li>
+</ul>
+
+</li>
+<li>One of the two most common causes of runaway projects is poor estimation.
+<ul>
+<li>程序失控通常因为：不良的估计。
+</li>
+</ul>
+
+</li>
+<li>Most software estimates are performed at the beginning of the life cycle. This makes sense until we realize that estimates are obtained before the requirements are defined and thus before the problem is understood. Estimation, therefore, usually occurs at the wrong time.
+<ul>
+<li>要在项目开始后估计时间。
+</li>
+</ul>
+
+</li>
+<li>Software estimates are rarely adjusted as the project proceeds. Thus those estimates done at the wrong time by the wrong people are usually not corrected.
+<ul>
+<li>项目时长被错误的人估计
+</li>
+</ul>
+
+</li>
+<li>Since estimates are so faulty, there is little reason to be concerned when software projects do not meet estimated targets. But everyone is concerned anyway.
+<ul>
+<li>
+</li>
+</ul>
+
+</li>
+<li>There is a disconnect between management and their programmers. In one research study of a project that failed to meet its estimates and was seen by its management as a failure, the technical participants saw it as the most successful project they had ever worked on.
+<ul>
+<li>管理者与程序员缺少沟通
+</li>
+</ul>
+
+</li>
+<li>Reuse-in-the-small (libraries of subroutines) began nearly 50 years ago and is a well-solved problem.
+<ul>
+<li>库的程序在50年前就开始了。
+</li>
+</ul>
+
+</li>
+<li>Reuse-in-the-large (components) remains a mostly unsolved problem, even though everyone agrees it is important and desirable.
+<ul>
+<li>组件式重用，每个人都同意，但很难做到
+</li>
+</ul>
+
+</li>
+<li>Reuse-in-the-large works best in families of related systems and thus is domain-dependent. This narrows the potential applicability of reuse-in-the-large.
+<ul>
+<li>组件重用，因其家庭特性，减少了可重用性
+</li>
+</ul>
+
+</li>
+<li>There are two "rules of three" in reuse: (a) It is three times as difficult to build reusable components as single use components, and (b) a reusable component should be tried out in three different applications before it will be sufficiently general to accept into a reuse library.
+<ul>
+<li>重用要花三倍时间，组件要适应于三种应用。
+</li>
+</ul>
+
+</li>
+<li>Modification of reused code is particularly error-prone. If more than 20 to 25 percent of a component is to be revised, it is more efficient and effective to rewrite it from scratch.
+<ul>
+<li>有25%的重用代码修改，就重写代码吧。
+</li>
+</ul>
+
+</li>
+<li>Design pattern reuse is one solution to the problems inherent in code reuse.
+<ul>
+<li>设计模式是不重用的好方法
+</li>
+</ul>
+
+</li>
+<li>For every 25 percent increase in problem complexity, there is a 100 percent increase in complexity of the software solution. That's not a condition to try to change (even though reducing complexity is always a desirable thing to do); that's just the way it is.
+<ul>
+<li>25%的问题复杂，100%的项目复杂
+</li>
+</ul>
+
+</li>
+<li>Eighty percent of software work is intellectual. A fair amount of it is creative. Little of it is clerical.
+<ul>
+<li>软件工作是智力工作
+</li>
+</ul>
+
+</li>
+<li>
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> about the life</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<ol>
+<li>One of the two most common causes of runaway projects is unstable requirements.
+<ol>
+<li>失控的项目原因之一是：变动的需求
+</li>
+</ol>
+
+</li>
+<li>Requirements errors are the most expensive to fix when found during production but the cheapest to fix early in development.
+<ol>
+<li>需求错误应该尽量在开发早期解决
+</li>
+</ol>
+
+</li>
+<li>Missing requirements are the hardest requirements errors to correct.
+<ol>
+<li>没有需求是最大的需求
+</li>
+</ol>
+
+</li>
+<li>When moving from requirements to design, there is an explosion of "derived requirements" (the requirements for a particular design solution) caused by the complexity of the solution process. The list of these design requirements is often 50 times longer than the list of original requirements.
+<ol>
+<li>设计需求文档是原始需求的50倍厚
+</li>
+</ol>
+
+</li>
+<li>There is seldom one best design solution to a software problem
+<ol>
+<li>很少有一个最佳的软件问题解决方案
+</li>
+</ol>
+
+</li>
+<li>Design is a complex, iterative process. The initial design solution will likely be wrong and certainly not optimal
+<ol>
+<li>设计是一个复杂，迭代的过程
+</li>
+</ol>
+
+</li>
+<li>Programmers shift from design to coding when the problem is decomposed to a level of "primitives" that the designer has mastered. If the coder is not the same person as the designer, the designer's primitives are unlikely to match the coder's primitives, and trouble will result.
+<ol>
+<li>设计师 ！= 编码者，会产生理解上的问题
+</li>
+</ol>
+
+</li>
+<li>Error removal is the most time-consuming phase of the life cycle.
+<ol>
+<li>错误排除是最费时间的。
+</li>
+</ol>
+
+</li>
+<li>Software that a typical programmer believes to be thoroughly tested has often had only about 55 to 60 percent of its logic paths executed. Using automated support, such as coverage analyzers, can raise that roughly to 85 to 90 percent. It is nearly impossible to test software at the level of 100 percent of its logic paths.
+<ol>
+<li>不可能100%的测试
+</li>
+</ol>
+
+</li>
+<li>Even if 100 percent test coverage were possible, that is not a sufficient criterion for testing. Roughly 35 percent of software defects emerge from missing logic paths, and another 40 percent from the execution of a unique combination of logic paths. They will not be caught by 100 percent coverage.
+<ol>
+<li>
+</li>
+</ol>
+
+</li>
+<li>It is nearly impossible to do a good job of error removal without tools. Debuggers are commonly used, but others, such as coverage analyzers, are not.
+<ol>
+<li>测试需要工具。
+</li>
+</ol>
+
+</li>
+<li>Test automation rarely is. That is, certain testing processes can and should be automated. But there is a lot of the testing activity that cannot be automated.
+<ol>
+<li>自动化测试其实很少的。
+</li>
+</ol>
+
+</li>
+<li>Programmer-created built-in debug code, preferably optionally included in the object code based on compiler parameters, is an important supplement to testing tools.
+<ol>
+<li>coder测试的时候最好加入编译器参数调试
+</li>
+</ol>
+
+</li>
+<li>Rigorous inspections can remove up to 90 percent of errors from a software product before the first test case is run
+<ol>
+<li>严格的检查可以移除90%的错误
+</li>
+</ol>
+
+</li>
+<li>In spite of the benefits of rigorous inspections, they cannot and should not replace testing
+<ol>
+<li>检查不能，也不应该代替测试
+</li>
+</ol>
+
+</li>
+<li>Postdelivery reviews (some call them "retrospectives") are generally acknowledged to be important, both from the point of view of determining customer satisfaction and from the point of view of process improvement. But most organizations do not do postdelivery reviews.
+<ol>
+<li>postDelivery review 不仅能提高用户满意度，也可以提高软件的工艺水准
+</li>
+</ol>
+
+</li>
+<li>Peer reviews are both technical and sociological. Paying attention to one without the other is a recipe for disaster
+<ol>
+<li>同行评审很重要
+</li>
+</ol>
+
+</li>
+<li>Maintenance typically consumes 40 to 80 percent (average, 60 percent) of software costs. Therefore, it is probably the most important life cycle phase of software
+<ol>
+<li>维护占软件开发费用的40% - 80%
+</li>
+</ol>
+
+</li>
+<li>Enhancement is responsible for roughly 60 percent of software maintenance costs. Error correction is roughly 17 percent. Therefore, software maintenance is largely about adding new capability to old software, not fixing it.
+<ol>
+<li>维护主要是添加新功能，而不是修复它
+</li>
+</ol>
+
+</li>
+<li>Maintenance is a solution, not a problem.
+<ol>
+<li>维护是一个解决方案不是一个问题
+</li>
+</ol>
+
+</li>
+<li>In examining the tasks of software development versus software maintenance, most of the tasks are the same梕xcept for the additional maintenance task of "understanding the existing product." This task consumes roughly 30 percent of the total maintenance time and is the dominant maintenance activity. Thus it is possible to claim that maintenance is a more difficult task than development.
+<ol>
+<li>维护需要理解产品，因此维护比开发任务更艰巨
+</li>
+</ol>
+
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> quality</h3>
+<div class="outline-text-3" id="text-1-3">
+
+<ol>
+<li>Quality is a collection of attributes.
+<ol>
+<li>软件质量是属性的集合（七个属性：可扩展，可移植。。）
+</li>
+</ol>
+
+</li>
+<li>Quality is not user satisfaction, meeting requirements, meeting cost and schedule targets, or reliability.
+<ol>
+<li>质量 ！= 会议要求 + 需求提供 + 合适的花费
+</li>
+</ol>
+
+</li>
+<li>There are errors that most programmers tend to make.
+<ol>
+<li>每个程序员都会犯错
+</li>
+</ol>
+
+</li>
+<li>Errors tend to cluster.
+<ol>
+<li>错误会集聚
+</li>
+</ol>
+
+</li>
+<li>There is no single best approach to software error removal.
+<ol>
+<li>没有单一的错误排除方法
+</li>
+</ol>
+
+</li>
+<li>Residual errors will always persist. The goal should be to minimize or eliminate severe errors.
+<ol>
+<li>总会有错误，应该尽量消除严重错误。
+</li>
+</ol>
+
+</li>
+<li>Efficiency stems more from good design than from good coding.
+<ol>
+<li>高效起源于好的设计，而不是好的Code
+</li>
+</ol>
+
+</li>
+<li>High-order language (HOL) code, with appropriate compiler optimizations, can be about 90 percent as efficient as the comparable assembler code. Or even higher, for some complex modern architectures.
+<ol>
+<li>
+</li>
+</ol>
+
+</li>
+<li>There are tradeoffs between size and time optimization. Often, improving one degrades the other
+<ol>
+<li>大软件大小和时效上取舍。
+</li>
+</ol>
+
+</li>
+</ol>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> research</h3>
+<div class="outline-text-3" id="text-1-4">
+
+<ol>
+<li>Many software researchers advocate rather than investigate. As a result, (a) some advocated concepts are worth far less than their advocates believe, and (b) there is a shortage of evaluative research to help determine what the value of such concepts really is.
+<ol>
+<li>有调查才有发言权，提倡的方法，往往没那么好用。
+</li>
+</ol>
+
+</li>
+</ol>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Fallacies（这里都是错误的想法）</h2>
+<div class="outline-text-2" id="text-2">
+
+
+</div>
+
+<div id="outline-container-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> management</h3>
+<div class="outline-text-3" id="text-2-1">
+
+<ol>
+<li>You can't manage what you can't measure.
+<ol>
+<li>不能量测的项目不能管理。
+</li>
+</ol>
+
+</li>
+<li>You can manage quality into a software product.
+<ol>
+<li>能管理项目的质量
+</li>
+</ol>
+
+</li>
+<li>Programming can and should be egoless.
+<ol>
+<li>编程应该是无私的。
+</li>
+</ol>
+
+</li>
+<li>Tools and techniques: one size fits all.
+<ol>
+<li>工具和技术，一刀切
+</li>
+</ol>
+
+</li>
+<li>Software needs more methodologies
+<ol>
+<li>软件应该采用更多的方法
+</li>
+</ol>
+
+</li>
+<li>To estimate cost and schedule, first estimate lines of code.
+<ol>
+<li>用代码行数去估计花费和计划
+</li>
+</ol>
+
+</li>
+</ol>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> about the life</h3>
+<div class="outline-text-3" id="text-2-2">
+
+<ol>
+<li>Random test input is a good way to optimize testing.
+<ol>
+<li>随机测试是一个优化测试的好方法
+</li>
+</ol>
+
+</li>
+<li>"Given enough eyeballs, all bugs are shallow."
+<ol>
+<li>所有Bug都能测出来
+</li>
+</ol>
+
+</li>
+<li>The way to predict future maintenance costs and to make product replacement decisions is to look at past cost data
+<ol>
+<li>通过过去的成本数据，去估计现在的维护成本
+</li>
+</ol>
+
+</li>
+</ol>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> education</h3>
+<div class="outline-text-3" id="text-2-3">
+
+<ol>
+<li>You teach people how to program by showing them how to write programs.
+<ol>
+<li>通过写代码教别人编程。
+</li>
+</ol>
+
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2014-09-24T10:59+0800</p>
+<p class="author">Author: zhuxiaolin</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>

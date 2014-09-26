@@ -1,4 +1,72 @@
-Arvin推荐书目：《拆掉思维里的墙》
+#+TITLE: 书列表
+
+[[~/file/wiki.org][首页]]
+
+| 书名                                             | 作者            | 类型   | 原文 | 完成度 | 评论                 |
+|--------------------------------------------------+-----------------+--------+------+--------+----------------------|
+|                                                  |                 |        |      |        |                      |
+| conceptual blockbusting : a guide to better idea | Jams L Adam     | 计算机 |      |   100% | [[~/file/book/computer/conceptual_blockbusting.org][突破思维的限定]]       |
+| 遇见未知的自己                                   |                 | 成功学 |      |   100% | [[C:\Jerryfive\emacs-24.3\config_red\file\meetMyself.org][meetMyself]]           |
+| 软件开发者路线图-从学徒到高手                    |                 | 计算机 |      |   100% | [[~/file/book/computer/软件开发者路线图.org][软件开发者路线图]]     |
+| Facts and Fallacies of Software Engineering      | Robert L. Glass | 计算机 |      |   100% | [[~/file/book/computer/Facts and Fallacies of Software Engineering.org][软件开发的事实和谬误]] |
+| code complete                                    | steve mcConnel  | 计算机 |      |        |                      |
+|                                                  |                 |        |      |        |                      | 
+
+  
+* 要读的书
+- 《双螺旋线》
+* 计算机
+** 编程
+*** 阶段
+- 入门
+  - conceptual blockbusting : a guide to better idea 
+  - Programming Perals 
+  - facts and fallacies of software engineering 
+  - software project survival guide 
+  - Code complete
+
+- 中级：
+  - software configuration management patterns:effective teamwork 
+  - UML distilled:a brief guide to the standard object modeling language
+  - testing computer software
+  - applying UML  and patterns 
+  - rapid development 
+  - software requirements 
+
+高级
+software architecture in practice
+refactoring improving the design of existing code
+design patterns
+principles of software engineering management
+writing solid code - 
+*** 其他相关
+- progmatic programmer
+- programmer perls
+- extreme programmer explained:embrace change 
+- the practice of programming 
+- programmers at work 
+
+- facts and fallacies of software engineering 
+- the psychology of computer programming
+- 程序开发心理学
+- the mythical man-month 
+- peopleWare 
+
+- software creativity (人件）
+
+- software engineering a practitioner's approach
+
+- ACM computer reviews 
+- Construx 软件开发阶梯
+
+- Magazines 
+  - software development 
+  - Dr.Dobb's  journal
+  - IEEE software 
+  - IEEE computer
+  - communication of the acm
+* 思维类快餐书：
+《拆掉思维里的墙》
 《14堂人生创意课》
 《遇见未知的自己》 #+include : [[C:\Jerryfive\emacs-24.3\config_red\file\meetMyself.org][meetMyself]]
 《幸福的方法》

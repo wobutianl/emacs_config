@@ -3,13 +3,16 @@
    - State "life"       from "TODO"       [2013-12-16 周一 10:14]
 
 Added: [2013-12-09 周一 16:59]
-** TODO 完成emacs GTD的配置					      :emacs:
+** DONE 完成emacs GTD的配置					      :emacs:
+   - State "DONE"       from "TODO"       [2014-09-22 周一 09:28]
 
 Added: [2013-12-16 周一 10:12]
-** TODO 中午回去洗衣服						   :personal:
+** DONE 中午回去洗衣服						   :personal:
+   - State "DONE"       from "TODO"       [2014-09-22 周一 09:28]
 
 Added: [2013-12-16 周一 10:14]
-** TODO 八段锦+五笔						     :myself:
+** DONE 八段锦+五笔						     :myself:
+   - State "DONE"       from "TODO"       [2014-09-22 周一 09:28]
 
 Added: [2014-01-02 周四 09:55]
 * Remember

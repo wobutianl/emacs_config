@@ -1,1 +1,16 @@
 #+TITLE: DayLife
+[[~/file/wiki.org][首页]]
+
+
+* 2014
+** 2014-09 九月
+*** 2014-09-22 星期一
+**** 买了一个Gunnar眼镜（MLG）（314元）感觉还不错。
+Entered on [2014-09-22 周一 11:10]
+ 
+ [[file:d:/jerryfive/emacs/config/file/project/projectMenu.org::*Android][Android]]
+*** 2014-09-25 星期四
+**** 买了一个眼镜盒，但是小了。因为本身不贵，所以不想退了。
+Entered on [2014-09-25 周四 11:36]
+ 
+ [[file:d:/jerryfive/emacs/config/ToDo/newgtd.org::*Guide%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A][Guide代码注释]]
