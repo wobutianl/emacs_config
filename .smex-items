@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- emms-random
- emms
  wiki
- emms-pause
  org-agenda
+ emms
+ send-invisible
+ emms-random
+ emms-pause
  emms-start
- gtd
 )
 
 ;; ----- smex-data -----
@@ -36,7 +36,7 @@
  >>>>>>>
  emacs/work
  (log . 4)
- (emms . 56)
+ (emms . 59)
  (org-insert-drawer . 2)
  (xterm-mouse-mode . 2)
  (ecb-activate . 5)
@@ -47,7 +47,7 @@
  (life . 1)
  (animate-birthday-present . 1)
  (emms-random . 16)
- (org-agenda . 19)
+ (org-agenda . 22)
  (emms-pause . 3)
  (emacs-wiki-find-file . 1)
  (emms-add-file . 1)
@@ -55,6 +55,7 @@
  (dired . 1)
  (delete-pair . 1)
  (recentf-mode . 1)
- (wiki . 6)
+ (wiki . 10)
  (emms-start . 1)
+ (send-invisible . 1)
 )
