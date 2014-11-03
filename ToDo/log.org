@@ -719,4 +719,80 @@ $make clean
   - check three bugs
   - write an android task
   
-- enjoy my National Day 
+- enjoy my National Day
+** 2014-10 十月
+*** 2014-10-16 星期四
+**** Log 连接PostGreSQL服务器						:stc:
+- postgreSQL
+- 添加服务器
+  - 主机：172.26.179.194
+  - 名字：随便
+  - 端口：5432
+  - 用户名：postgres
+  - 密码：postgres
+- 利用QGIS连接PostGreSQL
+  - 同上
+  - 数据库：选择PostGre中的一个。
+*** 2014-10-21 星期二
+**** Log 连接测试机，DDN项目（Android）					:stc:
+- 启动adb shell
+  - // 必须按顺序输入以下命令
+  - adb kill-server
+  - sudo adb start-server
+  - adb devices
+  - adb shell
+
+- 获取截图
+  - 在其他终端输入：
+  - adb pull /data/capture/截图名
+
+- 将lib拷贝到设备上
+  - cd ~/Tmap/prebuilt/navi/target_linux_generic/lib
+  - adb remount
+  - adb push libGuide-navi.so system/usr/lib
+
+- 重新启动navi进程
+  - emmcwp -t 0
+  - mount -o remount /dev/block/mmcblk0p1 /system
+  - mount -o remount /dev/block/mmcblk0p2 /android
+  -  
+  - cd ~/Tmap/prebuilt/navi/target_linux_generic/lib
+  - adb remount
+  - adb push libGuide-navi.so system/usr/lib
+  -  
+  - ps | grep navi
+  - mv /usr/bin/navimain-navi /usr/bin/navi
+  - ps | grep navi
+  - kill -9 2516 // 2516是navimain-navi的进程号
+  - navi&
+*** 2014-10-22 星期三
+**** Log 追加git分支							:stc:
+对需要提交的git仓库追加remote
+git remote add <name> <url> // <name>为remote名，自己定义
+git remote add develop ssh://igerrit.storm:29418/Src/nutshell/develop/framework/navi/guide/guide
+
+对追加remote进行pull动作
+git pull <remote>
+git pull develop
+
+创建并切换到develop分支:
+git checkout -b <name> <remote/branch>
+git checkout -b develop develop/nutshell/develop
+
+查看已有的分支
+cat .git/config
+git branch
+*** 2014-10-27 星期一
+**** Log 代码阅读（自己初期想法）					:stc:
+- 还没有真的看完过代码，就这几天看代码的想法，做一下总结。
+  - 先要知道这个软件是做什么用的，或者这个库是做什么的。
+  - 理清代码的文件夹的含义（每个文件夹的含义）
+  - 查看头文件，画类之间的UML关系（类关系图）
+  - 跑Debug，根据软件的主数据结构，跑每一个数据的运行过程（时序图）
+- 一个软件的组成部分通常有：
+  - 对外的接口（主要是接收和发送数据）
+  - 内部的过程控制（开启，运行，等等）
+  - 数据结构
+  - 数据的处理
+  - 数据的控制
+**** Log 换小组了（from:Guide To：DSP）					:stc:

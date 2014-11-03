@@ -1,0 +1,283 @@
+// $Id: mid.dot, 10-29-2014
+digraph mid_Struct {
+    node [shape=record fontsize=12 fontname=Courier style=filled];
+    edge[color=blue];
+    rankdir=LR;
+
+    graph [
+	   rankdir = "LR"
+	   ];
+    node [
+	  fontsize = "16"
+	  shape = "ellipse"
+	  ];
+    edge [
+	  ];
+
+
+
+   "mid_feat_key" [
+	  label = "Mid_feat_key| {PK |<feat_key> feat_key}|<feat_type> feat_type|org_id1| org_id2|CONSTRAINT"
+	  shape = "record"
+	  ];
+
+   "mid_abbr_word" [
+	  label = "mid_abbr_word| <type> type|<lang> language|<abbr> abbr| full_n"
+	  shape = "record"
+	  ];
+      "mid_full_area" [
+	  label = "Mid_full_area| <min_lon> min_lon|<min_lat> min_lat|<max_lon> max_lon| <max_lat> max_lat"
+	  shape = "record"
+	  ];
+      "mid_country_profile" [
+	  label = "Mid_country_profile| <iso> iso|<off_lang> off_lang|<key> key| <type> type"
+	  shape = "record"
+	  ];
+      "mid_place" [
+	  label = "Mid_place|{PK| <key> key}|<type> type|<class> class"
+	  shape = "record"
+	  ];
+      "mid_place_admin" [
+	  label = "Mid_place_admin|{PK| <key> key}|<type> type| <a0> a0| <a1> a1.."
+	  shape = "record"
+	  ];
+ //////////////////////////////////////////////////////////////////////////
+      
+      "mid_postcode" [
+	  label = "Mid_postcode| <key> key|<type> type| <iso> iso| <sub> sub| <pocode> pocode"
+	  shape = "record"
+	  ];
+      "mid_poi_category" [
+	  label = "Mid_poi_category| <per_code> per_code|<gen1> gen1| <gen2> gen2| <gen3> gen3| <level>level | <imp> important| <name> name| <tr_name> tr_name"
+	  shape = "record"
+	  ];
+      "mid_poi" [
+	  label = "Mid_poi| <key> key|<type> type|<gen_code> gen_code| <imp> important"
+	  shape = "record"
+	  ];
+      "mid_poi_attr_value" [
+	  label = "Mid_poi_attr_value| <key> key|<type> type| <attr_type> attr_type | <attr_value> attr_value"
+	  shape = "record"
+	  ];
+      "mid_poi_address" [
+	  label = "Mid_poi_address| <key> key|<type> type| <lang> lang| <name> name"
+	  shape = "record"
+	  ];
+      "mid_poi_children" [
+	  label = "Mid_poi_children| <parent_key> parent_key|<child_type> child_type"
+	  shape = "record"
+	  ];
+ //////////////////////////////////////////////////////////////////////
+
+      "mid_link" [
+	  label = "Mid_link| <key> key|<type> type"
+	  shape = "record"
+	  ];
+      "mid_link_road" [
+	  label = "Mid_link_road| <key> key|<type> type| <id> id| <langcode> langcode| <name>name"
+	  shape = "record"
+	  ];
+      "mid_place_road(mmi)" [
+	  label = "Mid_place_road(mmi)| <pkey> pkey|<ptype> ptype|<id> id|<lang>lang| <name> name"
+	  shape = "record"
+	  ];
+      "mid_address_range" [
+	  label = "Mid_address_range| <id> id|<side> side| <scheme> scheme|<first>first| <last> last"
+	  shape = "record"
+	  ];
+      "mid_address_point" [
+	  label = "Mid_address_point| <id> id|<side> side| <num> num| <x> x| <y> y| <entry_x> entry_x| <entry_y> entry_y"
+	  shape = "record"
+	  ];
+      "mid_bldg_point(mmi)" [
+	  label = "Mid_bldg_point(mmi)| <pkey> pkey|<ptype> ptype| <id> id| <lkey> lkey | <ltype> ltype| <side> side"
+	  shape = "record"
+	  ];
+////////////////////////////////////////////////////////////////////
+
+
+      "mid_street_name" [
+	  label = "Mid_street_name| <id> id| <langcode> langcode | <name> name| <tr_lang> tr_lang | <tr_name> tr_name | <ph_lang> ph_lang| <ph_name> ph_name"
+	  shape = "record"
+	  ];
+ 
+      "mid_poi_name" [
+	  label = "Mid_poi_name | <id> id| <langcode> langcode | <name> name| <tr_lang> tr_lang | <tr_name> tr_name | <ph_lang> ph_lang| <ph_name> ph_name"
+	  shape = "record"
+	  ];
+
+      "mid_street_geometry" [
+	  label = "Mid_street_geometry| <id> id|<type> type|<geom> geom"
+	  shape = "record"
+	  ];
+
+
+      "mid_poi_geometry" [
+	  label = "Mid_poi_geometry| <id> id|<type> type|<geom> geom"
+	  shape = "record"
+	  ];
+
+	  
+      "mid_feature_to_feature" [
+	  label = "Mid_feature_to_feature| <fkey> fkey| <ftype> ftype | <code> code | <tkey> tkey | <ttype> ttype"
+	  shape = "record"
+	  ];
+ //////////////////////////////////////////////////////////////////
+      
+      "mid_street_to_name" [
+	  label = "Mid_street_to_name|<key>key|<type>type|<nametype>nametype|<nameid>nameid"
+	  shape = "record"
+	  ];
+      "mid_street_to_geometry" [
+	  label = "Mid_street_to_geometry| <key> key|<type> type | <code> code | <geomid> geomid"
+	  shape = "record"
+	  ];
+
+      "mid_poi_to_name" [
+	  label = "Mid_poi_to_name| <key> key|<type> type|<nametype> nametype| <nameid> nameid"
+	  shape = "record"
+	  ];
+	  
+
+      "mid_poi_to_geometry" [
+	  label = "Mid_poi_to_geometry| <key> key|<type> type|<nametype> nametype| <nameid> nameid"
+	  shape = "record"
+	  ];
+	  	  
+      "temp_street_name" [
+	  label = "temp_street_name| <gid> gid| <key> key|<type> type| <nametype> nametype | <langcode> langcode| <name> name| <tr_lang> tr_lang | <tr_name> tr_name | <ph_lang> phlang| <ph_name> ph_name"
+	  shape = "record"
+	  ];
+      "temp_street_name_gen_id" [
+	  label = "temp_street_name_gen_id| <gid> gid|<nameid> nameid"
+	  shape = "record"
+	  ];
+  /////////////////////////////////////////////////////////////////////
+      
+      "temp_street_geom" [
+	  label = "temp_street_geom| <gid> gid| <key> key|<type> type| <code> code | <geotype> geotype| <geom> geom"
+	  shape = "record"
+	  ];
+      	  
+      "temp_street_geom_gen_id" [
+	  label = "temp_street_geom_gen_id| <gid> gid|<nameid> nameid"
+	  shape = "record"
+	  ];
+      
+	  "temp_poi_name" [
+	  label = "temp_poi_name| <gid> gid| <key> key|<type> type| <nametype> nametype | <langcode> langcode| <name> name| <tr_lang> tr_lang | <tr_name> tr_name | <ph_lang> phlang| <ph_name> ph_name"
+	  shape = "record"
+	  ];
+
+	  "temp_poi_name_gen_id" [
+	  label = "temp_street_poi_gen_id| <gid> gid|<nameid> nameid"
+	  shape = "record"
+	  ];
+		
+	  "temp_poi_geom" [
+	  label = "temp_poi_geom| <gid> gid| <key> key|<type> type|<code>code|<geotype> geotype|<geom>geom"
+	  shape = "record"
+	  ];
+
+	  "temp_poi_geom_gen_id" [
+	  label = "temp_poi_geom_gen_id| <gid> gid|<nameid> nameid"
+	  shape = "record"
+	  ];
+ 
+ 	  mid_feat_key:feat_type -> mid_country_profile:type[label="type"]
+	  mid_feat_key:feat_key -> mid_country_profile:key[label="key"]
+	  
+	  mid_feat_key:feat_key -> mid_place:key[label="key"]
+	  mid_feat_key:feat_type -> mid_place:type[label="type"]
+
+	  mid_feat_key:feat_key -> mid_postcode:key[label="key"]
+	  mid_feat_key:feat_type -> mid_postcode:type[label="type"]
+
+	  mid_feat_key:feat_key -> mid_poi:key[label="key"]
+	  mid_feat_key:feat_type -> mid_poi:type[label="type"]
+
+	  mid_feat_key:feat_key -> mid_link:key[label="key"]
+	  mid_feat_key:feat_type -> mid_link:type[label="type"]
+
+	  mid_feat_key:feat_key -> temp_street_name:key[label="key"]
+	  mid_feat_key:feat_type -> temp_street_name:type[label="type"]
+
+	  mid_feat_key:feat_key -> temp_street_geom:key[label="key"]
+	  mid_feat_key:feat_type -> temp_street_geom:type[label="type"]
+
+	  mid_feat_key:feat_key -> temp_poi_name:key[label="key"]
+	  mid_feat_key:feat_type -> temp_poi_name:type[label="type"]
+
+	  mid_feat_key:feat_key -> temp_poi_geom:key[label="key"]
+	  mid_feat_key:feat_type -> temp_poi_geom:type[label="type"]
+
+	  mid_feat_key:feat_key -> mid_feature_to_feature:fkey[label="key"]
+	  mid_feat_key:feat_type -> mid_feature_to_feature:ftype[label="type"]
+
+	  ///////////////////////////////////////////////////////////////////
+
+	  mid_place:key -> mid_place_admin:key
+	  mid_place:type -> mid_place_admin:type
+
+	  mid_poi:gen_code -> mid_poi_category:per_code
+
+	  mid_poi:key -> mid_poi_attr_value:key
+	  mid_poi:type -> mid_poi_attr_value:type
+
+	  mid_poi:key -> mid_poi_address:key
+	  mid_poi:type -> mid_poi_address:type
+
+	  mid_poi:key -> mid_poi_children:parent_key
+	  mid_poi:key -> mid_poi_children:child_key
+
+	  //////////////////////////////////////////////////////////////////////
+
+	  mid_link:key-> mid_link_road:key
+	  mid_link:type -> mid_link_road:type
+
+	  mid_link_road:id -> mid_address_point:id
+	  mid_link_road:id -> mid_address_range:id
+
+	  /////////////////////// street name ////////////////////////
+	  temp_street_name:gid -> temp_street_name_gen_id:gid
+	  temp_street_name:key -> mid_street_to_name:key
+	  temp_street_name:type -> mid_street_to_name:type
+	  temp_street_name_gen_id:nameid -> mid_street_to_name:nameid
+
+	  temp_street_name_gen_id:nameid -> mid_street_name:id
+
+	  ////////////////////////street geom  /////////////////////////////////
+
+	  temp_street_geom:gid -> temp_street_geom_gen_id:gid
+	  temp_street_geom:key -> mid_street_to_geometry:key
+	  temp_street_geom:type -> mid_street_to_geometry:type
+	  temp_street_geom_gen_id:nameid -> mid_street_to_geometry:geomid
+
+	  temp_street_geom_gen_id:nameid -> mid_street_geometry:id
+
+	  ///////////////////////poi name /////////////////////////////
+
+	  temp_poi_name:gid -> temp_poi_name_gen_id:gid
+	  temp_poi_name:key -> mid_poi_to_name:key
+	  temp_poi_name:type -> mid_poi_to_name:type
+	  temp_poi_name_gen_id:nameid -> mid_poi_to_name:nameid
+
+	  temp_poi_name_gen_id:nameid -> mid_poi_name:id
+		  
+	  ////////////////////poi geom /////////////////////////////////////
+
+	  temp_poi_geom:gid -> temp_poi_geom_gen_id:gid
+	  temp_poi_geom:key -> mid_poi_to_geometry:key
+	  temp_poi_geom:type -> mid_poi_to_geometry:type
+	  temp_poi_geom_gen_id:nameid -> mid_poi_to_geometry:nameid
+
+	  temp_poi_geom_gen_id:nameid -> mid_poi_geometry:id
+
+	  //////////////////////////////////////////////////////////////////////
+
+	  
+
+
+// XXX: pl// ace to put subgraph
+
+ }

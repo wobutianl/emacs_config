@@ -1,18 +1,18 @@
 
 ;; ----- smex-history -----
 (
+ gtd
  wiki
- org-agenda
  emms
+ org-agenda
  send-invisible
  emms-random
  emms-pause
- emms-start
 )
 
 ;; ----- smex-data -----
 (
- (gtd . 35)
+ (gtd . 42)
  (org-clock-in . 1)
  (jabber-connect . 2)
  (jabber-chat-with . 2)
@@ -36,7 +36,7 @@
  >>>>>>>
  emacs/work
  (log . 4)
- (emms . 59)
+ (emms . 72)
  (org-insert-drawer . 2)
  (xterm-mouse-mode . 2)
  (ecb-activate . 5)
@@ -47,7 +47,7 @@
  (life . 1)
  (animate-birthday-present . 1)
  (emms-random . 16)
- (org-agenda . 22)
+ (org-agenda . 32)
  (emms-pause . 3)
  (emacs-wiki-find-file . 1)
  (emms-add-file . 1)
@@ -55,7 +55,7 @@
  (dired . 1)
  (delete-pair . 1)
  (recentf-mode . 1)
- (wiki . 10)
+ (wiki . 16)
  (emms-start . 1)
  (send-invisible . 1)
 )

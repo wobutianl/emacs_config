@@ -1,0 +1,75 @@
+// $Id: mid.dot, 10-29-2014
+digraph mid_Struct {
+    node [shape=record fontsize=12 fontname=Courier style=filled];
+    edge[color=blue];
+    rankdir=LR;
+
+    graph [
+	   rankdir = "LR"
+	   ];
+    node [
+	  fontsize = "16"
+	  shape = "ellipse"
+	  ];
+    edge [
+	  ];
+
+
+
+   "mid_feat_key" [
+	  label = "Mid_feat_key| <feat_key> feat_key|<feat_type> feat_type|org_id1| org_id2|CONSTRAINT"
+	  shape = "record"
+	  ];
+
+   "mid_abbr_word" [
+	  label = "mid_abbr_word| <type> type|<lang> language|<abbr> abbr| full_n"
+	  shape = "record"
+	  ];
+      "mid_full_area" [
+	  label = "Mid_full_area| <min_lon> min_lon|<min_lat> min_lat|<max_lon> max_lon| <max_lat> max_lat"
+	  shape = "record"
+	  ];
+      "mid_country_profile" [
+	  label = "Mid_country_profile| <iso> iso|<off_lang> off_lang|<key> key| <type> type"
+	  shape = "record"
+	  ];
+      "mid_place" [
+	  label = "Mid_place| <key> key|<type> type|<class> class"
+	  shape = "record"
+	  ];
+      "mid_place_admin" [
+	  label = "Mid_place_admin| <key> key|<type> type| <a0> a0| <a1> a1.."
+	  shape = "record"
+	  ];
+      "mid_postcode" [
+	  label = "Mid_postcode| <key> key|<type> type| <iso> iso| <sub> sub| <pocode> pocode"
+	  shape = "record"
+	  ];
+      "mid_poi_category" [
+	  label = "Mid_poi_category| <per_code> per_code|<gen1> gen1| <gen2> gen2| <gen3> gen3| <level>level | <imp> important| <name> name| <tr_name> tr_name>"
+	  shape = "record"
+	  ];
+      "mid_poi" [
+	  label = "Mid_poi| <key> key|<type> type|<gen_code> gen_code| <imp> important"
+	  shape = "record"
+	  ];
+      "mid_poi_attr_value" [
+	  label = "Mid_poi_attr_value| <key> key|<type> type| <attr_type> attr_type | <attr_value> attr_value"
+	  shape = "record"
+	  ];
+      "mid_poi_address" [
+	  label = "Mid_poi_address| <key> key|<type> type| <lang> lang| <name> name"
+	  shape = "record"
+	  ];
+      "mid_poi_children" [
+	  label = "Mid_poi_children| <parent_key> parent_key|<child_type> child_type"
+	  shape = "record"
+	  ];
+
+	  mid_feat_key:feat_type -> mid_country_profile:type[label="type"]
+	  mid_feat_key:feat_key -> mid_country_profile:key[label="key"]
+	  
+	  
+// XXX: pl// ace to put subgraph
+
+ }

@@ -1,0 +1,10 @@
+// $Id: data_mid.dot, 10-31-2014
+digraph data_mid {
+
+edge[color=blue];
+    rankdir=LR;
+
+    config[label="config"]
+// XXX: place to put subgraph
+
+}

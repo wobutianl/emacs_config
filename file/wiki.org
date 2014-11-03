@@ -28,6 +28,7 @@
 * 个人记事DayLife
 - [[~/ToDo/daylife.org][个人记事-DayLife]]
 - [[~/ToDo/diary.org][diary]]
+- [[~/file/entertainment/][entertainment]
 * GTD
 - [[~/ToDo/newgtd.org][个人GTD]]
   
