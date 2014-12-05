@@ -10,7 +10,8 @@
 | 软件开发者路线图-从学徒到高手                    |                 | 计算机 |      |   100% | [[~/file/book/computer/软件开发者路线图.org][软件开发者路线图]]     |
 | Facts and Fallacies of Software Engineering      | Robert L. Glass | 计算机 |      |   100% | [[~/file/book/computer/Facts and Fallacies of Software Engineering.org][软件开发的事实和谬误]] |
 | code complete                                    | steve mcConnel  | 计算机 |      |        |                      |
-|                                                  |                 |        |      |        |                      | 
+| 地图学                                           |                 | 地理   |      |   100% | [[~/file/book/other/map.org][地图学]]               |
+|                                                  |                 |        |      |        |                      |
 
   
 * 要读的书

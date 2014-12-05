@@ -796,3 +796,22 @@ git branch
   - 数据的处理
   - 数据的控制
 **** Log 换小组了（from:Guide To：DSP）					:stc:
+** 2014-12 十二月
+*** 2014-12-05 星期五
+**** Log 50周								 
+- 完成CI的Bat文件 Python自动生成。
+- 阅读高德的协议和代码（未完成）
+- 代码Review（牟文杰的）
+  - 高速路出入口（Ramp与Hwy + road_direction）
+  - Emergency Poi（紧急POI，加一个表）
+  - 交叉路口（Complex feature + Node结点合并 + 名字去重）
+- 一周个人总结
+  - 要记录自己遇到的问题
+  - 要对基本概念多熟悉（这个很重要）
+- 下周任务
+  - QGIS 函数
+  - P-drive 脚本（问张亮要）
+  - 日本数据跑出来 与 脚本比较
+  - 与张亮讨论，主要存在哪些逻辑错误
+
+

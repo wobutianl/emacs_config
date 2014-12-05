@@ -8,8 +8,8 @@
  (rear-context-string . "在，但可以实现单一的打卡与联网\n")
  (position . 642))
 ("org-capture-last-stored"
- (filename . "d:/jerryfive/emacs/config/ToDo/newgtd.org")
- (front-context-string . "**** TODO 数据库系统概")
- (rear-context-string . " 2014-10-31 星期五\n")
- (position . 18518))
+ (filename . "d:/jerryfive/emacs/config/ToDo/diary.org")
+ (front-context-string . "**** 盛夏的方程式（观后感）")
+ (rear-context-string . " 2014-12-01 星期一\n")
+ (position . 24956))
 )

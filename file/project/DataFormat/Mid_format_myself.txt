@@ -1,0 +1,53 @@
+1NF：2NF:
+
+feature_key( key, type, org_id1, org_id2, Constraint)
+feature_to_feature(fkey, ftype, code, tkey, ttype)
+country_profile( iso, office_lang, key, type)
+full_name( min_lon, min_lat, max_lon, max_lat )
+abbr_word( type, lang, abbr, full_name)
+
+poi_category(gen_code, gen1,gen2,gen3, level, imp, name, tr_name)
+
+poi( key, type, gencode, imp, attr_type, attr_value, addr_lang, addr_name, addr_tr_lang, addr_tr_name, addr_hno, name, name_lang, name_tr_name, name_tr_lang, name_ph_lang, name_ph_name, geom_code, geom)
+
+place(key, type, class, a0, a1, a2, a7, a8, a9 )
+
+Link( key, type, street_id, street_lang, street_name, range_side, range_scheme, range_first, range_last, point_side, point_x, point_y, point_enX, point_enY, street_tr_lang, street_tr_name, street_ph_lang, street_ph_name, geom_code, geom )
+
+postcode( key, type, iso, sub, pocode )
+
+3NF:
+
+feature_key( key, type, org_id1, org_id2, Constraint)
+feature_to_feature(fkey, ftype, code, tkey, ttype)
+country_profile( iso, office_lang, key, type)
+full_name( min_lon, min_lat, max_lon, max_lat )
+abbr_word( type, lang, abbr, full_name)
+
+poi_category(gen_code, gen1,gen2,gen3, level, imp, name, tr_name)
+
+POI{
+	poi_lang( key, addr_lang, addr_tr_lang, name_lang, name_tr_lang, name_ph_lang)
+
+	poi_name(key, addr_name, addr_tr_name, name, name_tr_name, name_ph_name)
+
+	poi_value(key, attr_type, attr_value, geom, geom_code)  ??
+
+	poi(key, type, gencode, imp)
+}
+
+place(key, type, class, a0, a1, a2, a7, a8, a9 )
+
+LINK{
+	link_lang( key, street_lang, street_tr_lang, street_ph_lang)
+	
+	link_name( key, street_name, street_tr_name, street_ph_name)
+	
+	link_point(key, point_side, point_num, point_x, point_y, point_enX, point_enY)
+	
+	link_range( key, range_side, range_scheme, range_first, range_last)
+	
+	link( key, type, geom_code, geom)
+}
+
+postcode( key, type, iso, sub, pocode )

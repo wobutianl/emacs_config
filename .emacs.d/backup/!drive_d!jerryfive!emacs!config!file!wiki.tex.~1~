@@ -1,0 +1,107 @@
+% Created 2014-11-11 周二 17:39
+\documentclass[11pt]{article}
+\usepackage[AUTO]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{emacs-wiki-org}
+\author{}
+\date{\today}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs Org-mode version 7.9.3f}}
+
+\begin{document}
+
+\maketitle
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+\vspace*{1cm}
+
+首页
+
+\section{个人信息}
+\label{sec-1}
+
+\begin{itemize}
+\item \href{file://d:/Jerryfive/emacs/config/file/ownfile/softwareList.org}{个人软件}
+\item \href{file://d:/Jerryfive/emacs/config/file/ownfile/codelanguage.org}{编程语言}
+\item \href{file://d:/Jerryfive/emacs/config/file/ownfile/curriculum.org}{履历}
+\item \href{file://d:/Jerryfive/emacs/config/file/ownfile/个人实践图.mm}{个人实践图}
+\item \href{file://d:/Jerryfive/emacs/config/file/ownfile/codeThinking.org}{CodeThink}
+\end{itemize}
+\section{读书笔记}
+\label{sec-2}
+
+\begin{itemize}
+\item \href{file://d:/Jerryfive/emacs/config/file/book/bookslist.org}{booklist}
+\begin{itemize}
+\item \href{file://d:/Jerryfive/emacs/config/file/book/computer/conceptual_blockbusting.org}{突破思维的限定}
+\item \href{file://.C:\Jerryfive\emacs-24.3\config_red\file\meetMyself.org}{meetMyself}
+\item \href{file://d:/Jerryfive/emacs/config/file/book/computer/软件开发者路线图.org}{软件开发者路线图}
+\end{itemize}
+\end{itemize}
+\section{项目文件}
+\label{sec-3}
+
+\begin{itemize}
+\item \href{file://d:/Jerryfive/emacs/config/file/project/projectMenu.org}{项目列表}
+\begin{itemize}
+\item Android
+\begin{itemize}
+\item Telli
+\begin{itemize}
+\item \href{file://d:/Jerryfive/emacs/config/file/project/Android/summary-v0.2.org}{Telli项目总结}
+\item \href{file://d:/Jerryfive/emacs/config/file/project/Android/Telli_v3.org}{Telli说明文档}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\item Guide
+\begin{itemize}
+\item \href{file://d:/Jerryfive/emacs/config/file/project/Guide/GuideQuality.org}{Guide品质}
+\end{itemize}
+\item \href{file://d:/Jerryfive/emacs/config/file/project/DataFormat}{DataFormat}
+\begin{itemize}
+\item \href{file://d:/Jerryfive/emacs/config/file/project/DataFormat/ReadMe.org}{DataFormat\_ReadMe}
+\end{itemize}
+\end{itemize}
+\section{工作Log}
+\label{sec-4}
+
+\begin{itemize}
+\item \href{file://d:/Jerryfive/emacs/config/ToDo/log.org}{工作Log}
+\item \href{file://d:/Jerryfive/emacs/config/file/train/menu_train.org}{商泰培训}
+\item \href{file://d:/Jerryfive/emacs/config/file/ownfile/workThinking2014.org}{工作感想（第一年）}
+\end{itemize}
+\section{个人记事DayLife}
+\label{sec-5}
+
+\begin{itemize}
+\item \href{file://d:/Jerryfive/emacs/config/ToDo/daylife.org}{个人记事-DayLife}
+\item \href{file://d:/Jerryfive/emacs/config/ToDo/diary.org}{diary}
+\item \href{file://d:/Jerryfive/emacs/config/file/entertainment/}{entertainment}
+\end{itemize}
+\section{GTD}
+\label{sec-6}
+
+\begin{itemize}
+\item \href{file://d:/Jerryfive/emacs/config/ToDo/newgtd.org}{个人GTD}
+\end{itemize}
+  
+
+\end{document}

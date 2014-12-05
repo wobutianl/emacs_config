@@ -1,0 +1,1311 @@
+Table of Contents
+* Introduction
+** Prime:基本数据（最详细数据层）
+*** Transportation Network：交通路网
+****  Geometric Inclusion 
+交通路中的几何图：有名道路，人行道，等等。
+****  Roads and Ferries Attributes
+道路的相关属性：
+*** Administrative Inclusion
+prime层，行政区代码
+*** Cartographic Inclusion 
+绘制
+*** Signs：LOGOMARK
+*** Points of Interest (POIs)
+****  POI Attributes (Included when Applicable) ：POI
+** Complete ：between network and prime (第二层数据)
+每一层要显示的数据，数据属性，特征数据都是大体一致的。
+主要分为：
+- 交通网（诱导几何 + 属性）
+- 行政区域（区划的代码）
+- 绘制图（几何 + POI + LogoMark）
+- Sign（标志 + 诱导条件）
+- POI（POI种类 + 属性）
+*** Transportation Network
+****  Geometric Inclusion 
+****  Roads and Ferries Attributes (Included when Applicable) 
+****  Roads and Ferries Attributes (Not Required)
+*** Administrative Inclusion
+*** Cartographic Inclusion 
+*** Points of Interest (POIs)
+****  POIs Attributes (Included when Applicable) 
+****  POI Attributes (Not Required)
+****  POI Attributes (Not Included)
+** Network：网络层：主要的Highway，allow routing from city to city.
+应该相当于高速路层，即联通城市到城市的数据。
+*** Transportation Network
+****  Geometric Inclusion 
+****  Roads and Ferries Attributes/Relationships (Included when Applicable) 
+****  Roads and Ferries Attributes (Not Included)
+****  Roads and Ferries Attributes (Not Required)
+*** Administrative Inclusion
+*** Cartographic Inclusion 
+*** Points of Interest (POIs)
+****  POIs Attributes/Relationships (Included when Applicable) 
+****  POI Attributes (Not Required)
+** City-to-City：最高层的数据，连接城市到城市
+Connector Roads
+*** City
+*** Connector Roads
+*** Significant Intersecting Roads
+*** City-to-City Inclusion Rules 
+****  Roads 
+****  Additional Requirements
+*** Cartographic Inclusion 
+*** Administrative Coding
+****  Feature Name
+****  Attributes Included (Connector Roads)
+****  Attributes Included (Significant Intersecting Roads)
+*** Signs and Conditions (Connector Roads)
+*** Points of Interest (POIs) (Connector Roads)
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+** Base：not used yet 还没用
+* Geometric Representation：几何数据
+** Overview ：包括：点，节点，线，面
+** Reference Node and Non-Reference Node：参考点和非参考点
+只是为了区别一个Link的两个端点。
+有图例，一个做参考点，一个做非参考点。
+** Cartographic Feature Formation ：绘制几何图形
+*** Dedicated Raw Core Geometry
+* Navigable Network：导航路网
+** Road Network Representation：
+*** Link：basic unit of road
+*** Lane:和link差不多，共用一个几何图
+区别是：lane比link的属性要多，多了什么还不知道。
+*** Junction: Node :Link 连接的地方
+*** Ferry Connection: Link :
+*** Enclosed Traffic Area: Area Feature:封闭交通
+
+*** Centreline Digitisation :中线数字化
+用中线来表示一条道路
+*** Curved Features ：曲线特征
+Shape points ：多个Point来表示一个弧线。
+*** Multicarriageway ：多车行道
+有案例图
+例子：一条路被分为两条，又合并为一条
+*** Separately Digitised Roads：单独数字化道路
+主要表示：按道路方向，单独数字化，即，一条路分为两条线来表示。
+有条件：一般是道路中间有东西分割开来。
+*** Bows and Teardrops ：
+Bows:两条Link共用node。
+teardrops:一条Link绕成一圈。
+会加一个point来加识别link
+有图例
+*** Ferry Route：渡运航线
+*** Pedestrian Zones ：渡运航线
+*** Roundabouts：环岛
+*** Single-Point Urban Interchange (SPUI)：单点城市的交汇处
+highway interchange that helps move large volumes of traffic efficiently through small areas
+
+*** Traffic Islands and Turn Lanes ：交通岛屿和车道交通
+表示：右转便道。一般十字路口很多。
+*** Unstructured Traffic Square ：非结构化交通广场
+An unstructured traffic square is a paved area where a car can travel but there are no legally defined
+traffic paths. Unstructured Traffic Squares are predominantly found in Europe, not in North America.
+复杂路口，但又没有明确指示的情况。主要出现在欧州。
+*** Toll Structures ：收费站
+*** Roads in Complex POI Locations：复杂POI地点的道路
+***** Airports：机场
+***** Rest Areas
+** Addressing：地址
+*** Address Format (FORMAT)
+*** Address Level (ADDRESS_LEVEL)
+*** Address Type (ADDRESS_TYPE)
+*** First Address (FIRST_ADDRESS)
+*** Last Address (LAST_ADDRESS)
+*** Scheme (SCHEME) 
+** Road Names：道路名
+*** Official Name/Alternate Name (IS_NAME_ON_ROADSIGN)：road name from offical
+the Official Name generally is the name posted on the street signs
+*** Base Name (BASE_NAME):道路基础名
+ is the main part of Street Name without the Prefix, Suffix, Route Direction,and Street Type. For example, Elm in Elm Street W is the Base Name.
+没有前缀，后缀，没有道路方向
+*** Bridge Name (IS_BRIDGE_NAME) ：
+*** Exit Name (IS_EXIT_NAME)
+*** Explicatable (EXPLICATABLE) ：解释这个名字怎么用
+Explicatable indicates how to use a name.
+*** Intersection Name (IS_INTERSECTION_NAME)：交叉路口的名字
+intersection name 
+有图例
+*** Junction Name (IS_JUNCTION_NAME)：连接入口或者出口的名字
+identifies a ramp system that comprises a named Junction between two or more motorways or a named motorway exit/entrance
+explication of an exit or entry ramp ( Ramp = Y) that comprises a named junction without having to use the sign text.
+*** Overpass Name (IS_OVERPASS_NAME) ：过道
+ a road name as an overpass name
+*** Postal Name (IS_POSTAL_NAME)：邮箱名字
+*** Prefix of Street Name (PREFIX)：前缀
+ precedes the base name of a road
+*** Scenic Route Name (IS_SCENIC_NAME)：观光路线
+*** Scenic Route (SCENIC_ROUTE)：
+*** Stale Name (IS_STALE_NAME)：保留的旧名字
+ old names that are still in use
+*** Route Direction (DIRECTION_ON_SIGN)：高速路方向
+ the official directional identifier assigned to highways
+*** Route Number (BASE_NAME / STREET_NAME)：道路数量，用于描绘signpost的数据
+ official identifying number of the road designated by administrative authorities
+represents route numbers depicted on signposts
+*** Route Number on Road Sign (IS_NAME_ON_ROADSIGN)：
+most commonly recognised Route Number(s) on a link.
+*** Route Type (ROUTE_TYPE)：
+*** Street Name (STREET_NAME)：全名（名字+数量+出口）
+ the full name of the road, route number, or exit.
+*** Street Type (STREET_TYPE)
+*** Suffix of Street Name (SUFFIX) ：后缀
+*** Tunnel Name (IS_TUNNEL_NAME) ：隧道
+*** Underpass Name (IS_UNDERPASS_NAME) ：地下通道
+*** Vanity Name (IS_VANITY_NAME)：道路别名
+a name other than the official street name
+is used to assist in address identification, destination selection, and for route guidance.
+** Display & Routing Attributes ：显示和用于显示的道路属性
+*** Access Characteristics (RDF_ACCESS)：道路可通行性
+例子：小车道，多高，多重。。
+****  Through Traffic (THROUGH_TRAFFIC)
+*** Carpool Road (CARPOOL_ROAD) ：共乘车道
+a link where at some point all lanes serve as carpool lanes
+有图例
+*** Confidence Level Rating (CONFIDENCE_LEVEL_RATING) ：地图数据的信任级别
+the level of trust in the source for the link
+*** Controlled Access (CONTROLLED_ACCESS)：有限的入口和出口，它允许不间断高速交通流量
+限制行车的数量
+*** Coverage Indicator (COVERAGE_INDICATOR) ：覆盖指示
+不太知道什么意思
+*** Dividers (DIVIDER & DIVIDER_LEGAL) 
+*** Express Lane (EXPRESS_LANE) 
+*** Four-Wheel Drive (FOUR_WHEEL_DRIVE) 
+*** Functional Class (FUNCTIONAL_CLASS) 
+*** Intersection Category (INTERSECTION_CATEGORY) 
+*** Lane Category (LANE_CATEGORY)
+*** Lane Crossing Restriction (LANE_CROSSING_RESTRICTION)
+*** Lanes From/To (FROM/TO_REF_NUM_LANES) 
+*** Limited Access (LIMITED_ACCESS_ROAD)
+*** Long Haul Attribution
+**** Long Haul (LONG_HAUL_NAV) 
+**** Stub Link (STUB_LINK) 
+*** Low Mobility (LOW_MOBILITY)
+*** Multiply Digitised (MULTI_DIGITIZED) 
+*** Overpass/Underpass (OVERPASS_UNDERPASS) 
+*** Parking Availability (PARKING_AVAILABILITY)
+*** Physical Number of Lanes (PHYSICAL_NUM_LANES)
+*** Priority Road (PRIORITY_ROAD)
+*** Public Access (PUBLIC_ACCESS) 
+*** Reversible (REVERSIBLE) 
+*** Road Class (ROAD_CLASS)
+*** Speed Category (SPEED_CATEGORY)
+*** Speed Limit (FROM_REF_SPEED_LIMIT / TO_REF_SPEED_LIMIT)
+*** Speed Limit Source (SPEED_LIMIT_SOURCE)
+*** Supplemental Geometry Bitset (SUPPLEMENTAL_GEO_BITSET)
+*** Tollway (TOLLWAY)
+*** Travel Direction
+*** Transition Area (TRANSITION_AREA)
+** Lane Attribution：
+Lane：几车道，就有几个Lane
+Lane和Link共用一个几何图形
+*** Overview 
+*** Attributes
+****  Lanes From/To (FROM/TO_REF_NUM_LANES)：
+ Indicates the number of lanes on a link.
+****  Lane Type (LANE_TYPE)：一道Lane的类型
+每条lane都有自己可通行的车辆（有代码解释）
+****  Lane Number (LANE_NUMBER) ：几车道
+****  Lane Divider Marker (LANE_DIVIDER_MARKER)：区分车行的左右方向
+车道之间的车道标记
+****  Center Divider Marker (CENTER_DIVIDER_MARKER)：？？
+****  Direction Category (DIRECTION_CATEGORY)：Lane的指示表
+ the arrow direction shown on a sign or by road markings for a specific lane.
+****  Height (HEIGHT_RESTRICTION)：限高度
+****  Lane Forming/Ending (LANE_FORMING_ENDING)：lane的开头和结尾？
+****  Speed Limit (FROM/TO_SPEED_LIMIT)：限速
+****  Transition Area (TRANSITION_AREA)：过渡区域
+****  Width (WIDTH) 
+*** Lane Information Processing
+****  Processing Logics
+****  Examples
+*** Traffic Attributes (South Korea)
+****  Positive TPEG ID (POS_TPEG_ID) 
+****  Negative TPEG ID (NEG_TPEG_ID)
+* Administrative Coding
+** Administrative Entities
+*** Country：国家
+*** Order-1：国家的最高行政单位：省
+*** Order-2：中级行政单位：市
+*** Order-8：最低等级
+*** Built-Up：高密集城市区（不能覆盖整个国家）
+*** Postal Code
+*** Extended Postal Codes ：在一些国家中有
+*** Zone：区域的代码
+A Zone defines an alternate coding for a link
+** Administrative Area Naming ：行政区划的图例
+** Attributes
+*** Country Attributes 
+****  Currency Precision (CURRENCY_PRECISION) 
+****  Currency Type (CURRENCY_TYPE)
+****  Default Language Code (OFFICAL_LANGUAGES) 
+****  Driving Side (DRIVING_SIDE)
+****  House Number Format (HOUSE_NUMBER_FORMAT)
+****  ISO Country Code
+****  Maximum Administrative Level
+****  Phone Country Code (PHONE_COUNTRY_CODE)
+****  Phone Prefix (PHONE_PREFIX)
+**** * Unit of Measure (UNIT_OF_MEASURE) 
+*** Administrative Area Attributes 
+****  Abbreviation of Area Name (NAME_TYPE = A in RDF_FEATURE_NAMES)
+****  Alternate Name (NAME_TYPE = B in RDF_FEATURE_NAMES)
+****  Administrative Level Description
+****  Administrative Level (ADMIN_LEVEL in RDF_ADMIN_PLACE)
+****  Daylight Saving Time Observed
+****  Admin Wide Regulations (ADMIN_WIDE_REGULATIONS) 
+****  Government Code (GOVERNMENT_CODE)
+****  Official Name (NAME_TYPE = B)
+****  Long Haul (LONG_HAUL) 
+**** * Motorcycle Minimum Requirement (MOTORCYCLE_MIN_REQ)
+**** * Postal Code (POSTAL_CODE)
+**** * Time Zone (TIME_ZONE) 
+**** * Zone Type (ZONE_TYPE)
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+**** * TMC Areas
+**** * TMC Area Zone (TA Zone) 
+*** Administrative Hierarchies
+****  Graph Structure
+*** Flat Hierarchy Structure
+** Census IDs 
+*** Census ID (CENSUS_ID)
+*** Census Type (CENSUS_TYPE)
+*** Census Value (CENSUS_VALUE) 
+*** Census Name (CENSUS_NAME)
+Signs and Conditions
+** Introduction
+** Signs
+*** Signpost Information
+****  Inclusion Guidelines
+*** Sign Text
+*** Exit Number (EXIT_NUMBER) 
+*** Alternate Exit Number (ALT_EXIT_NUMBER)
+*** Straight-on-Sign (STRAIGHT_ON_SIGN)
+** Conditions
+*** Toll Structure (CONDITION_TYPE = *)
+****  Toll Structure Type
+****  Method of Payment
+****  Link Toll Structure Examples 
+****  Lane Toll Structure Example
+*** Construction Status Closed (CONDITION_TYPE = *)
+*** Gate (CONDITION_TYPE = *)
+*** Direction of Travel (CONDITION_TYPE = *)
+*** Restricted Driving Manoeuvre (CONDITION_TYPE = *) 
+*** Access Restriction (CONDITION_TYPE = *)
+****  Seasonal Closure (SEASONAL_CLOSURE)
+****  Fee Pay Considered Carpool (FEE_PAY_CARPOOL)
+****  Alternate Fuel Considered Carpool (ALTERNATE_FUEL_CARPOOL)
+*** Special Explication (CONDITION_TYPE = *)
+*** Special Speed Situation (CONDITION_TYPE = **) 
+*** Variable Speed Sign (CONDITION_TYPE = **)
+****  Variable Speed Sign ID (VSS_ID) 
+**** Usage Fee Required (CONDITION_TYPE = **)
+***** Toll Feature Type (TOLL_FEATURE_TYPE)
+***** Toll System Type (TOLL_SYSTEM_TYPE)
+**** Lane Traversal (CONDITION_TYPE = **)
+**** Through Route (CONDITION_TYPE = **) 
+**** Traffic Signal (CONDITION_TYPE = **) 
+***** Signal/Sign Location - Europe Only
+**** Traffic Sign (CONDITION_TYPE = **)
+***** Traffic Sign Type (TRAFFIC_SIGN_TYPE)
+***** Traffic Sign Category (TRAFFIC_SIGN_CATEGORY) 
+***** Traffic Sign Subcategory (TRAFFIC_SIGN_SUBCATEGORY)
+***** General Warning Sign Type (GEN_WARNING_SIGN_TYPE)
+***** Traffic Sign Value (TRAFFIC_SIGN_VALUE)
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+***** Supplemental Sign Duration (SIGN_DURATION)
+***** Supplemental Sign Pre-Warning (SIGN_PREWARNING)
+***** Supplemental Sign Validity Time (SIGN_VALIDITY_TIME)
+***** Supplemental Sign Applicable Vehicles
+
+****** Weather Type (WEATHER_TYPE)
+**** Railway Crossing (CONDITION_TYPE = **)
+***** Railway Crossing Type (RAILWAY_CROSSING_TYPE) 
+**** No Overtaking (CONDITION_TYPE = **) 
+**** Junction View (CONDITION_TYPE = **) 
+**** Protected Overtaking (CONDITION_TYPE = **) 
+**** Evacuation Route (CONDITION_TYPE = **) 
+***** Event Type (EVENT_TYPE)
+***** Evacuation Direction of Travel (EVACUATION_BEARING)
+***** Event Code (EVENT_CODE)
+**** Parking Restriction (CONDITION_TYPE = **)
+***** Parking Side of Street (PARKING_SIDE_OF_STREET)
+***** Parking Restriction Type (PARKING_RESTRICTION_TYPE)
+***** Snow Height (SNOW_HEIGHT)
+***** Parking Restriction Examples
+**** Environmental Zone (CONDITION_TYPE = **)
+***** Environmental Zone ID (ENVIRONMENTAL_ZONE_ID)
+**** Blackspot (CONDITION_TYPE = **)
+***** Blackspot Source (BLACKSPOT_SOURCE)
+**** Permitted Driving Manoeuvre (CONDITION_TYPE = **)
+***** PDM Type (PDM_TYPE)
+**** Variable Speed Limit Applicable (CONDITION_TYPE = **) 
+***** Variable Speed Sign ID
+***** Direction (DIRECTION)
+**** Lane Conditions
+** General Condition Attributes
+*** Direction (DIRECTION)
+** Date/Time Modifier
+*** Date Time Type (DATETIME_TYPE)
+*** Exclude Date (EXCLUDE_DATE)
+*** From End (FROM_END)
+*** Start Date and End Date (START_DATE / END_DATE) 
+*** Start Time and End Time (START_TIME / END_TIME)
+Complex Features
+** Introduction
+** Geometric Representation of Complex Features
+** Complex Feature Types 
+*** Complex Road
+*** Complex Intersection
+****  Specifications for Opposing Nodes for Intersection Creation
+****  Complex Intersections and Indescribable Links 
+****  Intersections at Roundabouts or Special Traffic Figures
+****  Overlapping Complex Intersections
+****  Complex Intersections of Non-Navigable Features and Multiply-Digitised Roads
+**
+*** Complex Object
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+****  Motorway Exit
+****  Centre Point of Complex Objects
+****  Overlapping Objects
+****  Very Long Objects
+****  Separately-Digitised Roads 
+****  Components of Complex Objects 
+*** Grouped Structures - Buildings/City Model Data
+****  *D Model and Landmark Naming Convention
+****  Structure Footprint
+****  Grouped Structure 
+****  POI Association to City Model Data
+****  File Association to City Model Features 
+*** Motorway Junction Object Complex Feature (MJO-CF)
+Cartographic Representation 
+** Cartographic Modelling
+** Naming of Cartographic Features 
+** Cartographic Inclusion 
+*** Administrative Area Boundaries 
+****  Country Boundary 
+****  State/Province Boundary
+****  Cartographic Country Boundary
+****  Cartographic State/Province Boundary
+*** Building/Landmark Features
+****  Structure Footprint
+*** Building/Landmark Attributes 
+****  Feature Type (FEATURE_TYPE) 
+****  Building Main Feature Type (MAIN_FEAT_TYPE)
+****  Display Class (DISPLAY_CLASS) 
+****  Enhanced Building/Landmark
+****  Height (HEIGHT)
+****  Ground Clearance (GROUND_CLEARANCE) 
+*** Land Cover/Land Usage Features 
+****  Airports and Aircraft Roads 
+****  Animal Park
+****  Amusement Park 
+****  Beach 
+****  Built-up Area Polygon for Named Places 
+****  Cartographic Settlement Boundary 
+****  Cemetery
+****  Elevation 
+****  Glacier
+**** * Island 
+**** * Neighbourhood 
+**** * Park
+**** * Railyard
+**** * Seaport/Harbour
+*** Land Cover Attributes
+****  Expanded Inclusion (EXPANDED_INCLUSION)
+****  Feature Type
+****  Long Haul (LONG_HAUL) 
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+****  Official Name/Alternate Name (NAME_TYPE) 
+*** Water Features
+*** Water Feature Attributes 
+****  Detailed City (DETAILED_CITY) 
+****  Expanded Inclusion (EXPANDED_INCLUSION)
+****  Long Haul
+****  Display Class (DISPLAY_CLASS) 
+****  Official Name/Alternate Name (NAME_TYPE) 
+****  Feature Type (FEATURE_TYPE) 
+*** Railroad Features 
+****  Railway Element
+*** Railroad Attributes 
+****  Railway Crossing (FP_TYPE = RC)
+****  Official Name/Alternate Name (NAME_TYPE) 
+**** Calamity Prone Area Features 
+***** Hurricane Prone Area
+***** Flood Prone Area
+***** Tsunami Prone Area
+**** Calamity Prone Area Attribute
+***** Severity Rating (SEVERITY_RATING)
+**** Environmental Zone
+***** Environmental Zone Feature
+**** Environmental Zone Attribute
+***** Polygon Restriction (POLYGON_RESTRICTION)
+Points of Interest
+** Introduction
+** General Rules
+** Placement of POIs
+*** Airport-Related POIs 
+*** POIs with Multiple Entrances 
+*** POIs - Extended Navigation 
+*** Loading Dock Locations
+*** Business Facilities - Select Automobile Factories
+*** Named Place
+*** Ski Lifts 
+** Naming of POIs
+*** General
+*** Airport-Related POIs 
+*** POIs with Multiple Entrances / Extended Navigation Content
+*** Off-Road POIs 
+*** Land Cover or Administrative Area vs. POI Inclusion
+** Standard POI Inclusion
+*** Airport
+*** Amusement Park 
+*** Animal Park
+*** ATM 
+*** Auto Dealerships 
+*** Auto Dealership - Used Cars
+*** Automobile Club
+*** Auto Service & Maintenance
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+*** Bank 
+**** Book Store
+**** Border Crossing
+**** Bowling Centre 
+**** Bus Station 
+**** Business Facility
+**** Campground
+**** Cargo Centre 
+**** Casino
+**** Cemetery
+**** City Hall
+**** Civic/Community Centre
+**** Cinema
+**** Clothing Store 
+**** Coffee Shop
+**** Commuter Rail Station
+**** Consumer Electronics Store
+**** Convenience Store
+**** Convention/Exhibition Centre
+**** County Council 
+**** Court House
+**** Department Store
+**** Embassy
+**** Ferry Terminal 
+**** Fire Department
+**** Golf Course
+**** Golf Practice Range
+**** Government Office 
+**** Grocery Store
+**** Hamlet 
+**** Higher Education
+**** Highway Exit 
+**** Historical Monument
+**** Home Improvement & Hardware Store
+**** Home Specialty Store 
+**** Hospital
+**** Hotel 
+**** Ice Skating Rink
+**** Industrial Zone 
+**** Library
+**** Marina
+**** Medical Service
+**** Military Base 
+**** Motorcycle Dealership
+**** Museum 
+**** Named Intersection
+**** Named Place
+**** Neighbourhood 
+**** Nightlife
+**** Office Supply and Service Store
+**** Other Accommodation
+**** Park/Recreation Area
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+**** Park & Ride 
+**** Parking Garage/House
+**** Parking Lot
+**** Performing Arts
+**** Petrol/Gasoline Station 
+**** Pharmacy
+**** Place of Worship
+**** Police Station
+**** Post Office
+**** Public Restroom
+**** Public Sports Airport
+**** Race Track
+**** Rental Car Agency 
+**** Repair Services
+**** Residential Area/ Building
+**** Rest Area 
+**** Restaurant
+**** School
+**** Shopping
+**** Ski Lift
+**** Ski Resort 
+**** Specialty Food Store (User Defined)
+**** Specialty Store
+**** Sporting Goods Store 
+**** Sports Centre
+**** Sports Complex
+**** Taxi Stand (User Defined)
+**** Tollbooth 
+**** Tourist Attraction
+**** Tourist Information
+**** Training Centre/Institute
+**** Train Station
+**** Transportation Service 
+**** Truck Dealership 
+**** Truck Stop/Plaza
+**** Weigh Station 
+**** Winery
+** POI Inclusion
+** POI Attributes
+*** Addressing
+****  Address Format (HOUSE_NUMBER_FORMAT)
+****  Actual Address - Full
+****  Language Code (RDF_POI_ADDRESS.LANGUAGE_CODE)
+****  Full House Number (FULL_HOUSE_NUMBER)
+****  Language Code (FULL_HOUSE_NUMBER_LANG_CODE)
+****  Full House Number Transliteration
+(DF_POI_ADDRESS_TRANS.FULL_HOUSE_NUMBER)
+****  Full House Number Transliteration Type
+(FULL_HOUSE_NUMBER_TRANS_TYPE)
+*** Actual POI Location: Display Location (DISPLAY_LAT/LON)
+*** Airport Type (AIRPORT_TYPE)
+*** Association 
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+****  ASSOCIATION ID (ASSOCIATION_ID
+****  POI ID (POI_ID)
+****  Primary POI ID (PRIMARY_POI_ID)
+****  Association Type (ASSOCIATION_TYPE)
+*** Chain Name (NAME)
+*** Chain Name Translations (TRANSLITERATION)
+*** Chain ID (CHAIN_ID)
+*** Building Type (BUILDING_TYPE)
+*** Capital Indicator (CAPITAL_<Admin Level>)
+**** Contact Information
+***** Contact Type (CONTACT_TYPE) 
+***** Contact (CONTACT)
+***** Preferred (PREFERRED)
+***** Phone Area Code (PHONE_AREA_CODE)
+***** Phone Local Number (PHONE_LOCAL_NUMBER)
+**** Diesel (DIESEL)
+**** Entrance Type (ENTRANCE_TYPE) 
+**** Family Chain ID (CHAIN_TYPE) 
+**** House Number of POI (HOUSE_NUMBER)
+**** National Importance (NATIONAL_IMPORTANCE) 
+**** In Vicinity (IN_VICINITY)
+**** Long Haul (LONG_HAUL)
+**** Official Name/Alternate Name (NAME_TYPE) 
+**** Percent From Reference Node (PERCENT_FROM_REF)
+**** Population (POPULATION)
+**** Private (PRIVATE_ACCESS)
+**** Street Name (STREET_NAME)
+**** Subcategory (SUBCATEGORY)
+**** Shortened Name (SHORT_NAME)
+**** Transliterated Shortened Name (SHORT_NAME)
+**** Rest Area Type (REST_AREA_TYPE) 
+**** Restaurant Attributes 
+***** Cuisine ID (CUISINE_ID)
+***** Alternate Cuisine ID (ALTERNATE_CUISINE_ID)
+***** Regional Cuisine ID (REGIONAL_CUISINE_ID)
+***** Restaurant Type (RESTAURANT_TYPE) 
+** Administrative Coding associated with POIs
+*** POI in Order* (ORDER*_ID)
+*** POI in Built-up Area (BUILTUP_ID) 
+*** POI - Administrative Area Mapping
+*** POI in Zone
+*** POI to Link Association
+*** POI to POI Association (Parent - Child)
+****  Parent-Child Association Type (ASSOCIATION_TYPE) 
+*** POI Side (SIDE)
+*** Vanity City (VANITY_CITY_ID)
+File Association 
+*** Introduction
+*** File Type (FILE_TYPE)
+**** Junction View and *D Sign Images
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+**** Motorway Junction Objects COLLADA (MJO-COLLADA) 
+*** Building Texture Pattern
+*** Attachment Type (ATTACHMENT_TYPE) 
+*** File Name (FILE_NAME)
+RDF Schema
+*** Introduction
+*** Entity Relationship Diagrams (ERD)
+**** Geometry Model
+**** Feature Association Model 
+**** POI Model
+**** Road Attributing Model
+**** Administrative Model 
+**** Feature Naming Model
+**** Metadata Model
+**** Voice Model 
+**** Point Address Model 
+***** File Association Model 
+***** Extended Postal Code Model
+***** Data Integrity Statistics Model
+***** ADAS Model
+***** Selection Clipper Configuration Model
+***** Administrative Extension Model
+***** Cartographic and Complex Features Model 
+*** RDF Core Tables
+**** RDF_ACCESS
+**** RDF_ADDRESS_MICROPOINT 
+**** RDF_ADDRESS_MPOINT_TRANS
+**** RDF_ADDRESS_POINT
+**** RDF_ADDRESS_POINT_TRANS
+**** RDF_ADDRESS_RANGE
+**** RDF_ADMIN_ATTRIBUTE 
+**** RDF_ADMIN_CENSUS 
+**** RDF_ADMIN_DST
+***** RDF_ADMIN_GRAPH
+***** RDF_ADMIN_HIERARCHY
+***** RDF_ADMIN_PLACE
+***** RDF_ANNOTATION
+***** RDF_AREA_TMC
+***** RDF_ASSO 
+***** RDF_ASSO_BUILDING 
+***** RDF_ASSO_CARTO
+***** RDF_ASSO_CF 
+***** RDF_ASSO_DT
+***** RDF_ASSO_FEAT_POINT
+***** RDF_ASSO_LINK
+***** RDF_ASSO_NAME
+***** RDF_ASSO_NAME_TRANS
+***** RDF_ASSO_NAMES
+***** RDF_ASSO_NATURAL_GUIDANCE
+***** RDF_ASSO_POI
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+***** RDF_BUILDING 
+***** RDF_BUILDING_ENH_FEATURE
+***** RDF_BUILDING_FACE 
+***** RDF_CARTO
+***** RDF_CARTO_FACE
+***** RDF_CARTO_LINK
+***** RDF_CENSUS
+***** RDF_CF 
+***** RDF_CF_ATTRIBUTE
+***** RDF_CF_BUILDING 
+***** RDF_CF_CARTO
+***** RDF_CF_CF 
+***** RDF_CF_LINK
+***** RDF_CF_NODE
+***** RDF_CHAIN
+***** RDF_CHAIN_NAME
+***** RDF_CHAIN_NAME_TRANS
+***** RDF_CITY_POI 
+***** RDF_CITY_POI_NAME
+***** RDF_CITY_POI_NAME_TRANS
+***** RDF_CITY_POI_NAMES
+***** RDF_CONDITION
+***** RDF_CONDITION_ACCESS 
+***** RDF_CONDITION_BLACKSPOT 
+***** RDF_CONDITION_DIRECTION_TRAVEL 
+***** RDF_CONDITION_DIVIDER
+***** RDF_CONDITION_DRIVER_ALERT
+***** RDF_CONDITION_DT
+***** RDF_CONDITION_ENV_ZONE 
+***** RDF_CONDITION_EVACUATION
+***** RDF_CONDITION_GATE 
+***** RDF_CONDITION_HOV
+***** RDF_CONDITION_PARKING
+***** RDF_CONDITION_RDM
+***** RDF_CONDITION_SPEED 
+***** RDF_CONDITION_TEXT
+***** RDF_CONDITION_TOLL
+***** RDF_CONDITION_TRANSPORT
+***** RDF_COUNTRY
+***** RDF_COUNTRY_TRANS
+***** RDF_DATE_TIME
+***** RDF_DISTANCE_MARKER
+***** RDF_FACE 
+***** RDF_FACE_LINK
+***** RDF_FEATURE_NAME 
+***** RDF_FEATURE_NAME_TRANS
+***** RDF_FEATURE_NAMES
+***** RDF_FEATURE_POINT 
+***** RDF_FEATURE_POINT_PREP
+***** RDF_FEATURE_POINT_NAME
+***** RDF_FEATURE_POINT_NAMES
+***** RDF_FILE
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+***** RDF_FILE_FEATURE
+***** RDF_LANE
+***** RDF_LANE_NAV_STRAND
+***** RDF_LAYER_BOUNDARIES 
+***** RDF_LINK
+***** RDF_LINK_GEOMETRY
+***** RDF_LINK_HEIGHT
+***** RDF_LINK_TMC
+***** RDF_LINK_TPEG 
+***** RDF_LINK_ZONE
+***** RDF_LOCATION
+***** RDF_META 
+***** RDF_META_PREMIUM_FEATURE
+***** RDF_META_PREMIUM_ID
+***** RDF_META_PREMIUM_OBJECT
+***** RDF_META_PREMIUM_PACKAGE
+***** RDF_META_PREMIUM_RULE 
+***** RDF_META_PREMIUM_SUPPRESS
+***** RDF_META_PREPOSITION
+***** RDF_META_TRANS 
+***** RDF_NAV_LINK 
+****** RDF_NAV_LINK_ATTRIBUTE
+****** RDF_NAV_LINK_STATUS
+****** RDF_NAV_STRAND
+****** RDF_NODE
+****** RDF_ORDER_LEVEL
+****** RDF_PLACE_POSTAL
+****** RDF_PLACE_ZONE
+****** RDF_POI
+****** RDF_POI_ADDRESS
+****** RDF_POI_ADDRESS_TRANS
+****** RDF_POI_AIRPORT
+****** RDF_POI_ASSOCIATION
+****** RDF_POI_CHAINS
+****** RDF_POI_CHILDREN
+****** RDF_POI_CONTACT_INFORMATION
+****** RDF_POI_FEATURE
+****** RDF_POI_NAME
+****** RDF_POI_NAME_TRANS
+****** RDF_POI_NAMES
+****** RDF_POI_PETROL_STATION
+****** RDF_POI_PLACE_OF_WORSHIP
+****** RDF_POI_REST_AREA
+****** RDF_POI_RESTAURANT
+****** RDF_POI_SUBCATEGORY
+****** RDF_POI_VANITY_CITY 
+****** RDF_POSTAL_AREA
+****** RDF_POSTAL_CODE_MIDPOINT
+****** RDF_ROAD_LINK 
+****** RDF_ROAD_NAME 
+****** RDF_ROAD_NAME_TRANS
+****** RDF_SIGN_DESTINATION
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+****** RDF_SIGN_DESTINATION_TRANS
+****** RDF_SIGN_ELEMENT
+****** RDF_SIGN_ELEMENT_TRANS
+****** RDF_SIGN_ORIGIN
+****** RDF_STATS_TABLE_ROW_COUNT 
+****** RDF_STREET_TYPE
+****** RDF_STREET_TYPE_ABBREVIATION
+****** RDF_STREET_TYPE_USAGE 
+****** RDF_TIME_DOMAIN
+****** RDF_VERSION_INFO
+****** RDF_VIRTUAL_CONNECTION
+****** RDF_ZONE
+****** RDF_ZONE_CENSUS
+****** RDF_ZONE_POSTAL
+*** Admin Extension Tables
+**** ADM_CITY_POI_SUBREGION
+**** ADM_LINK_SUBREGION
+**** ADM_POI_SUBREGION 
+**** ADM_SUBREGION
+**** ADM_SUBREGION_DEF
+*** SDO Tables
+**** SDO_BUILDING
+**** SDO_FACE
+**** SDO_LINK 
+**** SDO_LOCATION
+**** SDO_NODE 
+*** WKT Tables
+**** WKT_BUILDING
+**** WKT_FACE
+**** WKT_LINK
+**** WKT_LOCATION
+**** WKT_NODE 
+*** Voice Tables
+**** VCE_ASSO_NAME
+**** VCE_CHAIN_NAME
+**** VCE_CITY_POI_NAME 
+**** VCE_FEATURE_NAME
+**** VCE_FEATURE_POINT_NAME 
+**** VCE_GEO_OVERRIDE
+**** VCE_LANGUAGE_CODE_MAP 
+**** VCE_META
+**** VCE_META_PREPOSITION 
+***** VCE_PHONETIC_TEXT
+***** VCE_POI_NAME
+***** VCE_ROAD_NAME
+***** VCE_SIGN_DESTINATION
+***** VCE_SIGN_ELEMENT 
+***** VCE_STREET_TYPE
+*** ADAS Tables
+**** ADAS_LINK_GEOMETRY 
+**** ADAS_NODE_CURVATURE
+*** Selection Clipper Tables 
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+**** SC_PRODUCT 
+**** SC_PRODUCT_CARTO
+**** SC_PRODUCT_EXCEPTION
+**** SC_PRODUCT_SELECTION
+**** SC_SELECTION 
+**** SC_STATS_TABLE_ROW_COUNT
+Product Variations
+*** Unicode, Transliterations, and Transcriptions
+**** Definition of Terms
+**** Supported Languages
+*****  Use of Transcriptions
+*****  Use of Transliterations
+*** Entry Map
+**** Edge matching map products
+**** Ocean representation
+*** Intermediate Map
+*** Off-Road Africa 
+*** XML Products 
+*** Miscellaneous Files
+Premium Content
+*** Premium Content
+*** Premium Content Identification
+**** Rule Identification
+**** ID identification
+*** RDF_META_PREMIUM_PACKAGE
+**** Premium Content Package ID
+**** Premium Content Package 
+**** Description
+*** RDF_META_PREMIUM_SUPPRESS
+**** Table Name
+**** Column Name
+*** RDF_META_PREMIUM_FEATURE 
+**** Premium Content ID
+**** Region
+*** RDF_META_PREMIUM_RULE
+**** Sequence Number
+**** Table Name
+**** Column Name
+**** Value 
+*** RDF_META_PREMIUM_OBJECT
+**** Premium Content ID
+**** Table Name
+**** Column Name
+*** RDF_META_PREMIUM_ID
+**** Object ID
+*** Examples
+**** Removal of Neighbourhood Zone 
+**** Removal of Transport Access Restriction
+**** Removal of Structure Footprint 
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+**** Scenic Routes
+**** Extended Lanes & Lane Markings
+**** Trucks
+**** Speed Limits
+**** Transit and Pedestrian
+Extended Navigation 
+*** Introduction
+*** Inclusion
+**** Road Geometry 
+**** Cartographic Inclusion
+**** Points of Interest 
+*** POI Attributes
+**** Entrance Type 
+**** Parent/Child 
+*** Link Attributes
+**** Parking Lot Road (PARKING_LOT_ROAD)
+*****  Parking Lot Road Example
+**** Other Link Attributes
+Point & Micro Point Addresses 
+*** Introduction
+*** Point Address 
+**** Data Components
+**** Point Address 
+**** Point Address Attributes
+*****  Street Name (through ROAD_LINK_ID) 
+*****  Address (ADDRESS)
+*****  Display Location (DISPLAY_LAT/LON)
+*****  Arrival Location (LAT/LON) 
+*****  Building Name (BUILDING_NAME)
+*****  Address Type (ADDRESS_TYPE)
+*****  Enhanced (ENHANCED)
+*****  Address Link (ROAD_LINK_ID)
+*****  Arrival Link (ARRIVAL_LINK_ID) 
+**** Point Address Example 
+*** Micro Point Address 
+**** Micro Point Address 
+**** Attributes
+*****  Display Location (DISPLAY_LAT/LON)
+*****  Arrival Location (LAT/LON) 
+*****  Building Unit Name (BUILDING_UNIT_NAME)
+*****  Level Name (LEVEL_NAME)
+*****  Unit Name (UNIT_NAME) 
+*****  Point Address Association (ADDRESS_POINT_ID)
+*****  Arrival Link (ARRIVAL_LINK_ID) 
+Disputed Territories
+*** Introduction
+*** Disputed Territories Model
+**** Administrative Boundaries
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+*****  Disputed Country Boundary
+*****  Cartographic Disputed Country Boundary
+*****  Disputed State Boundary
+*****  Cartographic Disputed State Boundary
+**** Attributes
+*****  Claimed By (CLAIMED_BY)
+*****  Controlled By (CONTROLLED_BY) 
+*****  Line of Control (LINE_OF_CONTROL)
+**** Administrative Coding and Disputed Area Zone
+**** Named Place POI in Disputed Areas
+**** Naming in Disputed Areas
+*** Using a Disputed Territories Product
+**** Creating a Multi-country Product
+**** Creating a Country Product
+*** Examples
+**** Dual Administrative Coding 
+**** Disputed Polygonal Cartographic Administrative Boundary
+**** Disputed Linear Cartographic Administrative Boundary
+Natural Guidance
+*** Introduction
+*** Feature Point Object
+**** Feature Point ID (FP_ID)
+**** Link ID (LINK_ID)
+**** Feature Point Type (FP_TYPE)
+**** Side (SIDE)
+**** Latitude (LAT) 
+**** Longitude (LON) 
+*** Feature Association Model
+*** Guidance Point Inclusion and Specification
+*** Guidance Point Examples
+**** Passing Guidance Examples
+**** Junction Guidance Examples (Single digitised)
+**** Junction Guidance Examples (Multi-digitised)
+*** Natural Guidance Association (RDF_ASSO_NATURAL_GUIDANCE) 
+**** Direction (DIRECTION)
+**** Visibility (VISIBILITY)
+**** Seasonal Dependency (SEASONAL_DEPENDENCY) 
+**** Relative Distance (RELATIVE_DISTANCE) 
+**** Calculated Importance (CALC_IMPORTANCE)
+**** Association Type (ASSO_TYPE)
+*****  RDF_ASSO_CARTO
+*****  RDF_ASSO_CF
+*****  RDF_ASSO_NAME
+*****  RDF_ASSO_NAMES
+**** Importance Indicator (IMPORTANCE_IND) 
+**** Examples
+*****  Bridge/Tunnel Junction Guidance Example
+*****  Bridge/Tunnel Passing Guidance Example
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+Distance Markers
+*** Introduction
+*** Distance Marker - Feature
+**** Distance Value (DISTANCE_VALUE) 
+**** Direction on Sign (DIRECTION_ON_SIGN) 
+**** Direction (DIRECTION)
+**** Unit Of Measure (UNIT_OF_MEASURE)
+**** Enhanced (ENHANCED)
+**** Lat/Lon Coordinates (LAT/LON)
+**** Distance Marker Example 
+Trucks
+*** Introduction
+*** Access Characteristics
+*** Traffic Sign (CONDITION_TYPE = **)
+**** Traffic Sign Type (TRAFFIC_SIGN_TYPE) 
+**** Traffic Sign Category (TRAFFIC_SIGN_CATEGORY) 
+**** Supplemental Sign Duration (SIGN_DURATION)
+**** Supplemental Sign Pre-Warning (SIGN_PREWARNING)
+**** General Warning Sign Type (GEN_WARNING_SIGN_TYPE)
+**** Traffic Sign Value (TRAFFIC_SIGN_VALUE)
+*** No Overtaking (CONDITION_TYPE = **) 
+*** Transport Access Restriction (CONDITION_TYPE = **) 
+**** Direction Closure (DIRECTION_CLOSURE) 
+**** Physical Structure Type (PHYSICAL_STRUCTURE_TYPE)
+*** Transport Special Speed Situation (CONDITION_TYPE = **)
+**** Transport Speed Limit (TRANSPORT_SPEED_LIMIT) 
+**** Transport Speed Limit Type (SPEED_LIMIT_TYPE) 
+**** Transport Speed Situation Type (TRANSPORT_SPEED_TYPE)
+*** Transport Restricted Driving Manoeuvre (CONDITION_TYPE = **)
+*** Transport Preferred Route (CONDITION_TYPE = **)
+**** Transport Preferred Route Type (PREFERRED_ROUTE_TYPE)
+*** General Sub-attributes
+**** Direction (DIRECTION)
+**** Hazardous Material Type (HAZARDOUS_MATERIAL_TYPE) 
+**** Hazmat Permit Required (HAZMAT_PERMIT_REQUIRED) 
+**** KPRA Length (KPRA_LENGTH)
+**** Height Restriction (HEIGHT_RESTRICTION) 
+**** Length Restriction (LENGTH_RESTRICTION)
+**** Number of Axles (NUMBER_OF_AXLES)
+**** Trailer Type (TRAILER_TYPE)
+**** Weather Type (WEATHER_TYPE)
+***** Weight Dependent (WEIGHT_DEPENDENT)
+***** Weight per Axle Restriction (WEIGHT_PER_AXLE_RESTRICTION) 
+***** Weight Restriction (WEIGHT_RESTRICTION)
+***** Width Restriction (WIDTH_RESTRICTION)
+**** Transport Verified (TRANSPORT_VERIFIED)
+**** Loading Dock Locations
+***** Delivery Road (DELIVERY_ROAD)
+***** Points of Interests 
+****** Delivery Entrance
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+****** Dock
+****** Loading Zone
+Voice Phonetic Transcriptions
+*** Voice Phonetic Transcriptions Overview
+*** Voice Phonetic Text Table (VCE_PHONETIC_TEXT) 
+**** Phonetic Language Code (PHONETIC_LANGUAGE_CODE) 
+**** Phonetic Text (PHONETIC_STRING)
+**** Transcription Method (TRANSCRIPTION_METHOD) 
+*** Voice Cross-Reference Tables
+**** Preferred (PREFERRED)
+**** Type (TYPE)
+*** Super Category Data
+**** Shortened Name (NAME_TYPE = K) 
+*** Geo Override 
+*** Phonetic Transcription Examples
+**** Street Name 
+**** Street Name with Street Name Components
+**** Metadata Phonetic Transcription
+**** Geo Override Example 
+**** POI Name with Single Phonetic Transcription 
+**** POI Name with Multiple Phonetic Transcriptions 
+**** POI Name with Machine Generated Transcription
+*** Voice Phonetic Transcriptions for Natural Guidance
+**** Overview
+**** Route Guidance Point 
+**** Preposition Code (PREPOSITION_CODE)
+**** Preposition (PREPOSITION)
+**** Position (POSITION)
+**** Name for Route Guidance Point (NAME) 
+**** Using Voice Phonetic Transcriptions for Natural Guidance 
+*****  Junction Guidance
+*****  Traffic Light or Stop Sign Guidance
+*****  Voice for Natural Guidance Examples
+Enhanced Curvature, Enhanced Height and Slope
+*** Introduction
+**** Absolute Height (Z_COORD)
+**** Curvature (CURVATURE)
+**** Heading (HEADING) 
+**** Slope (SLOPE)
+**** Vertical Flag (VERTICAL_FLAG)
+Basic Height
+*** Introduction
+*** Map representation
+*** Ref/NRef Z Coordinates (REF/NREF_NODE_ZCOORD)
+*** Link Average Height (LINK_AVERAGE_HEIGHT)
+*** Link Minimum/Maximum Height 
+(LINK_MINIMUM/MAXIMUM_HEIGHT)
+*** Example 
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+Transit & Pedestrian
+*** Introduction
+*** Attribute: RDF_NAV_LINK
+**** Pedestrian Preferred (PEDESTRIAN_PREFERRED)
+*** Attribute: RDF_NAV_LINK_ATTRIBUTE 
+**** Stair Traversal (STAIR_TRAVERSAL)
+*** Attributes: RDF_VIRTUAL_CONNECTION 
+**** Connection Type (CONNECTION_TYPE) 
+**** Stair Traversal 
+**** Time Override (TIME_OVERRIDE)
+*** Points of Interest 
+**** Public Transit Stop
+**** Public Transit Access
+**** Taxi Stand
+**** Neighbourhood 
+*** Neighbourhood Feature
+*** Neighbourhood Zone
+Naming Rules
+A General Rules
+A* Capitalisation (Mixed Casing)
+A** Articles and Prepositions 
+A** Titles of Persons
+A** Abbreviations
+A** Roman Numerals
+A** Ordinal Numbers 
+A** Language Specific Exceptions 
+A** Miscellaneous Exceptions
+A* Language Code
+A* Bilingual Areas 
+A** Level * Bilingual Area 
+A** Level * Bilingual Area 
+A** Level * Bilingual Area 
+A** Level * Bilingual Area *
+A* Exonyms and Transliterations *
+A* Non-Latin Names*
+A** Transliteration and Transcription Languages*
+A** Transliteration Table*
+A* Abbreviations*
+A* Punctuation *
+A Naming Rules for Specific Features*
+A* Administrative Features*
+A* Cartographic County Boundary Feature*
+A* Cartographic State/Province Boundary Feature*
+A* Bridges and Tunnels*
+A* Building/Landmark Outlines *
+A* Calamity Prone Areas *
+A* Express, High Occupancy Vehicle (HOV) or Bus Lanes*
+A* Ferry Connections *
+A* Frontage Roads *
+A** Hospital*
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+A** Industrial/Business Area*
+A** Intersection Internal Links*
+A** Junction*
+A** Manoeuvre*
+A** Mountain Passes *
+A** Oceans*
+A** Park in Water *
+A** Ramps*
+A** Rest Areas*
+A** Roads within Airports*
+A** Roads within Complex POIs in the U.S. *
+A** Roads within Residential Complex*
+A** Roundabouts and Special Traffic Figures *
+A** Route Numbers *
+A** POI Access Roads*
+A** Turn Lanes and U-Turn Lanes*
+A** Undefined Traffic Squares*
+A** Unnamed Roads Added for Connectivity*
+Attribute Values 
+B Introduction
+B RDF_ADDRESS_POINT
+B* Language Code
+B RDF_ADDRESS_RANGE
+B RDF_ADMIN_ATTRIBUTE 
+B RDF_ADMIN_DST*
+B RDF_ADMIN_HIERARCHY*
+B RDF_ADMIN_PLACE*
+B* RDF_ANNOTATION*
+B* RDF_ASSO*
+B* RDF_ASSO_NATURAL_GUIDANCE*
+B* RDF_AREA_TMC*
+B* RDF_BUILDING*
+B* RDF_BUILDING_ENH_FEATURE*
+B* RDF_CARTO*
+B* RDF_CARTO_FACE*
+B** Coverage Indicator Values*
+B* RDF_CARTO_LINK*
+B* RDF_CENSUS *
+B* RDF_CF*
+B* RDF_CITY_POI*
+B* RDF_CITY_POI_NAME*
+B* RDF_CITY_POI_NAME_TRANS*
+B* RDF_CITY_POI_NAMES*
+B* RDF_CONDITION *
+B* RDF_CONDITION_ACCESS *
+B* RDF_CONDITION_BLACKSPOT *
+B* RDF_CONDITION_DIRECTION_TRAVEL*
+B* RDF_CONDITION_DRIVER_ALERT*
+B* RDF_CONDITION_EVACUATION*
+B* RDF_CONDITION_GATE*
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+B* RDF_CONDITION_HOV*
+B* RDF_CONDITION_PARKING*
+B* RDF_CONDITION_RDM*
+B* RDF_CONDITION_SPEED*
+B* RDF_CONDITION_TOLL*
+B* RDF_CONDITION_TRANSPORT*
+B* RDF_COUNTRY *
+B* RDF_DATE_TIME*
+B** Valid Start and End Date Values*
+B* RDF_DISTANCE_MARKER *
+B* RDF_FEATURE_NAME *
+B* RDF_FEATURE_NAME_TRANS *
+B* RDF_FEATURE_NAMES *
+B* RDF_FEATURE_POINT*
+B* RDF_FILE*
+B* RDF_FILE_FEATURE *
+B* RDF_LANE *
+B* RDF_LINK_TMC*
+B* RDF_LINK_TPEG*
+B* RDF_LINK_ZONE*
+B* RDF_LOCATION *
+B* RDF_META*
+B* RDF_META_PREPOSITION*
+B* RDF_NAV_LINK*
+B* RDF_NAV_LINK_ATTRIBUTE*
+B* RDF_NAV_LINK_STATUS *
+B* RDF_POI*
+B* RDF_POI_ADDRESS *
+B* RDF_POI_ADDRESS_TRANS *
+B* RDF_POI_ASSOCIATION*
+B* RDF_POI_PETROL_STATION *
+B* RDF_POI_AIRPORT**
+B* RDF_POI_PLACE_OF_WORSHIP**
+B* RDF_POI_REST_AREA **
+B* RDF_POI_SUBCATEGORY**
+B* RDF_POI_CHAINS**
+B* RDF_POI_CHILDREN**
+B* RDF_POI_CONTACT_INFORMATION**
+B* RDF_POI_RESTAURANT**
+B** Cuisine Type (CUISINE_ID) Values**
+B* RDF_POI_FEATURE**
+B* RDF_POI_NAME**
+B* RDF_POI_NAME_TRANS**
+B* RDF_POI_NAMES **
+B* RDF_POSTAL_CODE_MIDPOINT **
+B* RDF_ROAD_LINK**
+B* RDF_ROAD_NAME**
+B* RDF_ROAD_NAME_TRANS**
+B* RDF_SIGN_DESTINATION**
+B* RDF_SIGN_DESTINATION_TRANS**
+B* RDF_SIGN_ELEMENT **
+B* RDF_SIGN_ELEMENT_TRANS **
+Table of Contents
+
+PROPRIETARY & CONFIDENTIAL
+B* RDF_STATS_TABLE_ROW_COUNT**
+B* RDF_STREET_TYPE**
+B* RDF_STREET_TYPE_USAGE**
+B* RDF_TIME_DOMAIN**
+B* RDF_VIRTUAL_CONNECTION**
+B* RDF_ZONE **
+B* VCE_META**
+B* VCE_PHONETIC_TEXT **
+B** Phonetic Language Code**
+B* VCE_ROAD_NAME**
+B* VCE_SIGN_DESTINATION **
+Time Domain 
+C Time Domain
+C* Starting Date Syntax
+C** Valid Formats and Default Values
+C** General Rule for Default Values 
+C Time Interval Syntax
+C* Valid Formats and Default Values
+C** Combination of Periods
+C Time Domain Examples
+C Time Domain Combinations
+C* General aspects
+C Daylight Saving Date/Time Representation in RDF*
+Revision History
+RH Changes Made for Q
+RH Changes Made for Q
+RH Changes Made for Q
+RH Changes Made for Q
+RH Changes Made for Q
+RH Changes Made for Q

@@ -12,7 +12,8 @@
 - [[~/file/book/bookslist.org][booklist]]
   - [[~/file/book/computer/conceptual_blockbusting.org][突破思维的限定]]   
   - [[C:\Jerryfive\emacs-24.3\config_red\file\meetMyself.org][meetMyself]]       
-  - [[~/file/book/computer/软件开发者路线图.org][软件开发者路线图]] 
+  - [[~/file/book/computer/软件开发者路线图.org][软件开发者路线图]]
+  - [[~/file/book/computer/PEP8.org][PEP8]]
 * 项目文件
 - [[~/file/project/projectMenu.org][项目列表]]
   - Android
@@ -21,6 +22,10 @@
       - [[~/file/project/Android/Telli_v3.org][Telli说明文档]]
 - Guide
   - [[~/file/project/Guide/GuideQuality.org][Guide品质]]
+- [[~/file/project/DataFormat][DataFormat]]
+  - [[~/file/project/DataFormat/ReadMe.org][DataFormat_ReadMe]]
+  - [[~/file/project/DataFormat/work_record.org][work_record]]
+  - [[~/file/project/DataFormat/work_question.org][work_question]]
 * 工作Log
 - [[~/ToDo/log.org][工作Log]]
 - [[~/file/train/menu_train.org][商泰培训]]
@@ -28,7 +33,7 @@
 * 个人记事DayLife
 - [[~/ToDo/daylife.org][个人记事-DayLife]]
 - [[~/ToDo/diary.org][diary]]
-- [[~/file/entertainment/][entertainment]
+- [[~/file/entertainment/][entertainment]]
 * GTD
 - [[~/ToDo/newgtd.org][个人GTD]]
   
