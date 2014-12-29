@@ -1,8 +1,8 @@
 
 ;; ----- smex-history -----
 (
- log
  wiki
+ log
  emms
  diary
  gtd
@@ -55,7 +55,7 @@
  (dired . 1)
  (delete-pair . 1)
  (recentf-mode . 1)
- (wiki . 22)
+ (wiki . 27)
  (emms-start . 1)
  (send-invisible . 1)
  (diary . 4)
